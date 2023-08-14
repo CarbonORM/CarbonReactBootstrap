@@ -1,5 +1,8 @@
 import React from 'react';
 import logo from './logo.svg';
+
+import BootstrapStyle from "./bootstrap.module.scss"
+
 import './App.css';
 
 function App() {
@@ -18,6 +21,7 @@ function App() {
         >
           Learn React
         </a>
+        <div className={BootstrapStyle["btn-primary"]}>Test</div>
       </header>
     </div>
   );
