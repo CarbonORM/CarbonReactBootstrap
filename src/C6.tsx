@@ -2772,7 +2772,7 @@ export const wp_users : C6RestfulModel & iDefineWp_Users = {
 
   
 
-export const TABLES = {
+export const TABLES: { [name: string] : (C6RestfulModel & {[properties: string]: any})} = {
     
   carbons: carbons,
   comments: comments,
@@ -2807,7 +2807,8 @@ export const TABLES = {
   wp_users: wp_users,
 };
 
-export const C6 = {
+export const C6 : { TABLES: { [key: string]: (C6RestfulModel & { [key: string]: any }) } }
+                & { [key: string]: any } = {
         // try to 1=1 match the Rest abstract class
     ADDDATE: 'ADDDATE',
     ADDTIME: 'ADDTIME',

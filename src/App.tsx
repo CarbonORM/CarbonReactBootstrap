@@ -1,7 +1,6 @@
-import React from 'react';
 import logo from './logo.svg';
 
-import BootstrapStyle from "./bootstrap.module.scss"
+import BootstrapStyle from "./index.module.scss"
 
 import './App.css';
 
@@ -21,7 +20,7 @@ function App() {
         >
           Learn React
         </a>
-        <div className={BootstrapStyle.bgGradient}>Test</div>
+        <div className={BootstrapStyle.alertWarning}>Test</div>
       </header>
     </div>
   );

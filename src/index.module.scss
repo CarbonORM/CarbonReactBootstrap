@@ -1,0 +1,78 @@
+/** CarbonORM/ReactBoot
+ * @link https://stackoverflow.com/questions/57331645/how-to-get-value-of-grid-breakpoint-variable
+ * @link https://stackoverflow.com/questions/48924751/how-to-create-new-breakpoints-in-bootstrap-4-using-cdn
+ * import what we need to override
+ * TODO - test $grid-breakpoints
+ **/
+
+@import url('https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.3.0/css/flag-icon.min.css');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700');
+
+@import '../node_modules/admin-lte/plugins/fontawesome-free/css/all.min.css';
+@import '../node_modules/admin-lte/plugins/icheck-bootstrap/icheck-bootstrap.min.css';
+
+@import "../node_modules/bootstrap/scss/_functions.scss";
+@import "../node_modules/bootstrap/scss/_variables.scss";
+
+@import "../node_modules/admin-lte/build/scss/bootstrap-variables";
+
+
+/**
+  * Set the overriding variables
+  * @link https://getbootstrap.com/docs/5.2/layout/grid/#:~:text=Grid%20breakpoints%20are%20based%20on,not%20the%20first%20xs%20breakpoint)
+  * @link https://stackoverflow.com/questions/37490537/twitter-bootstrap-add-media-queries-for-xxs-breakpoint
+  **/
+
+$grid-breakpoints: (
+        xxs: 0,
+        xs: 375px,
+        sm: 576px,
+        md: 768px,
+        lg: 992px,
+        xl: 1200px,
+        xxl: 1400px
+);
+
+$container-max-widths: (
+        xxs: 374px,
+        xs: 375px,  // idk someone help - @link https://developer.apple.com/library/archive/documentation/DeviceInformation/Reference/iOSDeviceCompatibility/Displays/Displays.html
+        sm: 576px,
+        md: 768px,
+        lg: 992px,
+        xl: 1200px,
+        xxl: 1400px
+);
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+
+// Variables and Mixins
+// ---------------------------------------------------
+
+@import "../node_modules/admin-lte/build/scss/variables";
+
+@import "../node_modules/admin-lte/build/scss/variables-alt";
+
+@import "./variables/bootstrap/mixins";
+
+@import "../node_modules/admin-lte/build/scss/parts/core";
+@import "../node_modules/admin-lte/build/scss/parts/components";
+@import "../node_modules/admin-lte/build/scss/parts/extra-components";
+@import "../node_modules/admin-lte/build/scss/parts/pages";
+@import "../node_modules/admin-lte/build/scss/parts/plugins";
+@import "../node_modules/admin-lte/build/scss/parts/miscellaneous";
+
+@import '../node_modules/react-toastify/dist/ReactToastify.min.css';
+
+#root {
+  width: 100vw;
+  height: 100vh;
+}
+
+.main-header .navbar-nav .nav-item .nav-link {
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}

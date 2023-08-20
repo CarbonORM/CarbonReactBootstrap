@@ -1,26 +1,38 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "target": "esnext",
+    "rootDir": "./src/",
+    "baseUrl": "./src/",
     "lib": [
       "dom",
       "dom.iterable",
+      "es2019", "es2020",
       "esnext"
+    ],
+    "types": [
+      "node",
+      "webpack-env"
     ],
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
+    "noImplicitAny": false,
     "allowSyntheticDefaultImports": true,
-    "strict": true,
     "forceConsistentCasingInFileNames": true,
-    "noFallthroughCasesInSwitch": true,
     "module": "esnext",
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "strict": true,
+    "noFallthroughCasesInSwitch": true
   },
   "include": [
-    "src"
-  ]
+    "src",
+    "src/custom.d.ts"
+  ],
+  "compileOnSave": false
 }

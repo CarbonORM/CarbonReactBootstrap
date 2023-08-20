@@ -4,3 +4,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## TODO 
 php ubuntu scripts need to set up apache build and virtual host configurations
+
+
+
+
+The backend entry point is the index.php file
