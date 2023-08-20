@@ -35,8 +35,8 @@ module.exports = override(
              * Why? Read here: https://github.com/dherman/defense-of-dot-js/blob/master/proposal.md#typical-usage
              */
             const entryFile = pkg.module;
-            
-            
+
+
             const outFile = path.basename(pkg.main);
             const outDir = pkg.main.replace(outFile, '');
             /**
@@ -47,7 +47,7 @@ module.exports = override(
             /**
              * Change the webpack entry and output path
              */
-            config.entry = { [libraryName]: path.resolve(entryFile) };
+            config.entry = {[libraryName]: path.resolve(entryFile)};
             config.output.filename = outFile;
             config.output.path = path.resolve(outDir);
             /**
@@ -85,7 +85,7 @@ module.exports = override(
         }
         return config;
     },
-    //addWebpackPlugin(new MiniCssExtractPlugin()),
+    addWebpackPlugin(new MiniCssExtractPlugin()),
     function (config, _env) {
 
         log.info('webpack env', process.env.NODE_ENV)
@@ -102,14 +102,15 @@ module.exports = override(
 
                     // log.info('webpack context', context, localIdentName, localName, options)
 
-                    if (false === context.resourcePath.endsWith('bootstrap.module.scss')) {
+                    if (false === context.resourcePath.endsWith('index.module.scss')
+                        && false === context.resourcePath.endsWith('bootstrap.module.scss')) {
 
                         localName = defaultGetLocalIdent(context, localIdentName, localName, options)
                             .replace("[local]", localName)
 
                     }
 
-                    // log.info(localName)
+                    log.info(localName)
 
                     return localName;
 

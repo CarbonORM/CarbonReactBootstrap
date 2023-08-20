@@ -9704,3 +9704,5 @@ Set to an empty string "" for mysql to auto-resolve.[0m
 
 [0m
 [19-Aug-2023 19:29:12 America/Phoenix] [32m<pid::57414> CarbonPHP is returning (true) from (CarbonPHP\CarbonPHP::run). The cli command has finished.[0m
+[19-Aug-2023 23:57:01 America/Phoenix] [46m<pid::36067> Getting new database instance[0m
+[19-Aug-2023 23:58:03 America/Phoenix] [46m<pid::36098> Getting new database instance[0m
