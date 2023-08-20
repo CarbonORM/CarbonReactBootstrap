@@ -88,7 +88,7 @@ module.exports = override(
     addWebpackPlugin(new MiniCssExtractPlugin()),
     function (config, _env) {
 
-        log.info('webpack env', process.env.NODE_ENV)
+        log.info('webpack env loaded rewireTypingsForCssModule')
 
         // what's going on here? @link https://stackoverflow.com/questions/73551420/removing-hash-from-react-css-modules
         // noinspection JSUnusedGlobalSymbols
@@ -96,21 +96,22 @@ module.exports = override(
             modules: {
                 exportLocalsConvention: 'camelCase',
                 mode: 'local',
-                localIdentName: 'production' === process.env.NODE_ENV ? '[hash:base64:5]' : '[path][name]__[local]--[hash:base64:5]',
+                localIdentName: '[local]', // 'production' === process.env.NODE_ENV ? '[hash:base64:5]' : '[path][name]__[local]--[hash:base64:5]',
                 exportGlobals: true,
                 getLocalIdent: (context, localIdentName, localName, options) => {
 
-                    // log.info('webpack context', context, localIdentName, localName, options)
+                    if (false === context.resourcePath.includes('index.module.')
+                        && false === context.resourcePath.includes('bootstrap.module.')
+                        && false === context.resourcePath.includes('node_modules')) {
 
-                    if (false === context.resourcePath.endsWith('index.module.scss')
-                        && false === context.resourcePath.endsWith('bootstrap.module.scss')) {
+                        log.info(localName)
 
                         localName = defaultGetLocalIdent(context, localIdentName, localName, options)
                             .replace("[local]", localName)
 
-                    }
+                        log.info(localName)
 
-                    log.info(localName)
+                    }
 
                     return localName;
 
@@ -118,8 +119,6 @@ module.exports = override(
 
             }
         })(config); // do not pass env as it will cause the production build will not be modified
-
-        // log.info('webpack configuration post config-overrides.js', JSON.stringify(config))
 
         return config;
 

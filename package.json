@@ -57,7 +57,7 @@
     "yup": "1.1.1"
   },
   "scripts": {
-    "start": "npm cache clean --force && npm run build:css && concurrently \"npm:watch:sass\" \"npm:rewired:start\"",
+    "start": "rm -rf node_modules/.cache/ && npm cache clean --force && npm run build:css && concurrently \"npm:watch:sass\" \"npm:rewired:start\"",
     "rewired:start": "react-app-rewired start  --experimental-modules",
     "build:css": "sass ./src:./src && tcm src",
     "build": "npm run build:css && PUBLIC_URL=https://drop-in-gaming.github.io/node-core/ react-app-rewired build",
