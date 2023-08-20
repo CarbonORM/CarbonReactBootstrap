@@ -46,10 +46,15 @@ const App = () => {
       if (responses && responses.length > 0) {
         dispatch(setAuthentication(responses[0]));
       }
+
     } catch (error: any) {
+
       console.log('error', error);
+
     }
+
     setIsAppLoading(false);
+
   };
 
   useEffect(() => {
