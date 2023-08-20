@@ -21,7 +21,7 @@ function App() {
         >
           Learn React
         </a>
-        <div className={BootstrapStyle["btn-primary"]}>Test</div>
+        <div className={BootstrapStyle.bgGradient}>Test</div>
       </header>
     </div>
   );

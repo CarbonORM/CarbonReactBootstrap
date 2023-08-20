@@ -1,0 +1,155 @@
+{
+  "name": "carbonorm/reactboot",
+  "license": "MIT",
+  "type": "library",
+  "keywords": [
+    "Sockets",
+    "Carbon",
+    "Pipes",
+    "IO",
+    "Session",
+    "Routing"
+  ],
+  "homepage": "https://github.com/carbonorm/reactboot",
+  "description": "A PHP 8.1+ tool kit featuring RESTFUL ORM, sockets, session management, and routing.",
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "require": {
+    "php": ">=8.1",
+    "carbonorm/carbonphp": "^15.0.2",
+    "ext-json": "*",
+    "ext-pdo": "*",
+    "ext-curl": "*",
+    "ext-openssl": "*",
+    "ext-fileinfo": "*",
+    "ext-posix": "*",
+    "ext-readline": "*",
+    "ext-zip": "*",
+    "ext-pcntl": "*",
+    "ext-sockets": "*"
+  },
+  "require-dev": {
+    "wp-cli/wp-cli-bundle": ">=2.6.0",
+    "phpunit/phpunit-selenium": ">=9.0.1",
+    "se/selenium-server-standalone": ">=3.141.59",
+    "phpunit/phpunit": ">=9.5",
+    "phpmetrics/phpmetrics": ">=2.7"
+  },
+  "authors": [
+    {
+      "name": "Richard Miles",
+      "email": "Richard@Miles.systems",
+      "homepage": "https://www.miles.systems",
+      "role": "Developer"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Backend\\Tables\\": "backend/tables/",
+      "Backend\\Tables\\Traits\\": "backend/tables/traits/",
+      "Backend\\": "backend/"
+    }
+  },
+  "scripts": {
+    "apache:linkApplication": [
+      "rm /usr/local/var/www",
+      "ln -s $(pwd) /usr/local/var/www",
+      "@apache:restart:mac"
+    ],
+    "apache:restart:mac": "sudo brew services restart httpd",
+    "apache:start:mac": "sudo brew services start httpd",
+    "apache:stop:mac": "sudo brew services stop httpd",
+    "db": [
+      "php index.php cnf",
+      "php index.php buildDatabase -r"
+    ],
+    "force": "@composer install --ignore-platform-reqs",
+    "forceUp": "@composer update --ignore-platform-reqs",
+    "metrics": [
+      "php ./vendor/bin/phpmetrics --config=php-metrics.json ."
+    ],
+    "post-install-cmd": [
+      "@apache:linkApplication",
+      "@db",
+      "@rest"
+    ],
+    "gcloud:instance:delete": [
+      "chmod +x ./carbonphp/programs/gcpDeployment.sh",
+      "./carbonphp/programs/gcpDeployment.sh -delete"
+    ],
+    "gcloud:instance:new": [
+      "chmod +x ./carbonphp/programs/gcpDeployment.sh",
+      "./carbonphp/programs/gcpDeployment.sh -deploy"
+    ],
+    "gcloud": [
+      "gcloud projects list",
+      "gcloud compute instances list"
+    ],
+    "post-update-cmd": [
+      "@carbon:wordpress",
+      "@rest",
+      "@test"
+    ],
+    "rei": "rm -rf vendor && rm composer.lock && composer i",
+    "rest": [
+      "php index.php restbuilder -dontQueryWithDatabaseName -excludeTablesRegex '#_mig_.*#' -react src/ -json -namespace 'Backend\\Tables' -target backend/tables/"
+    ],
+    "setup": [
+      "@database:refresh:schema",
+      "@rest",
+      "npm install",
+      "php index.php ApacheConfig"
+    ],
+    "console": [
+      "echo https://cloud.google.com/sdk/docs/downloads-interactive"
+    ],
+    "setup:generated": [
+      "php index.php minify",
+      "cd view/assets/react && npm install && npm run build",
+      "@carbon:react"
+    ],
+    "start": [
+      "php -S local.carbonphp.com:80 dev-routing.php -d display_errors=1"
+    ],
+    "open": "open http://local.carbonphp.com:80/",
+    "socket": "php index.php websocket",
+    "test": [
+      "echo 'Use the following to enable XDEBUG :: export XDEBUG_MODE=debug XDEBUG_SESSION=1'",
+      "XDEBUG_MODE=debug XDEBUG_SESSION=1 ./vendor/bin/phpunit --log-junit junit.xml  --testdox || ./vendor/bin/phpunit --verbose --log-junit junit.xml >> logs/tests.txt"
+    ],
+    "wp": [
+      "cp index.php index.og.php",
+      "@wordpress:download:nightly-build",
+      "mv index.php index.wp.php",
+      "cp index.og.php index.php",
+      "@wordpress:install",
+      "@carbon:wordpress"
+    ],
+    "wordpress:download:latest-stable": [
+      "php -r \"copy('https://wordpress.org/latest.tar.gz', 'latest.tar.gz');\"",
+      "tar xfz latest.tar.gz",
+      "cp -R wordpress/* ./",
+      "rm -rf wordpress",
+      "rm -f latest.tar.gz"
+    ],
+    "wordpress:download:nightly-build": [
+      "php -r \"copy('https://wordpress.org/nightly-builds/wordpress-latest.zip', 'latest.zip');\"",
+      "unzip latest.zip",
+      "cp -R wordpress/* ./",
+      "rm -rf wordpress",
+      "rm -f latest.tar.gz"
+    ],
+    "wordpress:install": "wp core install --url=127.0.0.1:80 --title=CarbonPHP --admin_user=root --admin_password=password --admin_email=richard@miles.systems",
+    "wordpress:install:cli:global": [
+      "php -r \"copy('https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar', 'wp-cli.phar');\"",
+      "php wp-cli.phar --info",
+      "chmod +x wp-cli.phar",
+      "mv wp-cli.phar /usr/local/bin/wp"
+    ]
+  },
+  "config": {
+    "allow-plugins": {
+      "cweagans/composer-patches": true
+    }
+  }
+}

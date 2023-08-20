@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit backupGlobals="false"
+         backupStaticAttributes="false"
+         bootstrap="wp-load.php"
+         colors="true"
+         stderr="true"
+         convertErrorsToExceptions="true"
+         convertNoticesToExceptions="true"
+         convertWarningsToExceptions="true"
+         processIsolation="false"
+         stopOnFailure="true">
+    <testsuites>
+        <testsuite name="feature">
+            <file>dropingaming/php/tests/feature/WordpressTest.php</file>
+            <file>dropingaming/php/tests/feature/RestTest.php</file>
+            <file>dropingaming/php/tests/feature/BracketTest.php</file>
+            <file>dropingaming/php/tests/feature/PayPalTest.php</file>
+        </testsuite>
+        <testsuite name="browser">
+            <file>dropingaming/php/tests/browser/NavigationTest.php</file>
+        </testsuite>
+    </testsuites>
+    <php>
+        <const name="PHPUNIT_DROPINGAMING_TESTSUITE" value="true"/>
+        <env name="TESTING" value="1"/>
+        <env name="TEST" value="TRUE"/>
+        <env name="CACHE_DRIVER" value="array"/>
+        <env name="SESSION_DRIVER" value="array"/>
+        <env name="QUEUE_DRIVER" value="sync"/>
+        <ini name="display_errors" value="true"/>
+    </php>
+</phpunit>
