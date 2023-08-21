@@ -10,7 +10,8 @@ export const StyledDropdown = styled(PfDropdown)`
   justify-content: center;
   align-items: center;
   --pf-dropdown-menu-min-width: 18rem;
-
+  --pf-dropdown-menu-margin-top:300px;
+  
   .dropdown-item {
     padding: 0.5rem 1rem;
   }
@@ -21,8 +22,8 @@ export const StyledDropdown = styled(PfDropdown)`
   .dropdown-divider {
     margin: 0;
   }
-  .media {
-    margin-top: 80px;
+  .menu {
+    top: 0px;
   }
   
 `;

@@ -15,7 +15,6 @@ use CarbonPHP\Error\PublicAlert;
 use CarbonPHP\Interfaces\iRest;
 use CarbonPHP\Restful\RestLifeCycle;
 use CarbonPHP\Restful\RestQueryValidation;
-use DropInGaming\PHP\Errors\DropException;
 
 /**
  *

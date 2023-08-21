@@ -5,7 +5,7 @@
 /node_modules
 /.pnp
 .pnp.js
-
+/logs/*
 # generated
 mysqldump.sql
 mysql.cnf

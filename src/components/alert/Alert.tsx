@@ -165,10 +165,10 @@ export default function Alert() {
         }}>
             <div className={classNames(dig.modalHeader, dig.rounded0, dig.border0, {
                 // icon?: "warning" | "error" | "success" | "info" | "question"
-                [dig.digBgCardHeader]: "info" === alert.icon || alert.icon === undefined || alert.icon === null,
-                [dig.digBgDarkgreen]: "success" === alert.icon,
-                [dig.digBgOrange]: "warning" === alert.icon,
-                [dig.digBgOrange]: "error" === alert.icon, // TODO - change to red
+                [dig.bgCyan]: "info" === alert.icon || alert.icon === undefined || alert.icon === null,
+                [dig.bgGreen]: "success" === alert.icon,
+                [dig.bgWarning]: "warning" === alert.icon,
+                [dig.bgRed]: "error" === alert.icon, // TODO - change to red
                 [dig.bgPrimary]: "question" === alert.icon,
             })}>
                 <h3 className={classNames(dig.modalTitle, dig.textDark)} id="staticBackdropLabel">
@@ -181,25 +181,26 @@ export default function Alert() {
                         size={'xl'}/>
                 </div>
             </div>
-            <div className={classNames(dig.modalBody, dig.border0, dig.digBgNeutral8, dig.digTextWhite)}>
+            <div className={classNames(dig.modalBody, dig.border0, dig.bgWhite, dig.text)}>
                 <div className={dig.textCenter}>
                     {alert.text}
                     {alert.component}
                 </div>
             </div>
             {undefined !== alert.buttons &&
-                <div className={classNames(dig.modalFooter, dig.digBgNeutral7, dig.border0, dig.rounded0)}>
-                    {alert.footerText && <div className={classNames(dig.textCenter, dig.digTextWhite)}>{alert.footerText}</div>}
+                <div className={classNames(dig.modalFooter, dig.bgGray, dig.border0, dig.rounded0)}>
+                    {alert.footerText && <div className={classNames(dig.textCenter, dig.text)}>{alert.footerText}</div>}
 
                     {alert.buttons?.map((button: iAlertButtonOptions, index: number) => {
 
                         return <button key={index}
                                        className={classNames(dig.btn, dig.btnLg, {
                                            // todo - color: "default" | "primary" | "secondary" | "inherit" | "danger" | "info" | "success" | "warning" | undefined,
-                                           [dig.digBtnGreen]: "success" === button.color,
-                                           [dig.digBtnRed]: "danger" === button.color,
-                                           [dig.digBtnBlue]: "primary" === button.color,
-                                           [dig.digBtnLightRed]: "warning" === button.color,
+                                           [dig.bgCyan]: "info" === button.color,
+                                           [dig.bgGreen]: "success" === button.color,
+                                           [dig.bgRed]: "danger" === button.color,
+                                           [dig.bgPrimary]: "primary" === button.color,
+                                           [dig.bgWarning]: "warning" === button.color,
                                        }, "btn-Yes", dig.rounded0)}
                                        onClick={() => {
                                            handleClose()
