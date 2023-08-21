@@ -32,7 +32,7 @@ type tBootstrap = typeof RootStyles
 export default function getStyles<iCSS extends {}>(overrides: iCSS = {} as iCSS): tBootstrap & iCSS {
 
     if (0 === Object.keys(overrides).length) {
-        return RootStyles as (typeof RootStyles) & iCSS
+        return RootStyles as tBootstrap & iCSS
     }
 
     return mergeStyles(RootStyles, overrides)

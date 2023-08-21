@@ -2,7 +2,7 @@ import React from 'react';
 import CarbonORM from "CarbonORM";
 import ReactDOM from 'react-dom/client';
 
-import RootStyles from 'bootstrap.module.css';
+import RootStyles from './bootstrap.module.css';
 import "bootstrap/dist/js/bootstrap.js";
 
 import App from './App';

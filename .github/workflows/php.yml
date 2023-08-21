@@ -1,6 +1,10 @@
 name: CarbonPHP Feature Test Suit
 
-on: [ push ]
+on:
+  push:
+    # @link https://nvie.com/posts/a-successful-git-branching-model/
+    branches:
+      - www
 
 jobs:
   Linux:

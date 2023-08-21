@@ -94,6 +94,7 @@ module.exports = override(
         // noinspection JSUnusedGlobalSymbols
         config = rewireTypingsForCssModule.factory({
             modules: {
+                auto: true,
                 exportLocalsConvention: 'camelCase',
                 mode: 'local',
                 localIdentName: '[local]', // 'production' === process.env.NODE_ENV ? '[hash:base64:5]' : '[path][name]__[local]--[hash:base64:5]',

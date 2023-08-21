@@ -1,7 +1,4 @@
 /* eslint-disable no-unused-vars */
-/* eslint-disable jsx-a11y/anchor-is-valid */
-/* eslint-disable jsx-a11y/click-events-have-key-events */
-/* eslint-disable jsx-a11y/interactive-supports-focus */
 import {useEffect, useState} from 'react';
 import {NavLink, useNavigate, useLocation, Location} from 'react-router-dom';
 import {useTranslation} from 'react-i18next';

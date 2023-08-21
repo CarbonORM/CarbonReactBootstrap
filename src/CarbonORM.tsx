@@ -66,13 +66,7 @@ export default class CarbonORM extends CarbonReact<{}, {
     render() {
         console.log("LOGIN JSX RENDER");
 
-        const {isLoaded, alert} = this.state;
-
-        if (!isLoaded) {
-
-            return <h2>Loading...</h2>;
-
-        }
+        const { alert} = this.state;
 
         const reactRouterContext = (children: any) => {
 
