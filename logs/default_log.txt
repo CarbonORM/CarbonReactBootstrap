@@ -28600,3 +28600,5 @@ array(2) {
 #########################################################
 [0m
 [20-Aug-2023 17:53:36 America/Phoenix] [46m<pid::364> Getting new database instance[0m
+[20-Aug-2023 17:55:28 America/Phoenix] [46m<pid::365> Getting new database instance[0m
+[20-Aug-2023 17:55:31 America/Phoenix] [46m<pid::365> Getting new database instance[0m

@@ -61,3 +61,6 @@
 ::1 - - [20/Aug/2023:18:52:56 -0600] "POST /rest/users/ HTTP/1.1" 200 1326 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36"
 ::1 - - [20/Aug/2023:18:53:36 -0600] "OPTIONS /rest/users/ HTTP/1.1" 200 490 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36"
 ::1 - - [20/Aug/2023:18:53:36 -0600] "POST /rest/users/ HTTP/1.1" 200 4416 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36"
+127.0.0.1 - - [20/Aug/2023:18:55:28 -0600] "GET / HTTP/1.1" 200 39 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36"
+127.0.0.1 - - [20/Aug/2023:18:55:31 -0600] "GET / HTTP/1.1" 200 39 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36"
+127.0.0.1 - - [20/Aug/2023:18:55:48 -0600] "-" 408 - "-" "-"
