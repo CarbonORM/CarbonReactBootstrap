@@ -21,6 +21,10 @@ export const StyledDropdown = styled(PfDropdown)`
   .dropdown-divider {
     margin: 0;
   }
+  .media {
+    margin-top: 80px;
+  }
+  
 `;
 
 const MessagesDropdown = () => {
@@ -93,6 +97,8 @@ const MessagesDropdown = () => {
           </div>
         </Link>
         <div className="dropdown-divider" />
+
+
         <Link to="/" className="dropdown-item">
           <div className="media">
             <PfImage

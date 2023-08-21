@@ -10,7 +10,12 @@ use CarbonPHP\Rest;
 use PDO;
 
 // Custom User Imports
-
+use CarbonPHP\CarbonPHP;
+use CarbonPHP\Error\PublicAlert;
+use CarbonPHP\Interfaces\iRest;
+use CarbonPHP\Restful\RestLifeCycle;
+use CarbonPHP\Restful\RestQueryValidation;
+use DropInGaming\PHP\Errors\DropException;
 
 /**
  *
@@ -58,7 +63,6 @@ class Users extends Rest implements iRestSinglePrimaryKey
     
     // Tables we have a foreign key reference to
     public const INTERNAL_TABLE_CONSTRAINTS = [
-        self::USER_ID => Carbons::ENTITY_PK,
     ];
     
     // Tables that reference this tables columns via FK
@@ -97,7 +101,7 @@ class Users extends Rest implements iRestSinglePrimaryKey
      * CARBON_CARBONS_PRIMARY_KEY
      * does your table reference $prefix . 'carbon_carbons.entity_pk'
     **/
-    public const CARBON_CARBONS_PRIMARY_KEY = true;
+    public const CARBON_CARBONS_PRIMARY_KEY = false;
     
     /**
      * COLUMNS
@@ -204,7 +208,7 @@ class Users extends Rest implements iRestSinglePrimaryKey
     public const PDO_VALIDATION = [
         self::USER_USERNAME => [ self::MYSQL_TYPE => 'varchar', self::NOT_NULL => true, self::COLUMN_CONSTRAINTS => [], self::PDO_TYPE => PDO::PARAM_STR, self::MAX_LENGTH => '100', self::AUTO_INCREMENT => false, self::SKIP_COLUMN_IN_POST => false ],
         self::USER_PASSWORD => [ self::MYSQL_TYPE => 'varchar', self::NOT_NULL => true, self::COLUMN_CONSTRAINTS => [], self::PDO_TYPE => PDO::PARAM_STR, self::MAX_LENGTH => '225', self::AUTO_INCREMENT => false, self::SKIP_COLUMN_IN_POST => false ],
-        self::USER_ID => [ self::MYSQL_TYPE => 'binary', self::NOT_NULL => true, self::COLUMN_CONSTRAINTS => [Carbons::ENTITY_PK => [ self::CONSTRAINT_NAME => 'user_entity_entity_pk_fk', self::UPDATE_RULE => 'CASCADE', self::DELETE_RULE => 'CASCADE'],], self::PDO_TYPE => PDO::PARAM_STR, self::MAX_LENGTH => '16', self::AUTO_INCREMENT => false, self::SKIP_COLUMN_IN_POST => false ],
+        self::USER_ID => [ self::MYSQL_TYPE => 'binary', self::NOT_NULL => true, self::COLUMN_CONSTRAINTS => [], self::PDO_TYPE => PDO::PARAM_STR, self::MAX_LENGTH => '16', self::AUTO_INCREMENT => false, self::SKIP_COLUMN_IN_POST => false ],
         self::USER_TYPE => [ self::MYSQL_TYPE => 'varchar', self::NOT_NULL => true, self::COLUMN_CONSTRAINTS => [], self::PDO_TYPE => PDO::PARAM_STR, self::MAX_LENGTH => '20', self::AUTO_INCREMENT => false, self::SKIP_COLUMN_IN_POST => true, self::DEFAULT_POST_VALUE => '"Athlete"' ],
         self::USER_SPORT => [ self::MYSQL_TYPE => 'varchar', self::NOT_NULL => false, self::COLUMN_CONSTRAINTS => [], self::PDO_TYPE => PDO::PARAM_STR, self::MAX_LENGTH => '20', self::AUTO_INCREMENT => false, self::SKIP_COLUMN_IN_POST => true, self::DEFAULT_POST_VALUE => '"GOLF"' ],
         self::USER_SESSION_ID => [ self::MYSQL_TYPE => 'varchar', self::NOT_NULL => false, self::COLUMN_CONSTRAINTS => [], self::PDO_TYPE => PDO::PARAM_STR, self::MAX_LENGTH => '225', self::AUTO_INCREMENT => false, self::SKIP_COLUMN_IN_POST => true, self::DEFAULT_POST_VALUE => null ],
@@ -281,39 +285,115 @@ class Users extends Rest implements iRestSinglePrimaryKey
     /** Custom User Methods Are Placed Here **/
     
     
+    /**
+     * This function will exit!!! It will bypass the C6 sql builder entirely.
+     * @throws PublicAlert
+     */
+    public static function validateLogin($request): void
+    {
+
+        global $json;
+
+        if (false === self::$externalRestfulRequestsAPI) {
+
+            return;
+
+        }
+
+        if (false === isset($request[self::USER_USERNAME], $request[self::USER_PASSWORD])
+            || self::POST !== self::$REST_REQUEST_METHOD
+            || 2 !== count($request)) {
+
+            return;
+
+        }
+
+        $user = [];
+
+        if (false === self::get($user, null, [
+                iRest::SELECT => [
+                    self::USER_ID,
+                    self::USER_PASSWORD
+                ],
+                iRest::WHERE => [
+                    [
+                        self::USER_USERNAME => $request[self::USER_USERNAME],
+                        self::USER_EMAIL => $request[self::USER_USERNAME]
+                    ]
+                ],
+                iRest::PAGINATION => [
+                    iRest::LIMIT => 1
+                ]
+            ])) {
+
+            throw new PublicAlert('Failed to find user with login: ' . $request[self::USER_USERNAME]);
+
+        }
+
+        if (false === $user[self::USER_ID]) {
+
+            // work on attempt count 4 bad actor // temp ip ban
+            throw new PublicAlert('Failed to find user with login: ' . $request[self::USER_USERNAME]);
+
+        }
+
+        if (true !== password_verify($request[self::USER_PASSWORD], $user[self::USER_PASSWORD])) {
+
+            // work on attempt count 4 bad actor // temp ip ban
+            throw new PublicAlert('Password was incorrect for user: ' . $request[self::USER_USERNAME]);
+
+        }
+
+        RestLifeCycle::hijackRestfulRequest($json + [
+                'rest' => [
+                    'success' => true,
+                    'user' =>  $user,
+                ]
+            ]);
+
+    }
+
     /** Custom User Methods Are Placed Here **/
     public function __construct(array &$return = [])
     {
         parent::__construct($return);
-         
+
         # always create the column in your local database first, re-run the table builder, then add the needed functions
         $this->REFRESH_SCHEMA = [
-            
+
         ];
-         
-        $this->PHP_VALIDATION = [ 
+
+        $this->PHP_VALIDATION = [
             self::COLUMN => [
-               self::GLOBAL_COLUMN_VALIDATION => []
+                self::GLOBAL_COLUMN_VALIDATION => []
             ],
-            self::REST_REQUEST_PREPROCESS_CALLBACKS => [ 
+            self::REST_REQUEST_PREPROCESS_CALLBACKS => [
                 self::PREPROCESS => [
                     // before any other processing is done, this is the first callback to be executed
                     // typically used to validate the full request, add additional data to the request, and even creating a history log
-                    static fn() => self::disallowPublicAccess(self::class)
+                    static fn($request) => self::validateLogin($request)
                 ],
                 self::FINISH => [
                     // the compiled sql is passed to the callback, the statement has not been executed yet
-                ]  
+                ]
             ],
             self::GET => [
                 self::PREPROCESS => [
-                   static fn() => self::disallowPublicAccess(self::class)
-               ]
+                    static fn() => self::disallowPublicAccess(self::class)
+                ]
             ],
             self::POST => [
                 self::PREPROCESS => [
-                   static fn() => self::disallowPublicAccess(self::class)
-                ]
+                    static function (array &$args): void {
+                        if (array_key_exists(self::USER_PASSWORD, $args)) {
+                            $args[self::USER_PASSWORD] = password_hash($args[self::USER_PASSWORD], PASSWORD_DEFAULT);
+                            $args[self::USER_FIRST_NAME] = 'Anonymous';
+                            $args[self::USER_LAST_NAME] = 'User';
+                            $args[self::USER_TYPE] = 'member';
+                            $args[self::USER_IP] = CarbonPHP::$user_ip ?? 'NULL';
+                        }
+                    }
+                ],
             ],
             self::PUT => [
                 self::PREPROCESS => [
@@ -581,7 +661,9 @@ class Users extends Rest implements iRestSinglePrimaryKey
      */ 
     public const PHP_VALIDATION = []; 
     
-    public array $PHP_VALIDATION = [];
+    public array $PHP_VALIDATION = [
+        
+    ];
    
     /**
      * CREATE_TABLE_SQL is autogenerated and should not be manually updated. Make changes in MySQL and regenerate using
@@ -619,8 +701,7 @@ CREATE TABLE IF NOT EXISTS `carbon_users` (
 PRIMARY KEY (`user_id`),
 UNIQUE KEY `carbon_users_user_username_uindex` (`user_username`),
 UNIQUE KEY `user_user_profile_uri_uindex` (`user_profile_uri`),
-UNIQUE KEY `carbon_users_user_facebook_id_uindex` (`user_facebook_id`),
-CONSTRAINT `user_entity_entity_pk_fk` FOREIGN KEY (`user_id`) REFERENCES `carbon_carbons` (`entity_pk`) ON DELETE CASCADE ON UPDATE CASCADE
+UNIQUE KEY `carbon_users_user_facebook_id_uindex` (`user_facebook_id`)
 ) ENGINE=InnoDB;
 MYSQL;
        

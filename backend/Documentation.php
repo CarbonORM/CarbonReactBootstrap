@@ -9,6 +9,7 @@ use CarbonPHP\Application;
 use CarbonPHP\CarbonPHP;
 use CarbonPHP\Interfaces\iConfig;
 use CarbonPHP\Programs\CLI;
+use CarbonPHP\Rest;
 
 class Documentation extends Application implements iConfig
 {
@@ -149,6 +150,10 @@ class Documentation extends Application implements iConfig
 
     public function startApplication(string $uri): bool
     {
+
+        if (Rest::MatchRestfulRequests('', Carbons::CLASS_NAMESPACE)) {
+            return true;
+        }
 
         $method = __METHOD__;
 

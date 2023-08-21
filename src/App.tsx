@@ -18,12 +18,12 @@ import Profile from 'pages/profile/Profile';
 
 import PublicRoute from './routes/PublicRoute';
 import PrivateRoute from './routes/PrivateRoute';
-import { setAuthentication } from './store/reducers/auth';
+import { setAuthentication } from 'store/reducers/auth';
 import {
   GoogleProvider,
   getAuthStatus,
   getFacebookLoginStatus,
-} from './utils/oidc-providers';
+} from 'utils/oidc-providers';
 
 declare const FB: any;
 

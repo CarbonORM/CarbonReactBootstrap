@@ -1,7 +1,10 @@
 import {CarbonReact} from "@carbonorm/carbonreact";
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import RootStyles from './index.module.css';
+
+import RootStyles from 'bootstrap.module.css';
+import "bootstrap/dist/js/bootstrap.js";
+
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {Provider} from 'react-redux';
