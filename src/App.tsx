@@ -25,8 +25,6 @@ import {
   getFacebookLoginStatus,
 } from 'utils/oidc-providers';
 
-declare const FB: any;
-
 const App = () => {
   const windowSize = useWindowSize();
   const screenSize = useSelector((state: any) => state.ui.screenSize);
