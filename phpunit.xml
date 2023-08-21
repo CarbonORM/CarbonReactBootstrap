@@ -11,7 +11,13 @@
          stopOnFailure="true">
     <testsuites>
         <testsuite name="feature">
-            <file>reactc6boot/tests/feature/RestTest.php</file>
+            <file>dropingaming/php/tests/feature/WordpressTest.php</file>
+            <file>dropingaming/php/tests/feature/RestTest.php</file>
+            <file>dropingaming/php/tests/feature/BracketTest.php</file>
+            <file>dropingaming/php/tests/feature/PayPalTest.php</file>
+        </testsuite>
+        <testsuite name="browser">
+            <file>dropingaming/php/tests/browser/NavigationTest.php</file>
         </testsuite>
     </testsuites>
     <php>

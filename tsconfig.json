@@ -28,13 +28,11 @@
     "noEmit": true,
     "jsx": "react-jsx",
     "strict": true,
-    "noFallthroughCasesInSwitch": true,
-
+    "noFallthroughCasesInSwitch": true
   },
   "include": [
     "src",
-    "src/custom.d.ts",
-    "/src/**/*.d.ts"
+    "src/custom.d.ts"
   ],
   "compileOnSave": false
 }

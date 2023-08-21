@@ -1,6 +1,6 @@
-import RootStyles from "bootstrap.module.css";
 import classNames from "classnames";
-
+import BootstrapStyle from "variables/bootstrap.module.scss"
+import DropInGamingStyles from "style.module.scss"
 
 export const getRootStyleValue = (property = '--dig_primary_color') : string => {
 
@@ -27,14 +27,18 @@ function mergeStyles<iStyleA extends iStyle, iStyleB extends iStyle>(styleA : iS
 
 }
 
-type tBootstrap = typeof RootStyles
+const dropStyles = mergeStyles(BootstrapStyle, DropInGamingStyles);
 
-export default function getStyles<iCSS extends {}>(overrides: iCSS = {} as iCSS): tBootstrap & iCSS {
+type tBootstrap = typeof BootstrapStyle
+
+type tDropInGaming = typeof DropInGamingStyles
+
+export default function getStyles<iCSS extends {}>(overrides: iCSS = {} as iCSS): tBootstrap & tDropInGaming & iCSS {
 
     if (0 === Object.keys(overrides).length) {
-        return RootStyles as tBootstrap & iCSS
+        return dropStyles as (typeof dropStyles) & iCSS
     }
 
-    return mergeStyles(RootStyles, overrides)
+    return mergeStyles(dropStyles, overrides)
 
 }

@@ -1,6 +1,6 @@
 import classNames from "classnames";
 import OutsideClickHandler from 'react-outside-click-handler';
-import RootStyles from "index";
+import getStyles from "api/hoc/getStyles";
 
 
 interface iPopupProperties {
@@ -26,10 +26,10 @@ export default function Popup({
 
     }
 
-    const styles = RootStyles
+    const dig = getStyles()
 
     return <>
-        <div className={classNames(styles.modal, styles.fade, styles.show, styles.dBlock)}
+        <div className={classNames(dig.modal, dig.fade, dig.show, dig.dBlock)}
              style={{backgroundColor: "rgba(0,0,0,0.8)"}}
              id="exampleModalCenter"
              tabIndex={-1} aria-labelledby="exampleModalCenterTitle"
@@ -38,11 +38,11 @@ export default function Popup({
             <div
                 style={{maxWidth: maxWidth}}
                 className={classNames(
-                    styles.modalDialog, styles.modalDialogCentered,
+                    dig.modalDialog, dig.modalDialogCentered,
                 )}
             >
                 <OutsideClickHandler onOutsideClick={() => handleClose()}>
-                    <div className={classNames(styles.modalContent, styles.bgTransparent, styles.modalDialogScrollable, styles.modal)}>
+                    <div className={classNames(dig.modalContent, dig.bgTransparent, dig.modalDialogScrollable, dig.walletModal)}>
                         {children}
                     </div>
                 </OutsideClickHandler>

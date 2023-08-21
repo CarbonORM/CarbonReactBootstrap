@@ -10,7 +10,7 @@ export const StyledDropdown = styled(PfDropdown)`
   justify-content: center;
   align-items: center;
   --pf-dropdown-menu-min-width: 18rem;
-  --pf-dropdown-menu-margin-top:250px;
+
   .dropdown-item {
     padding: 0.5rem 1rem;
   }
