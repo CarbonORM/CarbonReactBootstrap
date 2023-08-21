@@ -1,5 +1,5 @@
-import {CarbonReact} from "@carbonorm/carbonreact";
 import React from 'react';
+import CarbonORM from "CarbonORM";
 import ReactDOM from 'react-dom/client';
 
 import RootStyles from 'bootstrap.module.css';
@@ -21,11 +21,11 @@ const root = ReactDOM.createRoot(
 
 root.render(
     <React.StrictMode>
-        <CarbonReact>
+        <CarbonORM>
             <Provider store={store}>
                 <App/>
             </Provider>
-        </CarbonReact>
+        </CarbonORM>
     </React.StrictMode>
 );
 

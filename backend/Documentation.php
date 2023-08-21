@@ -7,6 +7,7 @@ use Backend\Tables\Carbons;
 use CarbonPHP\Abstracts\ColorCode;
 use CarbonPHP\Application;
 use CarbonPHP\CarbonPHP;
+use CarbonPHP\Interfaces\iColorCode;
 use CarbonPHP\Interfaces\iConfig;
 use CarbonPHP\Programs\CLI;
 use CarbonPHP\Rest;
@@ -16,7 +17,7 @@ class Documentation extends Application implements iConfig
 
     public function defaultRoute(): void
     {
-        ColorCode::colorCode('Default route called.', ColorCode::CYAN);
+        ColorCode::colorCode('Default route called.', iColorCode::CYAN);
         print 'Hello world!';
     }
 
@@ -42,17 +43,19 @@ class Documentation extends Application implements iConfig
         }
 
         $json += [
-            'SITE' => CarbonPHP::$site,
-            'POST' => $_POST,
-            'GET' => $_GET,
-            'HTTP' => CarbonPHP::$http,
-            'HTTPS' => CarbonPHP::$https,
-            'SOCKET' => CarbonPHP::$socket,
-            'AJAX' => CarbonPHP::$ajax,
-            'SITE_TITLE' => CarbonPHP::$site_title,
-            'CarbonPHP::$app_view' => CarbonPHP::$app_view,
-            'COMPOSER' => CarbonPHP::CARBON_ROOT,
-            'FACEBOOK_APP_ID' => ''
+            'general' => [
+                'SITE' => CarbonPHP::$site,
+                'POST' => $_POST,
+                'GET' => $_GET,
+                'HTTP' => CarbonPHP::$http,
+                'HTTPS' => CarbonPHP::$https,
+                'SOCKET' => CarbonPHP::$socket,
+                'AJAX' => CarbonPHP::$ajax,
+                'SITE_TITLE' => CarbonPHP::$site_title,
+                'CarbonPHP::$app_view' => CarbonPHP::$app_view,
+                'COMPOSER' => CarbonPHP::CARBON_ROOT,
+                'FACEBOOK_APP_ID' => ''
+            ]
         ];
 
         parent::__construct();
@@ -157,7 +160,7 @@ class Documentation extends Application implements iConfig
 
         $method = __METHOD__;
 
-        if (self::regexMatch(/** @lang PhpRegExp */ '#.*#', static function () use ($method){
+        if (self::regexMatch(/** @lang PhpRegExp */ '#.*#', static function () use ($method) {
 
             print $method;
 
