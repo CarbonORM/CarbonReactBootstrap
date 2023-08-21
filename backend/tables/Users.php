@@ -330,14 +330,14 @@ class Users extends Rest implements iRestSinglePrimaryKey
 
         }
 
-        if (false === $user[self::USER_ID]) {
+        if (false === $user[self::COLUMNS[self::USER_ID]]) {
 
             // work on attempt count 4 bad actor // temp ip ban
             throw new PublicAlert('Failed to find user with login: ' . $request[self::USER_USERNAME]);
 
         }
 
-        if (true !== password_verify($request[self::USER_PASSWORD], $user[self::USER_PASSWORD])) {
+        if (true !== password_verify($request[self::USER_PASSWORD], $user[self::COLUMNS[self::USER_PASSWORD]])) {
 
             // work on attempt count 4 bad actor // temp ip ban
             throw new PublicAlert('Password was incorrect for user: ' . $request[self::USER_USERNAME]);
@@ -392,6 +392,18 @@ class Users extends Rest implements iRestSinglePrimaryKey
                             $args[self::USER_TYPE] = 'member';
                             $args[self::USER_IP] = CarbonPHP::$user_ip ?? 'NULL';
                         }
+                    }
+                ],
+                self::FINISH => [
+                    // Has executed and committed to the database, results are passed by reference
+                    static function (array $args): void {
+                        $_SESSION['ID'] = $args[self::COLUMNS[self::USER_ID]];
+                        self::hijackRestfulRequest([
+                            'rest' => [
+                                'success' => true,
+                                'user' => $args,
+                            ]
+                        ]);
                     }
                 ],
             ],

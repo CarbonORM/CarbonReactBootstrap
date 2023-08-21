@@ -69,18 +69,21 @@ const Login = () => {
 
   const { handleChange, values, handleSubmit, touched, errors } = useFormik({
     initialValues: {
-      email: '',
+      username: '',
       password: '',
     },
     validationSchema: Yup.object({
-      email: Yup.string().email('Invalid email address').required('Required'),
+      username: Yup.string()
+          .min(8, 'Must be at least 8 characters')
+          .max(20, 'Must be less  than 20 characters')
+          .required('Username is required'),
       password: Yup.string()
         .min(5, 'Must be 5 characters or more')
         .max(30, 'Must be 30 characters or less')
         .required('Required'),
     }),
     onSubmit: (values) => {
-      login(values.email, values.password);
+      login(values.username, values.password);
     },
   });
 
@@ -101,18 +104,18 @@ const Login = () => {
             <div className="mb-3">
               <InputGroup className="mb-3">
                 <Form.Control
-                  id="email"
-                  name="email"
-                  type="email"
-                  placeholder="Email"
+                  id="username"
+                  name="username"
+                  type="username"
+                  placeholder="Username"
                   onChange={handleChange}
-                  value={values.email}
-                  isValid={touched.email && !errors.email}
-                  isInvalid={touched.email && !!errors.email}
+                  value={values.username}
+                  isValid={touched.username && !errors.username}
+                  isInvalid={touched.username && !!errors.username}
                 />
-                {touched.email && errors.email ? (
+                {touched.username && errors.username ? (
                   <Form.Control.Feedback type="invalid">
-                    {errors.email}
+                    {errors.username}
                   </Form.Control.Feedback>
                 ) : (
                   <InputGroup.Append>

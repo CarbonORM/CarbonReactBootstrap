@@ -13,7 +13,7 @@ import {PfButton, PfCheckbox} from '@profabric/react-components';
 
 import {
     GoogleProvider,
-    authLogin,
+    //authLogin,
     facebookLogin,
 } from 'utils/oidc-providers';
 import {setAuthentication} from 'store/reducers/auth';
@@ -39,18 +39,18 @@ const Register = () => {
 
             setAuthLoading(true);
 
-            const postResponse = await postUsers({
+            const response = await postUsers({
                 user_username: values.username,
                 user_email: values.email,
                 user_password: values.password
             });
 
-            console.log(postResponse);
+            console.log(response);
 
             // this is just bs template filler
-            const response = await authLogin(values.email, values.password);
+            //const response = await authLogin(values.email, values.password);
 
-            dispatch(setAuthentication(response as any));
+            dispatch(setAuthentication({ profile: { email: 'admin@example.com' } } as any));
 
             toast.success('Registration is success');
 
@@ -111,8 +111,8 @@ const Register = () => {
                 username: Yup.string()
                     .min(8, 'Must be at least 8 characters')
                     .max(20, 'Must be less  than 20 characters')
-                    .required('Email is required')
-                    .test('Unique Email', 'Email already in use', // <- key, message
+                    .required('Username is required')
+                    .test('Unique Username', 'Username already in use', // <- key, message
                         function (_value) {
                             return new Promise((resolve, _reject) => {
                                 /*axios.get(`http://localhost:8003/api/u/user/${value}/available`)
@@ -190,7 +190,7 @@ const Register = () => {
                                     id="email"
                                     name="email"
                                     type="email"
-                                    placeholder="Email"
+                                    placeholder="Email (optional)"
                                     onChange={handleChange}
                                     value={values.email}
                                     isValid={touched.email && !errors.email}

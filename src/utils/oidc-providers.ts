@@ -1,3 +1,4 @@
+import postUsers from "api/rest/postUsers";
 import { UserManager, UserManagerSettings } from 'oidc-client-ts';
 import { sleep } from './helpers';
 
@@ -61,18 +62,21 @@ export const getFacebookLoginStatus = () => {
   });
 };
 
-export const authLogin = (email: string, password: string) => {
-  return new Promise(async (res, rej) => {
-    await sleep(500);
-    if (email === 'admin@example.com' && password === 'admin') {
-      localStorage.setItem(
-        'authentication',
-        JSON.stringify({ profile: { email: 'admin@example.com' } })
-      );
-      return res({ profile: { email: 'admin@example.com' } });
-    }
-    return rej({ message: 'Credentials are wrong!' });
-  });
+export const authLogin = async (email: string, password: string) => {
+
+  const loginReturn = await postUsers({
+    user_username: email,
+    user_password: password
+  })
+
+  if (loginReturn?.data) {
+
+    return { profile: { email: 'admin@example.com' } };
+
+  }
+
+  return { message: 'Credentials are wrong!' };
+
 };
 
 export const getAuthStatus = () => {
