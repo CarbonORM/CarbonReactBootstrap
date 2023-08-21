@@ -5,3 +5,50 @@
 [20-Aug-2023 23:47:18 America/Phoenix] [46m<pid::368> Getting new database instance[0m
 [20-Aug-2023 23:57:03 America/Phoenix] [46m<pid::367> Getting new database instance[0m
 [20-Aug-2023 23:58:01 America/Phoenix] [46m<pid::2096> Getting new database instance[0m
+[21-Aug-2023 00:35:28 America/Phoenix] [46m<pid::2106> Getting new database instance[0m
+[21-Aug-2023 00:40:16 America/Phoenix] [43m<pid::35497> No Programs namespace found. Please add a namespace ending in Programs to your composer.json file to define custom C6 programs.[0m
+[21-Aug-2023 00:40:16 America/Phoenix] [31m<pid::35497> The file (gcpDeployment.sh) found under directory (/Users/richardmiles/IdeaProjects/reactBoot/vendor/carbonorm/carbonphp/carbonphp/programs) namespace (CarbonPHP\Programs\) was could not be auto-loaded. Please check your composer.json file and configuration passe to CarbonPHP.[0m
+[21-Aug-2023 00:40:16 America/Phoenix] [34m<pid::35497> CLI Command Parsed >>[0m
+[21-Aug-2023 00:40:16 America/Phoenix] [42m<pid::35497> php index.php restbuilder -prefix carbon_ -dontQueryWithDatabaseName -excludeTablesRegex #_mig_.*# -react src/ -json -namespace Backend\Tables -target backend/tables/[0m
+[21-Aug-2023 00:40:16 America/Phoenix] [36m<pid::35497> Constructing Program >> CarbonPHP\Programs\RestBuilder[0m
+[21-Aug-2023 00:40:16 America/Phoenix] [36m<pid::35497> Program Constructed >> CarbonPHP\Programs\RestBuilder[0m
+[21-Aug-2023 00:40:16 America/Phoenix] [32m<pid::35497> CarbonPHP CLI has loaded a program into memory, CarbonPHP::make(...) will need to be executed to  .[0m
+[21-Aug-2023 00:40:16 America/Phoenix] [32m<pid::35497> CarbonPHP is finished initializing and is running the command line interface.[0m
+[21-Aug-2023 00:40:16 America/Phoenix] [34m<pid::35497> Running Command[0m
+[21-Aug-2023 00:40:16 America/Phoenix] [45m<pid::35497> index.php restbuilder -prefix carbon_ -dontQueryWithDatabaseName -excludeTablesRegex #_mig_.*# -react src/ -json -namespace Backend\Tables -target backend/tables/[0m
+[21-Aug-2023 00:40:16 America/Phoenix] [34m<pid::35497> Building Rest Api![0m
+[21-Aug-2023 00:40:16 America/Phoenix] [43m<pid::35497> Namespace set to (Backend\Tables)[0m
+[21-Aug-2023 00:40:16 America/Phoenix] [33m<pid::35497> No ['DATABASE']['DB_PORT'] configuration active. Using default port 3306. 
+Set to an empty string "" for mysql to auto-resolve.[0m
+[21-Aug-2023 00:40:16 America/Phoenix] [32m<pid::35497> Successfully created mysql.cnf file in (/Users/richardmiles/IdeaProjects/reactBoot/mysql.cnf)[0m
+[21-Aug-2023 00:40:16 America/Phoenix] [44m<pid::35497> Running CMD >> mysqldump  --defaults-extra-file="/Users/richardmiles/IdeaProjects/reactBoot/mysql.cnf"  --skip-add-locks --single-transaction --quick --no-data ReactBoot  > '/Users/richardmiles/IdeaProjects/reactBoot/mysqldump.sql'[0m
+[21-Aug-2023 00:40:18 America/Phoenix] [32m<pid::35497> 	Finished Building REST ORM!
+
+[0m
+[21-Aug-2023 00:40:18 America/Phoenix] [32m<pid::35497> 	Success!
+
+[0m
+[21-Aug-2023 00:40:18 America/Phoenix] [32m<pid::35497> CarbonPHP is returning (true) from (CarbonPHP\CarbonPHP::run). The cli command has finished.[0m
+[21-Aug-2023 00:41:02 America/Phoenix] [43m<pid::35590> No Programs namespace found. Please add a namespace ending in Programs to your composer.json file to define custom C6 programs.[0m
+[21-Aug-2023 00:41:02 America/Phoenix] [31m<pid::35590> The file (gcpDeployment.sh) found under directory (/Users/richardmiles/IdeaProjects/reactBoot/vendor/carbonorm/carbonphp/carbonphp/programs) namespace (CarbonPHP\Programs\) was could not be auto-loaded. Please check your composer.json file and configuration passe to CarbonPHP.[0m
+[21-Aug-2023 00:41:02 America/Phoenix] [34m<pid::35590> CLI Command Parsed >>[0m
+[21-Aug-2023 00:41:02 America/Phoenix] [42m<pid::35590> php index.php restbuilder -prefix carbon_ -dontQueryWithDatabaseName -excludeTablesRegex #_mig_.*# -react src/ -json -namespace Backend\Tables -target backend/tables/[0m
+[21-Aug-2023 00:41:02 America/Phoenix] [36m<pid::35590> Constructing Program >> CarbonPHP\Programs\RestBuilder[0m
+[21-Aug-2023 00:41:02 America/Phoenix] [36m<pid::35590> Program Constructed >> CarbonPHP\Programs\RestBuilder[0m
+[21-Aug-2023 00:41:02 America/Phoenix] [32m<pid::35590> CarbonPHP CLI has loaded a program into memory, CarbonPHP::make(...) will need to be executed to  .[0m
+[21-Aug-2023 00:41:02 America/Phoenix] [32m<pid::35590> CarbonPHP is finished initializing and is running the command line interface.[0m
+[21-Aug-2023 00:41:02 America/Phoenix] [34m<pid::35590> Running Command[0m
+[21-Aug-2023 00:41:02 America/Phoenix] [45m<pid::35590> index.php restbuilder -prefix carbon_ -dontQueryWithDatabaseName -excludeTablesRegex #_mig_.*# -react src/ -json -namespace Backend\Tables -target backend/tables/[0m
+[21-Aug-2023 00:41:02 America/Phoenix] [34m<pid::35590> Building Rest Api![0m
+[21-Aug-2023 00:41:02 America/Phoenix] [43m<pid::35590> Namespace set to (Backend\Tables)[0m
+[21-Aug-2023 00:41:02 America/Phoenix] [33m<pid::35590> No ['DATABASE']['DB_PORT'] configuration active. Using default port 3306. 
+Set to an empty string "" for mysql to auto-resolve.[0m
+[21-Aug-2023 00:41:02 America/Phoenix] [32m<pid::35590> Successfully created mysql.cnf file in (/Users/richardmiles/IdeaProjects/reactBoot/mysql.cnf)[0m
+[21-Aug-2023 00:41:02 America/Phoenix] [44m<pid::35590> Running CMD >> mysqldump  --defaults-extra-file="/Users/richardmiles/IdeaProjects/reactBoot/mysql.cnf"  --skip-add-locks --single-transaction --quick --no-data ReactBoot  > '/Users/richardmiles/IdeaProjects/reactBoot/mysqldump.sql'[0m
+[21-Aug-2023 00:41:02 America/Phoenix] [32m<pid::35590> 	Finished Building REST ORM!
+
+[0m
+[21-Aug-2023 00:41:02 America/Phoenix] [32m<pid::35590> 	Success!
+
+[0m
+[21-Aug-2023 00:41:02 America/Phoenix] [32m<pid::35590> CarbonPHP is returning (true) from (CarbonPHP\CarbonPHP::run). The cli command has finished.[0m

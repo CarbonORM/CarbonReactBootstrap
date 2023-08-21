@@ -1,7 +1,9 @@
 import classNames from "classnames";
 import {ReactNode} from "react";
 import getCurrentLoggedInUser from "api/hoc/getCurrentLoggedInUser";
-import getStyles, {getRootStyleValue} from "api/hoc/getStyles";
+import {getRootStyleValue} from "api/hoc/getStyles";
+import RootStyles from "index"
+
 
 import CarbonORM from "CarbonORM";
 import Popup from "components/Popup/Popup";
@@ -128,7 +130,7 @@ export default function Alert() {
 
     const bootstrap = CarbonORM.instance
 
-    const dig = getStyles()
+    const dig = RootStyles
 
     let cancelTimeout: any = null
 
@@ -159,7 +161,7 @@ export default function Alert() {
     }
 
     return <Popup handleClose={handleClose}>
-        <div className={classNames("model-content", dig.rounded0, dig.border0)} style={{
+        <div className={classNames(dig.modalContent, dig.rounded0, dig.border0)} style={{
             maxWidth: '75vw',
             maxHeight: '75vh',
         }}>

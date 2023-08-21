@@ -86,9 +86,7 @@
       "gcloud compute instances list"
     ],
     "post-update-cmd": [
-      "@carbon:wordpress",
-      "@rest",
-      "@test"
+      "@rest"
     ],
     "rei": "rm -rf vendor && rm composer.lock && composer i",
     "rest": [
