@@ -2,3 +2,7 @@ PHPUnit 9.6.11 by Sebastian Bergmann and contributors.
 
 Cannot open file "/Users/richardmiles/IdeaProjects/reactBoot/wp-load.php".
 
+PHPUnit 9.6.11 by Sebastian Bergmann and contributors.
+
+Cannot open file "/Users/richardmiles/IdeaProjects/reactBoot/wp-load.php".
+

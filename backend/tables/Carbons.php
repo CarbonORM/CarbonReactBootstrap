@@ -125,7 +125,7 @@ class Carbons extends Rest implements iRestSinglePrimaryKey
      * CARBON_CARBONS_PRIMARY_KEY
      * does your table reference $prefix . 'carbon_carbons.entity_pk'
     **/
-    public const CARBON_CARBONS_PRIMARY_KEY = true;
+    public const CARBON_CARBONS_PRIMARY_KEY = false;
     
     /**
      * COLUMNS
