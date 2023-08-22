@@ -4,7 +4,7 @@ on:
   push:
     # @link https://nvie.com/posts/a-successful-git-branching-model/
     branches:
-      - www
+      - main
 
 jobs:
   Linux:
