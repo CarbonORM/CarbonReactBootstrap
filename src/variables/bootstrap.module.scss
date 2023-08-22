@@ -9,13 +9,13 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.3.0/css/flag-icon.min.css');
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700');
 
-@import '../node_modules/admin-lte/plugins/fontawesome-free/css/all.min.css';
-@import '../node_modules/admin-lte/plugins/icheck-bootstrap/icheck-bootstrap.min.css';
+@import '../../node_modules/admin-lte/plugins/fontawesome-free/css/all.min.css';
+@import '../../node_modules/admin-lte/plugins/icheck-bootstrap/icheck-bootstrap.min.css';
 
-@import "../node_modules/bootstrap/scss/_functions.scss";
-@import "../node_modules/bootstrap/scss/_variables.scss";
+@import "../../node_modules/bootstrap/scss/_functions.scss";
+@import "../../node_modules/bootstrap/scss/_variables.scss";
 
-@import "../node_modules/admin-lte/build/scss/bootstrap-variables";
+@import "../../node_modules/admin-lte/build/scss/bootstrap-variables";
 
 
 /**
@@ -44,26 +44,26 @@ $container-max-widths: (
         xxl: 1400px
 );
 
-@import "../node_modules/bootstrap/scss/bootstrap";
+@import "../../node_modules/bootstrap/scss/bootstrap";
 
 
 // Variables and Mixins
 // ---------------------------------------------------
 
-@import "../node_modules/admin-lte/build/scss/variables";
+@import "../../node_modules/admin-lte/build/scss/variables";
 
-@import "../node_modules/admin-lte/build/scss/variables-alt";
+@import "../../node_modules/admin-lte/build/scss/variables-alt";
 
-@import "./variables/bootstrap/mixins";
+@import "./bootstrap/mixins";
 
-@import "../node_modules/admin-lte/build/scss/parts/core";
-@import "../node_modules/admin-lte/build/scss/parts/components";
-@import "../node_modules/admin-lte/build/scss/parts/extra-components";
-@import "../node_modules/admin-lte/build/scss/parts/pages";
-@import "../node_modules/admin-lte/build/scss/parts/plugins";
-@import "../node_modules/admin-lte/build/scss/parts/miscellaneous";
+@import "../../node_modules/admin-lte/build/scss/parts/core";
+@import "../../node_modules/admin-lte/build/scss/parts/components";
+@import "../../node_modules/admin-lte/build/scss/parts/extra-components";
+@import "../../node_modules/admin-lte/build/scss/parts/pages";
+@import "../../node_modules/admin-lte/build/scss/parts/plugins";
+@import "../../node_modules/admin-lte/build/scss/parts/miscellaneous";
 
-@import '../node_modules/react-toastify/dist/ReactToastify.min.css';
+@import '../../node_modules/react-toastify/dist/ReactToastify.min.css';
 
 #root {
   width: 100vw;

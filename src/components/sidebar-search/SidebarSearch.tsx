@@ -47,15 +47,7 @@ export const SidebarSearch = () => {
   const dropdown = useRef(null);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
-  useEffect(() => {
-    setFoundMenuItems([]);
-    if (searchText) {
-      setFoundMenuItems(findMenuItems(MENU));
-    } else {
-      setSearchText('');
-      setFoundMenuItems([]);
-    }
-  }, [searchText]);
+
 
   useEffect(() => {
     if (foundMenuItems && foundMenuItems.length > 0) {
@@ -75,18 +67,32 @@ export const SidebarSearch = () => {
     setIsDropdownOpen(false);
   };
 
-  const findMenuItems = (menu: any, results: any = []): any[] => {
-    // eslint-disable-next-line no-restricted-syntax
-    for (const menuItem of menu) {
-      if (menuItem.name.includes(searchText) && menuItem.path) {
-        results.push(menuItem);
+
+
+  useEffect(() => {
+
+    const findMenuItems = (menu: any, results: any = []): any[] => {
+      // eslint-disable-next-line no-restricted-syntax
+      for (const menuItem of menu) {
+        if (menuItem.name.includes(searchText) && menuItem.path) {
+          results.push(menuItem);
+        }
+        if (menuItem.children) {
+          return findMenuItems(menuItem.children, results);
+        }
       }
-      if (menuItem.children) {
-        return findMenuItems(menuItem.children, results);
-      }
+      return results;
+    };
+
+    setFoundMenuItems([]);
+    if (searchText) {
+      setFoundMenuItems(findMenuItems(MENU));
+    } else {
+      setSearchText('');
+      setFoundMenuItems([]);
     }
-    return results;
-  };
+  }, [searchText, setFoundMenuItems]);
+
 
   const boldString = (str: string, substr: string) => {
     return str.replaceAll(

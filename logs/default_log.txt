@@ -30494,3 +30494,9 @@ array(2) {
     ]
 }[0m
 [20-Aug-2023 18:19:26 America/Phoenix] [46m<pid::367> Getting new database instance[0m
+[21-Aug-2023 19:09:17 America/Phoenix] [46m<pid::2096> Getting new database instance[0m
+[21-Aug-2023 23:25:11 America/Phoenix] [46m<pid::368> Getting new database instance[0m
+[21-Aug-2023 23:57:01 America/Phoenix] [46m<pid::2107> Getting new database instance[0m
+[21-Aug-2023 23:58:01 America/Phoenix] [46m<pid::364> Getting new database instance[0m
+[22-Aug-2023 00:29:36 America/Phoenix] [46m<pid::2106> Getting new database instance[0m
+[22-Aug-2023 00:41:19 America/Phoenix] [46m<pid::367> Getting new database instance[0m

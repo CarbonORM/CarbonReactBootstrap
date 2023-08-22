@@ -25,25 +25,28 @@ const MenuItem = ({menuItem}: {menuItem: IMenuItem}) => {
     navigate(menuItem.path ? menuItem.path : '/');
   };
 
-  const calculateIsActive = (url: Location) => {
-    setIsMainActive(false);
-    setIsOneOfChildrenActive(false);
-    if (isExpandable && menuItem && menuItem.children) {
-      menuItem.children.forEach((item) => {
-        if (item.path === url.pathname) {
-          setIsOneOfChildrenActive(true);
-          setIsMenuExtended(true);
-        }
-      });
-    } else if (menuItem.path === url.pathname) {
-      setIsMainActive(true);
-    }
-  };
 
   useEffect(() => {
+
+    const calculateIsActive = (url: Location) => {
+      setIsMainActive(false);
+      setIsOneOfChildrenActive(false);
+      if (isExpandable && menuItem && menuItem.children) {
+        menuItem.children.forEach((item) => {
+          if (item.path === url.pathname) {
+            setIsOneOfChildrenActive(true);
+            setIsMenuExtended(true);
+          }
+        });
+      } else if (menuItem.path === url.pathname) {
+        setIsMainActive(true);
+      }
+    };
+
     if (location) {
       calculateIsActive(location);
     }
+
   }, [location, isExpandable, menuItem]);
 
   useEffect(() => {
@@ -60,7 +63,7 @@ const MenuItem = ({menuItem}: {menuItem: IMenuItem}) => {
 
   return (
     <li className={`nav-item${isMenuExtended ? ' menu-open' : ''}`}>
-      <a
+      <div
         className={`nav-link${
           isMainActive || isOneOfChildrenActive ? ' active' : ''
         }`}
@@ -71,7 +74,7 @@ const MenuItem = ({menuItem}: {menuItem: IMenuItem}) => {
         <i className={`${menuItem.icon}`} />
         <p>{t<string>(menuItem.name)}</p>
         {isExpandable ? <i className="right fas fa-angle-left" /> : null}
-      </a>
+      </div>
 
       {isExpandable &&
         menuItem &&
