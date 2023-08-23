@@ -25,48 +25,50 @@ import {
   getFacebookLoginStatus,
 } from 'utils/oidc-providers';
 
-declare const FB: any;
-
 const App = () => {
   const windowSize = useWindowSize();
   const screenSize = useSelector((state: any) => state.ui.screenSize);
   const dispatch = useDispatch();
   const [isAppLoading, setIsAppLoading] = useState(true);
 
-  const checkSession = async () => {
-    try {
-      let responses: any = await Promise.all([
-        getFacebookLoginStatus(),
-        GoogleProvider.getUser(),
-        getAuthStatus(),
-      ]);
-
-      responses = responses.filter((r: any) => Boolean(r));
-
-      if (responses && responses.length > 0) {
-        dispatch(setAuthentication(responses[0]));
-      }
-
-    } catch (error: any) {
-
-      console.log('error', error);
-
-    }
-
-    setIsAppLoading(false);
-
-  };
 
   useEffect(() => {
+
+    const checkSession = async () => {
+      try {
+        let responses: any = await Promise.all([
+          getFacebookLoginStatus(),
+          GoogleProvider.getUser(),
+          getAuthStatus(),
+        ]);
+
+        responses = responses.filter((r: any) => Boolean(r));
+
+        if (responses && responses.length > 0) {
+          dispatch(setAuthentication(responses[0]));
+        }
+
+      } catch (error: any) {
+
+        console.log('error', error);
+
+      }
+
+      setIsAppLoading(false);
+
+    };
+
+    // noinspection JSIgnoredPromiseFromCall
     checkSession();
-  }, []);
+
+  }, [dispatch]);
 
   useEffect(() => {
     const size = calculateWindowSize(windowSize.width);
     if (screenSize !== size) {
       dispatch(setWindowSize(size));
     }
-  }, [windowSize]);
+  }, [windowSize, dispatch, screenSize]);
 
   if (isAppLoading) {
     return <p>Loading</p>;

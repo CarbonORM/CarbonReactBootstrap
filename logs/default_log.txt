@@ -28602,3 +28602,1947 @@ array(2) {
 [20-Aug-2023 17:53:36 America/Phoenix] [46m<pid::364> Getting new database instance[0m
 [20-Aug-2023 17:55:28 America/Phoenix] [46m<pid::365> Getting new database instance[0m
 [20-Aug-2023 17:55:31 America/Phoenix] [46m<pid::365> Getting new database instance[0m
+[20-Aug-2023 18:18:48 America/Phoenix] [46m<pid::364> Getting new database instance[0m
+[20-Aug-2023 18:18:49 America/Phoenix] [36m<pid::364> Note :: warnings will not be caught by a try catch block, they signal error and should corrected but typically may be 'recoverable'. Some warnings PHP, such as 'max file descriptors reached', are more critical and should be handled with care. For this reason it's important to keep logs of warnings and correct/suppress when necessary. For suppression see @link https://stackoverflow.com/questions/1241728/can-i-try-catch-a-warning[0m
+[20-Aug-2023 18:18:49 America/Phoenix] [33m<pid::364> The Global Error (set_error_handler) Handler has been invoked.[0m
+[20-Aug-2023 18:18:49 America/Phoenix] [33m<pid::364> code: 2, message: Undefined array key "user_id", /Users/richardmiles/IdeaProjects/reactBoot/backend/tables/Users.php:400[0m
+[20-Aug-2023 18:18:49 America/Phoenix] [33m<pid::364> Generating new stack trace with Throwable. This might not capture all information needed :/[0m
+[20-Aug-2023 18:18:49 America/Phoenix] [33m<pid::364> {
+    "PHP": "8.2.8 (Darwin)",
+    "THROWN NEAR": "<pre><code><table style='width: 100%'><tr><td class=\"num\">\n-1<br />0<br />1<br />2<br />3<br />4<br />5<br />6<br />7<br />8<br />9<br />10<br />11<br />12<br />13<br />14<br />15<br />16<br />17<br />18<br />19\n</td><td>\n<span style=\"overflow-x: scroll\">&nbsp;<span style=\"color: #0000BB\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$args</span><span style=\"color: #007700\">[</span><span style=\"color: #0000BB\">self</span><span style=\"color: #007700\">::</span><span style=\"color: #0000BB\">USER_LAST_NAME</span><span style=\"color: #007700\">]&nbsp;=&nbsp;</span><span style=\"color: #DD0000\">'User'</span><span style=\"color: #007700\">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style=\"color: #0000BB\">$args</span><span style=\"color: #007700\">[</span><span style=\"color: #0000BB\">self</span><span style=\"color: #007700\">::</span><span style=\"color: #0000BB\">USER_TYPE</span><span style=\"color: #007700\">]&nbsp;=&nbsp;</span><span style=\"color: #DD0000\">'member'</span><span style=\"color: #007700\">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style=\"color: #0000BB\">$args</span><span style=\"color: #007700\">[</span><span style=\"color: #0000BB\">self</span><span style=\"color: #007700\">::</span><span style=\"color: #0000BB\">USER_IP</span><span style=\"color: #007700\">]&nbsp;=&nbsp;</span><span style=\"color: #0000BB\">CarbonPHP</span><span style=\"color: #007700\">::</span><span style=\"color: #0000BB\">$user_ip&nbsp;</span><span style=\"color: #007700\">??&nbsp;</span><span style=\"color: #DD0000\">'NULL'</span><span style=\"color: #007700\">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;],<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style=\"color: #0000BB\">self</span><span style=\"color: #007700\">::</span><span style=\"color: #0000BB\">FINISH&nbsp;</span><span style=\"color: #007700\">=&gt;&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style=\"color: #FF8000\">//&nbsp;Has&nbsp;executed&nbsp;and&nbsp;committed&nbsp;to&nbsp;the&nbsp;database,&nbsp;results&nbsp;are&nbsp;passed&nbsp;by&nbsp;reference<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style=\"color: #007700\">static&nbsp;function&nbsp;(array&nbsp;</span><span style=\"color: #0000BB\">$args</span><span style=\"color: #007700\">):&nbsp;</span><span style=\"color: #0000BB\">void&nbsp;</span><span style=\"color: #007700\">{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style=\"color: #0000BB\">$_SESSION</span><span style=\"color: #007700\">[</span><span style=\"color: #DD0000\">'ID'</span><span style=\"color: #007700\">]&nbsp;=&nbsp;</span><span style=\"color: #0000BB\">$args</span><span style=\"color: #007700\">[</span><span style=\"color: #0000BB\">self</span><span style=\"color: #007700\">::</span><span style=\"color: #0000BB\">COLUMNS</span><span style=\"color: #007700\">[</span><span style=\"color: #0000BB\">self</span><span style=\"color: #007700\">::</span><span style=\"color: #0000BB\">USER_ID</span><span style=\"color: #007700\">]];<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style=\"color: #0000BB\">self</span><span style=\"color: #007700\">::</span><span style=\"color: #0000BB\">hijackRestfulRequest</span><span style=\"color: #007700\">([<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style=\"color: #DD0000\">'rest'&nbsp;</span><span style=\"color: #007700\">=&gt;&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style=\"color: #DD0000\">'success'&nbsp;</span><span style=\"color: #007700\">=&gt;&nbsp;</span><span style=\"color: #0000BB\">true</span><span style=\"color: #007700\">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style=\"color: #DD0000\">'user'&nbsp;</span><span style=\"color: #007700\">=&gt;&nbsp;</span><span style=\"color: #0000BB\">$args</span><span style=\"color: #007700\">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;]<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;]);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;],<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;],<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style=\"color: #0000BB\">self</span><span style=\"color: #007700\">::</span><span style=\"color: #0000BB\">PUT&nbsp;</span><span style=\"color: #007700\">=&gt;&nbsp;[</span>\n\n</span>\n</td></tr></table></code></pre>",
+    "RECOVERABLE WARNING": "E_WARNING",
+    "WARNING MESSAGE": "Undefined array key \"user_id\"",
+    "FILE": "/Users/richardmiles/IdeaProjects/reactBoot/backend/tables/Users.php",
+    "LINE": "400",
+    "[C6] CARBONPHP": "/Users/richardmiles/IdeaProjects/reactBoot/vendor/carbonorm/carbonphp/carbonphp/error/ThrowableHandler.php CarbonPHP\\Error\\ThrowableHandler::generateLog",
+    "METHOD": "POST",
+    "$_COOKIE": [],
+    "$_REQUEST": [],
+    "$_SERVER": {
+        "REDIRECT_CORS_ALLOW_ORIGIN": "http://localhost:3000",
+        "REDIRECT_XDEBUG_SESSION": "1",
+        "REDIRECT_DBGP_IDEKEY": "XDEBUG_INTELLIJ",
+        "REDIRECT_STATUS": "200",
+        "CORS_ALLOW_ORIGIN": "http://localhost:3000",
+        "XDEBUG_SESSION": "1",
+        "DBGP_IDEKEY": "XDEBUG_INTELLIJ",
+        "HTTP_HOST": "local.carbonphp.com:8080",
+        "HTTP_CONNECTION": "keep-alive",
+        "CONTENT_LENGTH": "114",
+        "HTTP_ACCEPT": "application/json, text/plain, */*",
+        "HTTP_X_REQUESTED_WITH": "XMLHttpRequest",
+        "HTTP_USER_AGENT": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36",
+        "CONTENT_TYPE": "application/json",
+        "HTTP_ORIGIN": "http://localhost:3000",
+        "HTTP_REFERER": "http://localhost:3000/",
+        "HTTP_ACCEPT_ENCODING": "gzip, deflate",
+        "HTTP_ACCEPT_LANGUAGE": "en-US,en;q=0.9",
+        "PATH": "/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin",
+        "SERVER_SIGNATURE": "",
+        "SERVER_SOFTWARE": "Apache/2.4.57 (Unix) PHP/8.2.8",
+        "SERVER_NAME": "local.carbonphp.com",
+        "SERVER_ADDR": "::1",
+        "SERVER_PORT": "8080",
+        "REMOTE_ADDR": "::1",
+        "DOCUMENT_ROOT": "/usr/local/var/www",
+        "REQUEST_SCHEME": "http",
+        "CONTEXT_PREFIX": "",
+        "CONTEXT_DOCUMENT_ROOT": "/usr/local/var/www",
+        "SERVER_ADMIN": "you@example.com",
+        "SCRIPT_FILENAME": "/usr/local/var/www/index.php",
+        "REMOTE_PORT": "59195",
+        "REDIRECT_URL": "/rest/users/",
+        "GATEWAY_INTERFACE": "CGI/1.1",
+        "SERVER_PROTOCOL": "HTTP/1.1",
+        "REQUEST_METHOD": "POST",
+        "QUERY_STRING": "",
+        "REQUEST_URI": "/rest/users/",
+        "SCRIPT_NAME": "/index.php",
+        "PHP_SELF": "/index.php",
+        "REQUEST_TIME_FLOAT": 1692580728.67183,
+        "REQUEST_TIME": 1692580728,
+        "HTTP_X_FORWARDED_PROTO": false
+    },
+    "URI": "/rest/users/",
+    "TRACE": {
+        "CALL TRACE 0": {
+            "file": "/Users/richardmiles/IdeaProjects/reactBoot/index.php",
+            "line": 18,
+            "function": "__invoke",
+            "class": "CarbonPHP\\CarbonPHP",
+            "type": "->",
+            "args": [],
+            "jump": "/Users/richardmiles/IdeaProjects/reactBoot/index.php:18"
+        },
+        "CALL TRACE 1": {
+            "file": "/Users/richardmiles/IdeaProjects/reactBoot/vendor/carbonorm/carbonphp/carbonphp/CarbonPHP.php",
+            "line": 170,
+            "function": "run",
+            "class": "CarbonPHP\\CarbonPHP",
+            "type": "::",
+            "args": [
+                "Backend\\Documentation"
+            ],
+            "jump": "/Users/richardmiles/IdeaProjects/reactBoot/vendor/carbonorm/carbonphp/carbonphp/CarbonPHP.php:170"
+        },
+        "CALL TRACE 2": {
+            "file": "/Users/richardmiles/IdeaProjects/reactBoot/vendor/carbonorm/carbonphp/carbonphp/CarbonPHP.php",
+            "line": 275,
+            "function": "startApplication",
+            "class": "CarbonPHP\\CarbonPHP",
+            "type": "::",
+            "args": [],
+            "jump": "/Users/richardmiles/IdeaProjects/reactBoot/vendor/carbonorm/carbonphp/carbonphp/CarbonPHP.php:275"
+        },
+        "CALL TRACE 3": {
+            "file": "/Users/richardmiles/IdeaProjects/reactBoot/vendor/carbonorm/carbonphp/carbonphp/CarbonPHP.php",
+            "line": 342,
+            "function": "startApplication",
+            "class": "Backend\\Documentation",
+            "type": "->",
+            "args": [
+                "rest/users"
+            ],
+            "jump": "/Users/richardmiles/IdeaProjects/reactBoot/vendor/carbonorm/carbonphp/carbonphp/CarbonPHP.php:342"
+        },
+        "CALL TRACE 4": {
+            "file": "/Users/richardmiles/IdeaProjects/reactBoot/backend/Documentation.php",
+            "line": 154,
+            "function": "MatchRestfulRequests",
+            "class": "CarbonPHP\\Restful\\RestLifeCycle",
+            "type": "::",
+            "args": [
+                "",
+                "Backend\\Tables\\"
+            ],
+            "jump": "/Users/richardmiles/IdeaProjects/reactBoot/backend/Documentation.php:154"
+        },
+        "CALL TRACE 5": {
+            "file": "/Users/richardmiles/IdeaProjects/reactBoot/vendor/carbonorm/carbonphp/carbonphp/restful/RestLifeCycle.php",
+            "line": 589,
+            "function": "regexMatch",
+            "class": "CarbonPHP\\Route",
+            "type": "::",
+            "args": [
+                "#rest/([A-Za-z\\_]{1,256})/?([^/]+)?#",
+                {}
+            ],
+            "jump": "/Users/richardmiles/IdeaProjects/reactBoot/vendor/carbonorm/carbonphp/carbonphp/restful/RestLifeCycle.php:589"
+        },
+        "CALL TRACE 6": {
+            "file": "/Users/richardmiles/IdeaProjects/reactBoot/vendor/carbonorm/carbonphp/carbonphp/Route.php",
+            "line": 167,
+            "function": "call_user_func_array",
+            "args": [
+                {},
+                [
+                    "users"
+                ]
+            ],
+            "jump": "/Users/richardmiles/IdeaProjects/reactBoot/vendor/carbonorm/carbonphp/carbonphp/Route.php:167"
+        },
+        "CALL TRACE 7": {
+            "function": "CarbonPHP\\Restful\\{closure}",
+            "class": "CarbonPHP\\Restful\\RestLifeCycle",
+            "type": "::",
+            "args": [
+                "users"
+            ]
+        },
+        "CALL TRACE 8": {
+            "file": "/Users/richardmiles/IdeaProjects/reactBoot/vendor/carbonorm/carbonphp/carbonphp/restful/RestLifeCycle.php",
+            "line": 603,
+            "function": "ExternalRestfulRequestsAPI",
+            "class": "CarbonPHP\\Restful\\RestLifeCycle",
+            "type": "::",
+            "args": [
+                "Users",
+                null,
+                "Backend\\Tables\\"
+            ],
+            "jump": "/Users/richardmiles/IdeaProjects/reactBoot/vendor/carbonorm/carbonphp/carbonphp/restful/RestLifeCycle.php:603"
+        },
+        "CALL TRACE 9": {
+            "file": "/Users/richardmiles/IdeaProjects/reactBoot/vendor/carbonorm/carbonphp/carbonphp/restful/RestLifeCycle.php",
+            "line": 474,
+            "function": "call_user_func_array",
+            "args": [
+                [
+                    "Backend\\Tables\\Users",
+                    "Post"
+                ],
+                [
+                    [
+                        {
+                            "carbon_users.user_email": "",
+                            "carbon_users.user_password": "$2y$10$onkSraslLEcZqNejVIAsu.4/OmnkdhhlgLgVeQggX/81G8LVGOiRi",
+                            "carbon_users.user_username": "TestingNow",
+                            "carbon_users.user_first_name": "Anonymous",
+                            "carbon_users.user_last_name": "User",
+                            "carbon_users.user_type": "member",
+                            "carbon_users.user_ip": "NULL",
+                            "carbon_users.user_id": "aea6928c3fc011ee8cd48e580f411cc7"
+                        }
+                    ],
+                    null
+                ]
+            ],
+            "jump": "/Users/richardmiles/IdeaProjects/reactBoot/vendor/carbonorm/carbonphp/carbonphp/restful/RestLifeCycle.php:474"
+        },
+        "CALL TRACE 10": {
+            "function": "post",
+            "class": "Backend\\Tables\\Users",
+            "type": "::",
+            "args": [
+                [
+                    {
+                        "carbon_users.user_email": "",
+                        "carbon_users.user_password": "$2y$10$onkSraslLEcZqNejVIAsu.4/OmnkdhhlgLgVeQggX/81G8LVGOiRi",
+                        "carbon_users.user_username": "TestingNow",
+                        "carbon_users.user_first_name": "Anonymous",
+                        "carbon_users.user_last_name": "User",
+                        "carbon_users.user_type": "member",
+                        "carbon_users.user_ip": "NULL",
+                        "carbon_users.user_id": "aea6928c3fc011ee8cd48e580f411cc7"
+                    }
+                ],
+                null
+            ]
+        },
+        "CALL TRACE 11": {
+            "file": "/Users/richardmiles/IdeaProjects/reactBoot/backend/tables/Users.php",
+            "line": 809,
+            "function": "insert",
+            "class": "CarbonPHP\\Rest",
+            "type": "::",
+            "args": [
+                [
+                    {
+                        "carbon_users.user_email": "",
+                        "carbon_users.user_password": "$2y$10$onkSraslLEcZqNejVIAsu.4/OmnkdhhlgLgVeQggX/81G8LVGOiRi",
+                        "carbon_users.user_username": "TestingNow",
+                        "carbon_users.user_first_name": "Anonymous",
+                        "carbon_users.user_last_name": "User",
+                        "carbon_users.user_type": "member",
+                        "carbon_users.user_ip": "NULL",
+                        "carbon_users.user_id": "aea6928c3fc011ee8cd48e580f411cc7"
+                    }
+                ]
+            ],
+            "jump": "/Users/richardmiles/IdeaProjects/reactBoot/backend/tables/Users.php:809"
+        },
+        "CALL TRACE 12": {
+            "file": "/Users/richardmiles/IdeaProjects/reactBoot/vendor/carbonorm/carbonphp/carbonphp/Rest.php",
+            "line": 1086,
+            "function": "postprocessRestRequest",
+            "class": "CarbonPHP\\Restful\\RestQueryValidation",
+            "type": "::",
+            "args": [
+                [
+                    {
+                        "carbon_users.user_email": "",
+                        "carbon_users.user_password": "$2y$10$onkSraslLEcZqNejVIAsu.4/OmnkdhhlgLgVeQggX/81G8LVGOiRi",
+                        "carbon_users.user_username": "TestingNow",
+                        "carbon_users.user_first_name": "Anonymous",
+                        "carbon_users.user_last_name": "User",
+                        "carbon_users.user_type": "member",
+                        "carbon_users.user_ip": "NULL",
+                        "carbon_users.user_id": "aea6928c3fc011ee8cd48e580f411cc7"
+                    }
+                ]
+            ],
+            "jump": "/Users/richardmiles/IdeaProjects/reactBoot/vendor/carbonorm/carbonphp/carbonphp/Rest.php:1086"
+        },
+        "CALL TRACE 13": {
+            "file": "/Users/richardmiles/IdeaProjects/reactBoot/vendor/carbonorm/carbonphp/carbonphp/restful/RestQueryValidation.php",
+            "line": 186,
+            "function": "runValidations",
+            "class": "CarbonPHP\\Restful\\RestQueryValidation",
+            "type": "::",
+            "args": [
+                [
+                    {}
+                ],
+                [
+                    {
+                        "carbon_users.user_email": "",
+                        "carbon_users.user_password": "$2y$10$onkSraslLEcZqNejVIAsu.4/OmnkdhhlgLgVeQggX/81G8LVGOiRi",
+                        "carbon_users.user_username": "TestingNow",
+                        "carbon_users.user_first_name": "Anonymous",
+                        "carbon_users.user_last_name": "User",
+                        "carbon_users.user_type": "member",
+                        "carbon_users.user_ip": "NULL",
+                        "carbon_users.user_id": "aea6928c3fc011ee8cd48e580f411cc7"
+                    }
+                ]
+            ],
+            "jump": "/Users/richardmiles/IdeaProjects/reactBoot/vendor/carbonorm/carbonphp/carbonphp/restful/RestQueryValidation.php:186"
+        },
+        "CALL TRACE 14": {
+            "file": "/Users/richardmiles/IdeaProjects/reactBoot/vendor/carbonorm/carbonphp/carbonphp/restful/RestQueryValidation.php",
+            "line": 818,
+            "function": "call_user_func_array",
+            "args": [
+                {},
+                [
+                    [
+                        [
+                            {
+                                "carbon_users.user_email": "",
+                                "carbon_users.user_password": "$2y$10$onkSraslLEcZqNejVIAsu.4/OmnkdhhlgLgVeQggX/81G8LVGOiRi",
+                                "carbon_users.user_username": "TestingNow",
+                                "carbon_users.user_first_name": "Anonymous",
+                                "carbon_users.user_last_name": "User",
+                                "carbon_users.user_type": "member",
+                                "carbon_users.user_ip": "NULL",
+                                "carbon_users.user_id": "aea6928c3fc011ee8cd48e580f411cc7"
+                            }
+                        ]
+                    ]
+                ]
+            ],
+            "jump": "/Users/richardmiles/IdeaProjects/reactBoot/vendor/carbonorm/carbonphp/carbonphp/restful/RestQueryValidation.php:818"
+        },
+        "CALL TRACE 15": {
+            "function": "Backend\\Tables\\{closure}",
+            "class": "Backend\\Tables\\Users",
+            "type": "::",
+            "args": [
+                [
+                    [
+                        {
+                            "carbon_users.user_email": "",
+                            "carbon_users.user_password": "$2y$10$onkSraslLEcZqNejVIAsu.4/OmnkdhhlgLgVeQggX/81G8LVGOiRi",
+                            "carbon_users.user_username": "TestingNow",
+                            "carbon_users.user_first_name": "Anonymous",
+                            "carbon_users.user_last_name": "User",
+                            "carbon_users.user_type": "member",
+                            "carbon_users.user_ip": "NULL",
+                            "carbon_users.user_id": "aea6928c3fc011ee8cd48e580f411cc7"
+                        }
+                    ]
+                ]
+            ]
+        },
+        "CALL TRACE 16": {
+            "file": "/Users/richardmiles/IdeaProjects/reactBoot/backend/tables/Users.php",
+            "line": 400,
+            "function": "CarbonPHP\\Error\\{closure}",
+            "class": "CarbonPHP\\Error\\ThrowableHandler",
+            "type": "::",
+            "args": [
+                2,
+                "Undefined array key \"user_id\"",
+                "/Users/richardmiles/IdeaProjects/reactBoot/backend/tables/Users.php",
+                400
+            ],
+            "jump": "/Users/richardmiles/IdeaProjects/reactBoot/backend/tables/Users.php:400"
+        },
+        "CALL TRACE 17": {
+            "file": "/Users/richardmiles/IdeaProjects/reactBoot/vendor/carbonorm/carbonphp/carbonphp/error/ThrowableHandler.php",
+            "line": 673,
+            "function": "generateLog",
+            "class": "CarbonPHP\\Error\\ThrowableHandler",
+            "type": "::",
+            "args": [
+                null,
+                true,
+                "2",
+                {
+                    "PHP": "8.2.8 (Darwin)",
+                    "RECOVERABLE WARNING": "E_WARNING",
+                    "WARNING MESSAGE": "Undefined array key \"user_id\"",
+                    "FILE": "/Users/richardmiles/IdeaProjects/reactBoot/backend/tables/Users.php",
+                    "LINE": "400"
+                },
+                "yellow"
+            ],
+            "jump": "/Users/richardmiles/IdeaProjects/reactBoot/vendor/carbonorm/carbonphp/carbonphp/error/ThrowableHandler.php:673"
+        },
+        "CALL TRACE 18": {
+            "file": "/Users/richardmiles/IdeaProjects/reactBoot/vendor/carbonorm/carbonphp/carbonphp/error/ThrowableHandler.php",
+            "line": 872,
+            "function": "generateCallTrace",
+            "class": "CarbonPHP\\Error\\ThrowableHandler",
+            "type": "::",
+            "args": [],
+            "jump": "/Users/richardmiles/IdeaProjects/reactBoot/vendor/carbonorm/carbonphp/carbonphp/error/ThrowableHandler.php:872"
+        },
+        "CALL TRACE 19": {
+            "file": "/Users/richardmiles/IdeaProjects/reactBoot/vendor/carbonorm/carbonphp/carbonphp/error/ThrowableHandler.php",
+            "line": 1187,
+            "code": 0,
+            "preview": [
+                "        if (false === CarbonPHP::$cli) {",
+                "",
+                "            ob_start(null, 0, PHP_OUTPUT_HANDLER_CLEANABLE",
+                "                | PHP_OUTPUT_HANDLER_FLUSHABLE | PHP_OUTPUT_HANDLER_REMOVABLE);     // start a new buffer for saving errors",
+                "",
+                "        }",
+                "",
+                "        if (null === $e) {",
+                "",
+                "            $e = new \\Exception();",
+                "",
+                "        }",
+                "",
+                "        $trace = $e->getTrace();",
+                "",
+                "        $trace = array_reverse($trace);",
+                "",
+                "        $trace[] = [",
+                "            'file' => $e->getFile(),",
+                "            'line' => $e->getLine(),"
+            ],
+            "jump": "/Users/richardmiles/IdeaProjects/reactBoot/vendor/carbonorm/carbonphp/carbonphp/error/ThrowableHandler.php:1187"
+        }
+    },
+    "$GLOBALS['json']": {
+        "session": {
+            "database_closed_committed": true,
+            "@close": {
+                "id": 0
+            },
+            "?close": "closing session from (/Users/richardmiles/IdeaProjects/reactBoot/vendor/carbonorm/carbonphp/carbonphp/Session.php) from method (CarbonPHP\\Session::close) at line (526)"
+        },
+        "sql": [
+            {
+                "method": "POST",
+                "table": "CarbonPHP\\Tables\\Sessions",
+                "CarbonPHP\\Restful\\RestSettings::$externalRestfulRequestsAPI": false,
+                "argv": [
+                    [
+                        {
+                            "carbon_sessions.session_id": "5l0hgrj67f51vibb2b6o9tttem",
+                            "carbon_sessions.user_id": "0",
+                            "carbon_sessions.user_ip": "::1",
+                            "carbon_sessions.session_expires": "2023-08-27 18:18:48",
+                            "carbon_sessions.session_data": ""
+                        }
+                    ]
+                ],
+                "affected_rows": 1,
+                "committed": true,
+                "stmt": {
+                    "sql": "INSERT IGNORE  INTO CarbonPHP.carbon_sessions (user_id, user_ip, session_id, session_expires, session_data) VALUES (UNHEX(:user_id0), :user_ip0, :session_id0, :session_expires0, :session_data0)",
+                    "injections": [],
+                    "debugDumpParams": [
+                        "SQL: [193] INSERT IGNORE  INTO CarbonPHP.carbon_sessions (user_id, user_ip, session_id, session_expires, session_data) VALUES (UNHEX(:user_id0), :user_ip0, :session_id0, :session_expires0, :session_data0)",
+                        "Sent SQL: [191] INSERT IGNORE  INTO CarbonPHP.carbon_sessions (user_id, user_ip, session_id, session_expires, session_data) VALUES (UNHEX('0'), '::1', '5l0hgrj67f51vibb2b6o9tttem', '2023-08-27 18:18:48', '')",
+                        "Params:  5",
+                        "Key: Name: [9] :user_id0",
+                        "paramno=-1",
+                        "name=[9] \":user_id0\"",
+                        "is_param=1",
+                        "param_type=2",
+                        "Key: Name: [9] :user_ip0",
+                        "paramno=-1",
+                        "name=[9] \":user_ip0\"",
+                        "is_param=1",
+                        "param_type=2",
+                        "Key: Name: [12] :session_id0",
+                        "paramno=-1",
+                        "name=[12] \":session_id0\"",
+                        "is_param=1",
+                        "param_type=2",
+                        "Key: Name: [17] :session_expires0",
+                        "paramno=-1",
+                        "name=[17] \":session_expires0\"",
+                        "is_param=1",
+                        "param_type=2",
+                        "Key: Name: [14] :session_data0",
+                        "paramno=-1",
+                        "name=[14] \":session_data0\"",
+                        "is_param=1",
+                        "param_type=2",
+                        ""
+                    ]
+                }
+            },
+            {
+                "method": "GET",
+                "table": "CarbonPHP\\Tables\\Sessions",
+                "CarbonPHP\\Restful\\RestSettings::$externalRestfulRequestsAPI": false,
+                "argv": [
+                    [],
+                    {
+                        "SELECT": [
+                            "carbon_sessions.session_data"
+                        ],
+                        "LOCK": "FOR_UPDATE"
+                    },
+                    {
+                        "carbon_sessions.session_id": "5l0hgrj67f51vibb2b6o9tttem"
+                    }
+                ],
+                "affected_rows": 1,
+                "committed": false,
+                "stmt": {
+                    "sql": "SELECT carbon_sessions.session_data FROM CarbonPHP.carbon_sessions  WHERE carbon_sessions.session_id=:injection0  ORDER BY carbon_sessions.session_id ASC LIMIT 1 FOR UPDATE",
+                    "injections": {
+                        ":injection0": "5l0hgrj67f51vibb2b6o9tttem"
+                    },
+                    "debugDumpParams": [
+                        "SQL: [172] SELECT carbon_sessions.session_data FROM CarbonPHP.carbon_sessions  WHERE carbon_sessions.session_id=:injection0  ORDER BY carbon_sessions.session_id ASC LIMIT 1 FOR UPDATE",
+                        "Sent SQL: [189] SELECT carbon_sessions.session_data FROM CarbonPHP.carbon_sessions  WHERE carbon_sessions.session_id='5l0hgrj67f51vibb2b6o9tttem'  ORDER BY carbon_sessions.session_id ASC LIMIT 1 FOR UPDATE",
+                        "Params:  1",
+                        "Key: Name: [11] :injection0",
+                        "paramno=-1",
+                        "name=[11] \":injection0\"",
+                        "is_param=1",
+                        "param_type=2",
+                        ""
+                    ]
+                }
+            },
+            {
+                "method": "POST",
+                "table": "Backend\\Tables\\Users",
+                "CarbonPHP\\Restful\\RestSettings::$externalRestfulRequestsAPI": true,
+                "argv": [
+                    [
+                        {
+                            "carbon_users.user_email": "",
+                            "carbon_users.user_password": "$2y$10$onkSraslLEcZqNejVIAsu.4/OmnkdhhlgLgVeQggX/81G8LVGOiRi",
+                            "carbon_users.user_username": "TestingNow",
+                            "carbon_users.user_first_name": "Anonymous",
+                            "carbon_users.user_last_name": "User",
+                            "carbon_users.user_type": "member",
+                            "carbon_users.user_ip": "NULL",
+                            "carbon_users.user_id": null
+                        }
+                    ]
+                ],
+                "affected_rows": 1,
+                "committed": true,
+                "stmt": {
+                    "sql": "INSERT INTO carbon_users (user_username, user_password, user_id, user_type, user_first_name, user_last_name, user_email, user_ip) VALUES (:user_username0, :user_password0, UNHEX(:user_id0), :user_type0, :user_first_name0, :user_last_name0, :user_email0, :user_ip0)",
+                    "injections": [],
+                    "debugDumpParams": [
+                        "SQL: [264] INSERT INTO carbon_users (user_username, user_password, user_id, user_type, user_first_name, user_last_name, user_email, user_ip) VALUES (:user_username0, :user_password0, UNHEX(:user_id0), :user_type0, :user_first_name0, :user_last_name0, :user_email0, :user_ip0)",
+                        "Sent SQL: [301] INSERT INTO carbon_users (user_username, user_password, user_id, user_type, user_first_name, user_last_name, user_email, user_ip) VALUES ('TestingNow', '$2y$10$onkSraslLEcZqNejVIAsu.4/OmnkdhhlgLgVeQggX/81G8LVGOiRi', UNHEX('aea6928c3fc011ee8cd48e580f411cc7'), 'member', 'Anonymous', 'User', '', 'NULL')",
+                        "Params:  8",
+                        "Key: Name: [15] :user_username0",
+                        "paramno=-1",
+                        "name=[15] \":user_username0\"",
+                        "is_param=1",
+                        "param_type=2",
+                        "Key: Name: [15] :user_password0",
+                        "paramno=-1",
+                        "name=[15] \":user_password0\"",
+                        "is_param=1",
+                        "param_type=2",
+                        "Key: Name: [9] :user_id0",
+                        "paramno=-1",
+                        "name=[9] \":user_id0\"",
+                        "is_param=1",
+                        "param_type=2",
+                        "Key: Name: [11] :user_type0",
+                        "paramno=-1",
+                        "name=[11] \":user_type0\"",
+                        "is_param=1",
+                        "param_type=2",
+                        "Key: Name: [17] :user_first_name0",
+                        "paramno=-1",
+                        "name=[17] \":user_first_name0\"",
+                        "is_param=1",
+                        "param_type=2",
+                        "Key: Name: [16] :user_last_name0",
+                        "paramno=-1",
+                        "name=[16] \":user_last_name0\"",
+                        "is_param=1",
+                        "param_type=2",
+                        "Key: Name: [12] :user_email0",
+                        "paramno=-1",
+                        "name=[12] \":user_email0\"",
+                        "is_param=1",
+                        "param_type=2",
+                        "Key: Name: [9] :user_ip0",
+                        "paramno=-1",
+                        "name=[9] \":user_ip0\"",
+                        "is_param=1",
+                        "param_type=2",
+                        ""
+                    ]
+                },
+                "uri": "/rest/users/"
+            },
+            {
+                "method": "PUT",
+                "table": "CarbonPHP\\Tables\\Sessions",
+                "CarbonPHP\\Restful\\RestSettings::$externalRestfulRequestsAPI": false,
+                "argv": [
+                    [],
+                    {
+                        "carbon_sessions.user_id": "0",
+                        "carbon_sessions.user_ip": "::1",
+                        "carbon_sessions.session_expires": "2023-08-21 18:18:49",
+                        "carbon_sessions.session_data": "id|i:0;",
+                        "carbon_sessions.session_id": "5l0hgrj67f51vibb2b6o9tttem"
+                    },
+                    {
+                        "carbon_sessions.session_id": "5l0hgrj67f51vibb2b6o9tttem"
+                    }
+                ],
+                "affected_rows": 2,
+                "committed": false,
+                "stmt": {
+                    "sql": "REPLACE INTO CarbonPHP.carbon_sessions SET  carbon_sessions.user_id = UNHEX(:user_id) , carbon_sessions.user_ip = :user_ip , carbon_sessions.session_expires = :session_expires , carbon_sessions.session_data = :session_data , carbon_sessions.session_id = :session_id ",
+                    "injections": [],
+                    "debugDumpParams": [
+                        "SQL: [266] REPLACE INTO CarbonPHP.carbon_sessions SET  carbon_sessions.user_id = UNHEX(:user_id) , carbon_sessions.user_ip = :user_ip , carbon_sessions.session_expires = :session_expires , carbon_sessions.session_data = :session_data , carbon_sessions.session_id = :session_id ",
+                        "Sent SQL: [276] REPLACE INTO CarbonPHP.carbon_sessions SET  carbon_sessions.user_id = UNHEX('0') , carbon_sessions.user_ip = '::1' , carbon_sessions.session_expires = '2023-08-21 18:18:49' , carbon_sessions.session_data = 'id|i:0;' , carbon_sessions.session_id = '5l0hgrj67f51vibb2b6o9tttem' ",
+                        "Params:  5",
+                        "Key: Name: [8] :user_id",
+                        "paramno=-1",
+                        "name=[8] \":user_id\"",
+                        "is_param=1",
+                        "param_type=2",
+                        "Key: Name: [8] :user_ip",
+                        "paramno=-1",
+                        "name=[8] \":user_ip\"",
+                        "is_param=1",
+                        "param_type=2",
+                        "Key: Name: [11] :session_id",
+                        "paramno=-1",
+                        "name=[11] \":session_id\"",
+                        "is_param=1",
+                        "param_type=2",
+                        "Key: Name: [16] :session_expires",
+                        "paramno=-1",
+                        "name=[16] \":session_expires\"",
+                        "is_param=1",
+                        "param_type=2",
+                        "Key: Name: [13] :session_data",
+                        "paramno=-1",
+                        "name=[13] \":session_data\"",
+                        "is_param=1",
+                        "param_type=2",
+                        ""
+                    ]
+                }
+            },
+            {
+                "Committed Transaction": 1,
+                "Committing transaction from": {
+                    "0": "file (/Users/richardmiles/IdeaProjects/reactBoot/vendor/carbonorm/carbonphp/carbonphp/Database.php) method (CarbonPHP\\Database::commit) at line (540)",
+                    "debug_backtrace": [
+                        {
+                            "file": "/Users/richardmiles/IdeaProjects/reactBoot/vendor/carbonorm/carbonphp/carbonphp/Database.php",
+                            "line": 565,
+                            "function": "CarbonPHP\\{closure}",
+                            "class": "CarbonPHP\\Database",
+                            "type": "::",
+                            "args": [
+                                {
+                                    "Session ID": "5l0hgrj67f51vibb2b6o9tttem",
+                                    "Session Status": {
+                                        "session_status()": 1,
+                                        "PHP_SESSION_DISABLED": 0,
+                                        "PHP_SESSION_ACTIVE": 2,
+                                        "PHP_SESSION_NONE": 1
+                                    },
+                                    "Session Write Close": "(this commit closed the session)"
+                                }
+                            ]
+                        },
+                        {
+                            "file": "/Users/richardmiles/IdeaProjects/reactBoot/vendor/carbonorm/carbonphp/carbonphp/Rest.php",
+                            "line": 1071,
+                            "function": "commit",
+                            "class": "CarbonPHP\\Database",
+                            "type": "::",
+                            "args": []
+                        },
+                        {
+                            "file": "/Users/richardmiles/IdeaProjects/reactBoot/backend/tables/Users.php",
+                            "line": 809,
+                            "function": "insert",
+                            "class": "CarbonPHP\\Rest",
+                            "type": "::",
+                            "args": [
+                                [
+                                    {
+                                        "carbon_users.user_email": "",
+                                        "carbon_users.user_password": "$2y$10$onkSraslLEcZqNejVIAsu.4/OmnkdhhlgLgVeQggX/81G8LVGOiRi",
+                                        "carbon_users.user_username": "TestingNow",
+                                        "carbon_users.user_first_name": "Anonymous",
+                                        "carbon_users.user_last_name": "User",
+                                        "carbon_users.user_type": "member",
+                                        "carbon_users.user_ip": "NULL",
+                                        "carbon_users.user_id": "aea6928c3fc011ee8cd48e580f411cc7"
+                                    }
+                                ]
+                            ]
+                        },
+                        {
+                            "function": "post",
+                            "class": "Backend\\Tables\\Users",
+                            "type": "::",
+                            "args": [
+                                [
+                                    {
+                                        "carbon_users.user_email": "",
+                                        "carbon_users.user_password": "$2y$10$onkSraslLEcZqNejVIAsu.4/OmnkdhhlgLgVeQggX/81G8LVGOiRi",
+                                        "carbon_users.user_username": "TestingNow",
+                                        "carbon_users.user_first_name": "Anonymous",
+                                        "carbon_users.user_last_name": "User",
+                                        "carbon_users.user_type": "member",
+                                        "carbon_users.user_ip": "NULL",
+                                        "carbon_users.user_id": "aea6928c3fc011ee8cd48e580f411cc7"
+                                    }
+                                ],
+                                null
+                            ]
+                        },
+                        {
+                            "file": "/Users/richardmiles/IdeaProjects/reactBoot/vendor/carbonorm/carbonphp/carbonphp/restful/RestLifeCycle.php",
+                            "line": 474,
+                            "function": "call_user_func_array",
+                            "args": [
+                                [
+                                    "Backend\\Tables\\Users",
+                                    "Post"
+                                ],
+                                [
+                                    [
+                                        {
+                                            "carbon_users.user_email": "",
+                                            "carbon_users.user_password": "$2y$10$onkSraslLEcZqNejVIAsu.4/OmnkdhhlgLgVeQggX/81G8LVGOiRi",
+                                            "carbon_users.user_username": "TestingNow",
+                                            "carbon_users.user_first_name": "Anonymous",
+                                            "carbon_users.user_last_name": "User",
+                                            "carbon_users.user_type": "member",
+                                            "carbon_users.user_ip": "NULL",
+                                            "carbon_users.user_id": "aea6928c3fc011ee8cd48e580f411cc7"
+                                        }
+                                    ],
+                                    null
+                                ]
+                            ]
+                        },
+                        {
+                            "file": "/Users/richardmiles/IdeaProjects/reactBoot/vendor/carbonorm/carbonphp/carbonphp/restful/RestLifeCycle.php",
+                            "line": 603,
+                            "function": "ExternalRestfulRequestsAPI",
+                            "class": "CarbonPHP\\Restful\\RestLifeCycle",
+                            "type": "::",
+                            "args": [
+                                "Users",
+                                null,
+                                "Backend\\Tables\\"
+                            ]
+                        },
+                        {
+                            "function": "CarbonPHP\\Restful\\{closure}",
+                            "class": "CarbonPHP\\Restful\\RestLifeCycle",
+                            "type": "::",
+                            "args": [
+                                "users"
+                            ]
+                        },
+                        {
+                            "file": "/Users/richardmiles/IdeaProjects/reactBoot/vendor/carbonorm/carbonphp/carbonphp/Route.php",
+                            "line": 167,
+                            "function": "call_user_func_array",
+                            "args": [
+                                {},
+                                [
+                                    "users"
+                                ]
+                            ]
+                        },
+                        {
+                            "file": "/Users/richardmiles/IdeaProjects/reactBoot/vendor/carbonorm/carbonphp/carbonphp/restful/RestLifeCycle.php",
+                            "line": 589,
+                            "function": "regexMatch",
+                            "class": "CarbonPHP\\Route",
+                            "type": "::",
+                            "args": [
+                                "#rest/([A-Za-z\\_]{1,256})/?([^/]+)?#",
+                                {}
+                            ]
+                        },
+                        {
+                            "file": "/Users/richardmiles/IdeaProjects/reactBoot/backend/Documentation.php",
+                            "line": 154,
+                            "function": "MatchRestfulRequests",
+                            "class": "CarbonPHP\\Restful\\RestLifeCycle",
+                            "type": "::",
+                            "args": [
+                                "",
+                                "Backend\\Tables\\"
+                            ]
+                        },
+                        {
+                            "file": "/Users/richardmiles/IdeaProjects/reactBoot/vendor/carbonorm/carbonphp/carbonphp/CarbonPHP.php",
+                            "line": 342,
+                            "function": "startApplication",
+                            "class": "Backend\\Documentation",
+                            "object": {},
+                            "type": "->",
+                            "args": [
+                                "rest/users"
+                            ]
+                        },
+                        {
+                            "file": "/Users/richardmiles/IdeaProjects/reactBoot/vendor/carbonorm/carbonphp/carbonphp/CarbonPHP.php",
+                            "line": 275,
+                            "function": "startApplication",
+                            "class": "CarbonPHP\\CarbonPHP",
+                            "type": "::",
+                            "args": []
+                        },
+                        {
+                            "file": "/Users/richardmiles/IdeaProjects/reactBoot/vendor/carbonorm/carbonphp/carbonphp/CarbonPHP.php",
+                            "line": 170,
+                            "function": "run",
+                            "class": "CarbonPHP\\CarbonPHP",
+                            "type": "::",
+                            "args": [
+                                "Backend\\Documentation"
+                            ]
+                        },
+                        {
+                            "file": "/Users/richardmiles/IdeaProjects/reactBoot/index.php",
+                            "line": 18,
+                            "function": "__invoke",
+                            "class": "CarbonPHP\\CarbonPHP",
+                            "object": {},
+                            "type": "->",
+                            "args": []
+                        }
+                    ]
+                },
+                "Session ID": "5l0hgrj67f51vibb2b6o9tttem",
+                "Session Status": {
+                    "session_status()": 1,
+                    "PHP_SESSION_DISABLED": 0,
+                    "PHP_SESSION_ACTIVE": 2,
+                    "PHP_SESSION_NONE": 1
+                },
+                "Session Write Close": "(this commit closed the session)"
+            }
+        ],
+        "SITE": "http://local.carbonphp.com:8080/",
+        "POST": {
+            "carbon_users.user_email": "",
+            "carbon_users.user_password": "TestingNow",
+            "carbon_users.user_username": "TestingNow"
+        },
+        "GET": [],
+        "HTTP": false,
+        "HTTPS": false,
+        "SOCKET": false,
+        "AJAX": true,
+        "SITE_TITLE": "CarbonPHP \u2022 C6",
+        "CarbonPHP::$app_view": "view/",
+        "COMPOSER": "/Users/richardmiles/IdeaProjects/reactBoot/vendor/carbonorm/carbonphp/carbonphp/",
+        "FACEBOOK_APP_ID": ""
+    },
+    "LAST_REST_STATEMENT": {
+        "Committed Transaction": 1,
+        "Committing transaction from": {
+            "0": "file (/Users/richardmiles/IdeaProjects/reactBoot/vendor/carbonorm/carbonphp/carbonphp/Database.php) method (CarbonPHP\\Database::commit) at line (540)",
+            "debug_backtrace": [
+                {
+                    "file": "/Users/richardmiles/IdeaProjects/reactBoot/vendor/carbonorm/carbonphp/carbonphp/Database.php",
+                    "line": 565,
+                    "function": "CarbonPHP\\{closure}",
+                    "class": "CarbonPHP\\Database",
+                    "type": "::",
+                    "args": [
+                        {
+                            "Session ID": "5l0hgrj67f51vibb2b6o9tttem",
+                            "Session Status": {
+                                "session_status()": 1,
+                                "PHP_SESSION_DISABLED": 0,
+                                "PHP_SESSION_ACTIVE": 2,
+                                "PHP_SESSION_NONE": 1
+                            },
+                            "Session Write Close": "(this commit closed the session)"
+                        }
+                    ]
+                },
+                {
+                    "file": "/Users/richardmiles/IdeaProjects/reactBoot/vendor/carbonorm/carbonphp/carbonphp/Rest.php",
+                    "line": 1071,
+                    "function": "commit",
+                    "class": "CarbonPHP\\Database",
+                    "type": "::",
+                    "args": []
+                },
+                {
+                    "file": "/Users/richardmiles/IdeaProjects/reactBoot/backend/tables/Users.php",
+                    "line": 809,
+                    "function": "insert",
+                    "class": "CarbonPHP\\Rest",
+                    "type": "::",
+                    "args": [
+                        [
+                            {
+                                "carbon_users.user_email": "",
+                                "carbon_users.user_password": "$2y$10$onkSraslLEcZqNejVIAsu.4/OmnkdhhlgLgVeQggX/81G8LVGOiRi",
+                                "carbon_users.user_username": "TestingNow",
+                                "carbon_users.user_first_name": "Anonymous",
+                                "carbon_users.user_last_name": "User",
+                                "carbon_users.user_type": "member",
+                                "carbon_users.user_ip": "NULL",
+                                "carbon_users.user_id": "aea6928c3fc011ee8cd48e580f411cc7"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "function": "post",
+                    "class": "Backend\\Tables\\Users",
+                    "type": "::",
+                    "args": [
+                        [
+                            {
+                                "carbon_users.user_email": "",
+                                "carbon_users.user_password": "$2y$10$onkSraslLEcZqNejVIAsu.4/OmnkdhhlgLgVeQggX/81G8LVGOiRi",
+                                "carbon_users.user_username": "TestingNow",
+                                "carbon_users.user_first_name": "Anonymous",
+                                "carbon_users.user_last_name": "User",
+                                "carbon_users.user_type": "member",
+                                "carbon_users.user_ip": "NULL",
+                                "carbon_users.user_id": "aea6928c3fc011ee8cd48e580f411cc7"
+                            }
+                        ],
+                        null
+                    ]
+                },
+                {
+                    "file": "/Users/richardmiles/IdeaProjects/reactBoot/vendor/carbonorm/carbonphp/carbonphp/restful/RestLifeCycle.php",
+                    "line": 474,
+                    "function": "call_user_func_array",
+                    "args": [
+                        [
+                            "Backend\\Tables\\Users",
+                            "Post"
+                        ],
+                        [
+                            [
+                                {
+                                    "carbon_users.user_email": "",
+                                    "carbon_users.user_password": "$2y$10$onkSraslLEcZqNejVIAsu.4/OmnkdhhlgLgVeQggX/81G8LVGOiRi",
+                                    "carbon_users.user_username": "TestingNow",
+                                    "carbon_users.user_first_name": "Anonymous",
+                                    "carbon_users.user_last_name": "User",
+                                    "carbon_users.user_type": "member",
+                                    "carbon_users.user_ip": "NULL",
+                                    "carbon_users.user_id": "aea6928c3fc011ee8cd48e580f411cc7"
+                                }
+                            ],
+                            null
+                        ]
+                    ]
+                },
+                {
+                    "file": "/Users/richardmiles/IdeaProjects/reactBoot/vendor/carbonorm/carbonphp/carbonphp/restful/RestLifeCycle.php",
+                    "line": 603,
+                    "function": "ExternalRestfulRequestsAPI",
+                    "class": "CarbonPHP\\Restful\\RestLifeCycle",
+                    "type": "::",
+                    "args": [
+                        "Users",
+                        null,
+                        "Backend\\Tables\\"
+                    ]
+                },
+                {
+                    "function": "CarbonPHP\\Restful\\{closure}",
+                    "class": "CarbonPHP\\Restful\\RestLifeCycle",
+                    "type": "::",
+                    "args": [
+                        "users"
+                    ]
+                },
+                {
+                    "file": "/Users/richardmiles/IdeaProjects/reactBoot/vendor/carbonorm/carbonphp/carbonphp/Route.php",
+                    "line": 167,
+                    "function": "call_user_func_array",
+                    "args": [
+                        {},
+                        [
+                            "users"
+                        ]
+                    ]
+                },
+                {
+                    "file": "/Users/richardmiles/IdeaProjects/reactBoot/vendor/carbonorm/carbonphp/carbonphp/restful/RestLifeCycle.php",
+                    "line": 589,
+                    "function": "regexMatch",
+                    "class": "CarbonPHP\\Route",
+                    "type": "::",
+                    "args": [
+                        "#rest/([A-Za-z\\_]{1,256})/?([^/]+)?#",
+                        {}
+                    ]
+                },
+                {
+                    "file": "/Users/richardmiles/IdeaProjects/reactBoot/backend/Documentation.php",
+                    "line": 154,
+                    "function": "MatchRestfulRequests",
+                    "class": "CarbonPHP\\Restful\\RestLifeCycle",
+                    "type": "::",
+                    "args": [
+                        "",
+                        "Backend\\Tables\\"
+                    ]
+                },
+                {
+                    "file": "/Users/richardmiles/IdeaProjects/reactBoot/vendor/carbonorm/carbonphp/carbonphp/CarbonPHP.php",
+                    "line": 342,
+                    "function": "startApplication",
+                    "class": "Backend\\Documentation",
+                    "object": {},
+                    "type": "->",
+                    "args": [
+                        "rest/users"
+                    ]
+                },
+                {
+                    "file": "/Users/richardmiles/IdeaProjects/reactBoot/vendor/carbonorm/carbonphp/carbonphp/CarbonPHP.php",
+                    "line": 275,
+                    "function": "startApplication",
+                    "class": "CarbonPHP\\CarbonPHP",
+                    "type": "::",
+                    "args": []
+                },
+                {
+                    "file": "/Users/richardmiles/IdeaProjects/reactBoot/vendor/carbonorm/carbonphp/carbonphp/CarbonPHP.php",
+                    "line": 170,
+                    "function": "run",
+                    "class": "CarbonPHP\\CarbonPHP",
+                    "type": "::",
+                    "args": [
+                        "Backend\\Documentation"
+                    ]
+                },
+                {
+                    "file": "/Users/richardmiles/IdeaProjects/reactBoot/index.php",
+                    "line": 18,
+                    "function": "__invoke",
+                    "class": "CarbonPHP\\CarbonPHP",
+                    "object": {},
+                    "type": "->",
+                    "args": []
+                }
+            ]
+        },
+        "Session ID": "5l0hgrj67f51vibb2b6o9tttem",
+        "Session Status": {
+            "session_status()": 1,
+            "PHP_SESSION_DISABLED": 0,
+            "PHP_SESSION_ACTIVE": 2,
+            "PHP_SESSION_NONE": 1
+        },
+        "Session Write Close": "(this commit closed the session)"
+    },
+    "debug_backtrace()": "[{\"file\":\"\\/Users\\/richardmiles\\/IdeaProjects\\/reactBoot\\/vendor\\/carbonorm\\/carbonphp\\/carbonphp\\/error\\/ThrowableHandler.php\",\"line\":673,\"function\":\"generateLog\",\"class\":\"CarbonPHP\\\\Error\\\\ThrowableHandler\",\"type\":\"::\",\"args\":[null,true,\"2\",{\"PHP\":\"8.2.8 (Darwin)\",\"RECOVERABLE WARNING\":\"E_WARNING\",\"WARNING MESSAGE\":\"Undefined array key \\\"user_id\\\"\",\"FILE\":\"\\/Users\\/richardmiles\\/IdeaProjects\\/reactBoot\\/backend\\/tables\\/Users.php\",\"LINE\":\"400\",\"[C6] CARBONPHP\":\"\\/Users\\/richardmiles\\/IdeaProjects\\/reactBoot\\/vendor\\/carbonorm\\/carbonphp\\/carbonphp\\/error\\/ThrowableHandler.php CarbonPHP\\\\Error\\\\ThrowableHandler::generateLog\",\"METHOD\":\"POST\",\"$_COOKIE\":[],\"$_REQUEST\":[],\"$_SERVER\":{\"REDIRECT_CORS_ALLOW_ORIGIN\":\"http:\\/\\/localhost:3000\",\"REDIRECT_XDEBUG_SESSION\":\"1\",\"REDIRECT_DBGP_IDEKEY\":\"XDEBUG_INTELLIJ\",\"REDIRECT_STATUS\":\"200\",\"CORS_ALLOW_ORIGIN\":\"http:\\/\\/localhost:3000\",\"XDEBUG_SESSION\":\"1\",\"DBGP_IDEKEY\":\"XDEBUG_INTELLIJ\",\"HTTP_HOST\":\"local.carbonphp.com:8080\",\"HTTP_CONNECTION\":\"keep-alive\",\"CONTENT_LENGTH\":\"114\",\"HTTP_ACCEPT\":\"application\\/json, text\\/plain, *\\/*\",\"HTTP_X_REQUESTED_WITH\":\"XMLHttpRequest\",\"HTTP_USER_AGENT\":\"Mozilla\\/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit\\/537.36 (KHTML, like Gecko) Chrome\\/116.0.0.0 Safari\\/537.36\",\"CONTENT_TYPE\":\"application\\/json\",\"HTTP_ORIGIN\":\"http:\\/\\/localhost:3000\",\"HTTP_REFERER\":\"http:\\/\\/localhost:3000\\/\",\"HTTP_ACCEPT_ENCODING\":\"gzip, deflate\",\"HTTP_ACCEPT_LANGUAGE\":\"en-US,en;q=0.9\",\"PATH\":\"\\/usr\\/local\\/bin:\\/usr\\/local\\/sbin:\\/usr\\/bin:\\/bin:\\/usr\\/sbin:\\/sbin\",\"SERVER_SIGNATURE\":\"\",\"SERVER_SOFTWARE\":\"Apache\\/2.4.57 (Unix) PHP\\/8.2.8\",\"SERVER_NAME\":\"local.carbonphp.com\",\"SERVER_ADDR\":\"::1\",\"SERVER_PORT\":\"8080\",\"REMOTE_ADDR\":\"::1\",\"DOCUMENT_ROOT\":\"\\/usr\\/local\\/var\\/www\",\"REQUEST_SCHEME\":\"http\",\"CONTEXT_PREFIX\":\"\",\"CONTEXT_DOCUMENT_ROOT\":\"\\/usr\\/local\\/var\\/www\",\"SERVER_ADMIN\":\"you@example.com\",\"SCRIPT_FILENAME\":\"\\/usr\\/local\\/var\\/www\\/index.php\",\"REMOTE_PORT\":\"59195\",\"REDIRECT_URL\":\"\\/rest\\/users\\/\",\"GATEWAY_INTERFACE\":\"CGI\\/1.1\",\"SERVER_PROTOCOL\":\"HTTP\\/1.1\",\"REQUEST_METHOD\":\"POST\",\"QUERY_STRING\":\"\",\"REQUEST_URI\":\"\\/rest\\/users\\/\",\"SCRIPT_NAME\":\"\\/index.php\",\"PHP_SELF\":\"\\/index.php\",\"REQUEST_TIME_FLOAT\":1692580728.67183,\"REQUEST_TIME\":1692580728,\"HTTP_X_FORWARDED_PROTO\":false},\"URI\":\"\\/rest\\/users\\/\",\"TRACE\":\"\\n{\\n    \\\"CALL TRACE 0\\\": {\\n        \\\"file\\\": \\\"\\\\\\/Users\\\\\\/richardmiles\\\\\\/IdeaProjects\\\\\\/reactBoot\\\\\\/index.php\\\",\\n        \\\"line\\\": 18,\\n        \\\"function\\\": \\\"__invoke\\\",\\n        \\\"class\\\": \\\"CarbonPHP\\\\\\\\CarbonPHP\\\",\\n        \\\"type\\\": \\\"->\\\",\\n        \\\"args\\\": [],\\n        \\\"jump\\\": \\\"\\\\\\/Users\\\\\\/richardmiles\\\\\\/IdeaProjects\\\\\\/reactBoot\\\\\\/index.php:18\\\"\\n    },\\n    \\\"CALL TRACE 1\\\": {\\n        \\\"file\\\": \\\"\\\\\\/Users\\\\\\/richardmiles\\\\\\/IdeaProjects\\\\\\/reactBoot\\\\\\/vendor\\\\\\/carbonorm\\\\\\/carbonphp\\\\\\/carbonphp\\\\\\/CarbonPHP.php\\\",\\n        \\\"line\\\": 170,\\n        \\\"function\\\": \\\"run\\\",\\n        \\\"class\\\": \\\"CarbonPHP\\\\\\\\CarbonPHP\\\",\\n        \\\"type\\\": \\\"::\\\",\\n        \\\"args\\\": [\\n            \\\"Backend\\\\\\\\Documentation\\\"\\n        ],\\n        \\\"jump\\\": \\\"\\\\\\/Users\\\\\\/richardmiles\\\\\\/IdeaProjects\\\\\\/reactBoot\\\\\\/vendor\\\\\\/carbonorm\\\\\\/carbonphp\\\\\\/carbonphp\\\\\\/CarbonPHP.php:170\\\"\\n    },\\n    \\\"CALL TRACE 2\\\": {\\n        \\\"file\\\": \\\"\\\\\\/Users\\\\\\/richardmiles\\\\\\/IdeaProjects\\\\\\/reactBoot\\\\\\/vendor\\\\\\/carbonorm\\\\\\/carbonphp\\\\\\/carbonphp\\\\\\/CarbonPHP.php\\\",\\n        \\\"line\\\": 275,\\n        \\\"function\\\": \\\"startApplication\\\",\\n        \\\"class\\\": \\\"CarbonPHP\\\\\\\\CarbonPHP\\\",\\n        \\\"type\\\": \\\"::\\\",\\n        \\\"args\\\": [],\\n        \\\"jump\\\": \\\"\\\\\\/Users\\\\\\/richardmiles\\\\\\/IdeaProjects\\\\\\/reactBoot\\\\\\/vendor\\\\\\/carbonorm\\\\\\/carbonphp\\\\\\/carbonphp\\\\\\/CarbonPHP.php:275\\\"\\n    },\\n    \\\"CALL TRACE 3\\\": {\\n        \\\"file\\\": \\\"\\\\\\/Users\\\\\\/richardmiles\\\\\\/IdeaProjects\\\\\\/reactBoot\\\\\\/vendor\\\\\\/carbonorm\\\\\\/carbonphp\\\\\\/carbonphp\\\\\\/CarbonPHP.php\\\",\\n        \\\"line\\\": 342,\\n        \\\"function\\\": \\\"startApplication\\\",\\n        \\\"class\\\": \\\"Backend\\\\\\\\Documentation\\\",\\n        \\\"type\\\": \\\"->\\\",\\n        \\\"args\\\": [\\n            \\\"rest\\\\\\/users\\\"\\n        ],\\n        \\\"jump\\\": \\\"\\\\\\/Users\\\\\\/richardmiles\\\\\\/IdeaProjects\\\\\\/reactBoot\\\\\\/vendor\\\\\\/carbonorm\\\\\\/carbonphp\\\\\\/carbonphp\\\\\\/CarbonPHP.php:342\\\"\\n    },\\n    \\\"CALL TRACE 4\\\": {\\n        \\\"file\\\": \\\"\\\\\\/Users\\\\\\/richardmiles\\\\\\/IdeaProjects\\\\\\/reactBoot\\\\\\/backend\\\\\\/Documentation.php\\\",\\n        \\\"line\\\": 154,\\n        \\\"function\\\": \\\"MatchRestfulRequests\\\",\\n        \\\"class\\\": \\\"CarbonPHP\\\\\\\\Restful\\\\\\\\RestLifeCycle\\\",\\n        \\\"type\\\": \\\"::\\\",\\n        \\\"args\\\": [\\n            \\\"\\\",\\n            \\\"Backend\\\\\\\\Tables\\\\\\\\\\\"\\n        ],\\n        \\\"jump\\\": \\\"\\\\\\/Users\\\\\\/richardmiles\\\\\\/IdeaProjects\\\\\\/reactBoot\\\\\\/backend\\\\\\/Documentation.php:154\\\"\\n    },\\n    \\\"CALL TRACE 5\\\": {\\n        \\\"file\\\": \\\"\\\\\\/Users\\\\\\/richardmiles\\\\\\/IdeaProjects\\\\\\/reactBoot\\\\\\/vendor\\\\\\/carbonorm\\\\\\/carbonphp\\\\\\/carbonphp\\\\\\/restful\\\\\\/RestLifeCycle.php\\\",\\n        \\\"line\\\": 589,\\n        \\\"function\\\": \\\"regexMatch\\\",\\n        \\\"class\\\": \\\"CarbonPHP\\\\\\\\Route\\\",\\n        \\\"type\\\": \\\"::\\\",\\n        \\\"args\\\": [\\n            \\\"#rest\\\\\\/([A-Za-z\\\\\\\\_]{1,256})\\\\\\/?([^\\\\\\/]+)?#\\\",\\n            {}\\n        ],\\n        \\\"jump\\\": \\\"\\\\\\/Users\\\\\\/richardmiles\\\\\\/IdeaProjects\\\\\\/reactBoot\\\\\\/vendor\\\\\\/carbonorm\\\\\\/carbonphp\\\\\\/carbonphp\\\\\\/restful\\\\\\/RestLifeCycle.php:589\\\"\\n    },\\n    \\\"CALL TRACE 6\\\": {\\n        \\\"file\\\": \\\"\\\\\\/Users\\\\\\/richardmiles\\\\\\/IdeaProjects\\\\\\/reactBoot\\\\\\/vendor\\\\\\/carbonorm\\\\\\/carbonphp\\\\\\/carbonphp\\\\\\/Route.php\\\",\\n        \\\"line\\\": 167,\\n        \\\"function\\\": \\\"call_user_func_array\\\",\\n        \\\"args\\\": [\\n            {},\\n            [\\n                \\\"users\\\"\\n            ]\\n        ],\\n        \\\"jump\\\": \\\"\\\\\\/Users\\\\\\/richardmiles\\\\\\/IdeaProjects\\\\\\/reactBoot\\\\\\/vendor\\\\\\/carbonorm\\\\\\/carbonphp\\\\\\/carbonphp\\\\\\/Route.php:167\\\"\\n    },\\n    \\\"CALL TRACE 7\\\": {\\n        \\\"function\\\": \\\"CarbonPHP\\\\\\\\Restful\\\\\\\\{closure}\\\",\\n        \\\"class\\\": \\\"CarbonPHP\\\\\\\\Restful\\\\\\\\RestLifeCycle\\\",\\n        \\\"type\\\": \\\"::\\\",\\n        \\\"args\\\": [\\n            \\\"users\\\"\\n        ]\\n    },\\n    \\\"CALL TRACE 8\\\": {\\n        \\\"file\\\": \\\"\\\\\\/Users\\\\\\/richardmiles\\\\\\/IdeaProjects\\\\\\/reactBoot\\\\\\/vendor\\\\\\/carbonorm\\\\\\/carbonphp\\\\\\/carbonphp\\\\\\/restful\\\\\\/RestLifeCycle.php\\\",\\n        \\\"line\\\": 603,\\n        \\\"function\\\": \\\"ExternalRestfulRequestsAPI\\\",\\n        \\\"class\\\": \\\"CarbonPHP\\\\\\\\Restful\\\\\\\\RestLifeCycle\\\",\\n        \\\"type\\\": \\\"::\\\",\\n        \\\"args\\\": [\\n            \\\"Users\\\",\\n            null,\\n            \\\"Backend\\\\\\\\Tables\\\\\\\\\\\"\\n        ],\\n        \\\"jump\\\": \\\"\\\\\\/Users\\\\\\/richardmiles\\\\\\/IdeaProjects\\\\\\/reactBoot\\\\\\/vendor\\\\\\/carbonorm\\\\\\/carbonphp\\\\\\/carbonphp\\\\\\/restful\\\\\\/RestLifeCycle.php:603\\\"\\n    },\\n    \\\"CALL TRACE 9\\\": {\\n        \\\"file\\\": \\\"\\\\\\/Users\\\\\\/richardmiles\\\\\\/IdeaProjects\\\\\\/reactBoot\\\\\\/vendor\\\\\\/carbonorm\\\\\\/carbonphp\\\\\\/carbonphp\\\\\\/restful\\\\\\/RestLifeCycle.php\\\",\\n        \\\"line\\\": 474,\\n        \\\"function\\\": \\\"call_user_func_array\\\",\\n        \\\"args\\\": [\\n            [\\n                \\\"Backend\\\\\\\\Tables\\\\\\\\Users\\\",\\n                \\\"Post\\\"\\n            ],\\n            [\\n                [\\n                    {\\n                        \\\"carbon_users.user_email\\\": \\\"\\\",\\n                        \\\"carbon_users.user_password\\\": \\\"$2y$10$onkSraslLEcZqNejVIAsu.4\\\\\\/OmnkdhhlgLgVeQggX\\\\\\/81G8LVGOiRi\\\",\\n                        \\\"carbon_users.user_username\\\": \\\"TestingNow\\\",\\n                        \\\"carbon_users.user_first_name\\\": \\\"Anonymous\\\",\\n                        \\\"carbon_users.user_last_name\\\": \\\"User\\\",\\n                        \\\"carbon_users.user_type\\\": \\\"member\\\",\\n                        \\\"carbon_users.user_ip\\\": \\\"NULL\\\",\\n                        \\\"carbon_users.user_id\\\": \\\"aea6928c3fc011ee8cd48e580f411cc7\\\"\\n                    }\\n                ],\\n                null\\n            ]\\n        ],\\n        \\\"jump\\\": \\\"\\\\\\/Users\\\\\\/richardmiles\\\\\\/IdeaProjects\\\\\\/reactBoot\\\\\\/vendor\\\\\\/carbonorm\\\\\\/carbonphp\\\\\\/carbonphp\\\\\\/restful\\\\\\/RestLifeCycle.php:474\\\"\\n    },\\n    \\\"CALL TRACE 10\\\": {\\n        \\\"function\\\": \\\"post\\\",\\n        \\\"class\\\": \\\"Backend\\\\\\\\Tables\\\\\\\\Users\\\",\\n        \\\"type\\\": \\\"::\\\",\\n        \\\"args\\\": [\\n            [\\n                {\\n                    \\\"carbon_users.user_email\\\": \\\"\\\",\\n                    \\\"carbon_users.user_password\\\": \\\"$2y$10$onkSraslLEcZqNejVIAsu.4\\\\\\/OmnkdhhlgLgVeQggX\\\\\\/81G8LVGOiRi\\\",\\n                    \\\"carbon_users.user_username\\\": \\\"TestingNow\\\",\\n                    \\\"carbon_users.user_first_name\\\": \\\"Anonymous\\\",\\n                    \\\"carbon_users.user_last_name\\\": \\\"User\\\",\\n                    \\\"carbon_users.user_type\\\": \\\"member\\\",\\n                    \\\"carbon_users.user_ip\\\": \\\"NULL\\\",\\n                    \\\"carbon_users.user_id\\\": \\\"aea6928c3fc011ee8cd48e580f411cc7\\\"\\n                }\\n            ],\\n            null\\n        ]\\n    },\\n    \\\"CALL TRACE 11\\\": {\\n        \\\"file\\\": \\\"\\\\\\/Users\\\\\\/richardmiles\\\\\\/IdeaProjects\\\\\\/reactBoot\\\\\\/backend\\\\\\/tables\\\\\\/Users.php\\\",\\n        \\\"line\\\": 809,\\n        \\\"function\\\": \\\"insert\\\",\\n        \\\"class\\\": \\\"CarbonPHP\\\\\\\\Rest\\\",\\n        \\\"type\\\": \\\"::\\\",\\n        \\\"args\\\": [\\n            [\\n                {\\n                    \\\"carbon_users.user_email\\\": \\\"\\\",\\n                    \\\"carbon_users.user_password\\\": \\\"$2y$10$onkSraslLEcZqNejVIAsu.4\\\\\\/OmnkdhhlgLgVeQggX\\\\\\/81G8LVGOiRi\\\",\\n                    \\\"carbon_users.user_username\\\": \\\"TestingNow\\\",\\n                    \\\"carbon_users.user_first_name\\\": \\\"Anonymous\\\",\\n                    \\\"carbon_users.user_last_name\\\": \\\"User\\\",\\n                    \\\"carbon_users.user_type\\\": \\\"member\\\",\\n                    \\\"carbon_users.user_ip\\\": \\\"NULL\\\",\\n                    \\\"carbon_users.user_id\\\": \\\"aea6928c3fc011ee8cd48e580f411cc7\\\"\\n                }\\n            ]\\n        ],\\n        \\\"jump\\\": \\\"\\\\\\/Users\\\\\\/richardmiles\\\\\\/IdeaProjects\\\\\\/reactBoot\\\\\\/backend\\\\\\/tables\\\\\\/Users.php:809\\\"\\n    },\\n    \\\"CALL TRACE 12\\\": {\\n        \\\"file\\\": \\\"\\\\\\/Users\\\\\\/richardmiles\\\\\\/IdeaProjects\\\\\\/reactBoot\\\\\\/vendor\\\\\\/carbonorm\\\\\\/carbonphp\\\\\\/carbonphp\\\\\\/Rest.php\\\",\\n        \\\"line\\\": 1086,\\n        \\\"function\\\": \\\"postprocessRestRequest\\\",\\n        \\\"class\\\": \\\"CarbonPHP\\\\\\\\Restful\\\\\\\\RestQueryValidation\\\",\\n        \\\"type\\\": \\\"::\\\",\\n        \\\"args\\\": [\\n            [\\n                {\\n                    \\\"carbon_users.user_email\\\": \\\"\\\",\\n                    \\\"carbon_users.user_password\\\": \\\"$2y$10$onkSraslLEcZqNejVIAsu.4\\\\\\/OmnkdhhlgLgVeQggX\\\\\\/81G8LVGOiRi\\\",\\n                    \\\"carbon_users.user_username\\\": \\\"TestingNow\\\",\\n                    \\\"carbon_users.user_first_name\\\": \\\"Anonymous\\\",\\n                    \\\"carbon_users.user_last_name\\\": \\\"User\\\",\\n                    \\\"carbon_users.user_type\\\": \\\"member\\\",\\n                    \\\"carbon_users.user_ip\\\": \\\"NULL\\\",\\n                    \\\"carbon_users.user_id\\\": \\\"aea6928c3fc011ee8cd48e580f411cc7\\\"\\n                }\\n            ]\\n        ],\\n        \\\"jump\\\": \\\"\\\\\\/Users\\\\\\/richardmiles\\\\\\/IdeaProjects\\\\\\/reactBoot\\\\\\/vendor\\\\\\/carbonorm\\\\\\/carbonphp\\\\\\/carbonphp\\\\\\/Rest.php:1086\\\"\\n    },\\n    \\\"CALL TRACE 13\\\": {\\n        \\\"file\\\": \\\"\\\\\\/Users\\\\\\/richardmiles\\\\\\/IdeaProjects\\\\\\/reactBoot\\\\\\/vendor\\\\\\/carbonorm\\\\\\/carbonphp\\\\\\/carbonphp\\\\\\/restful\\\\\\/RestQueryValidation.php\\\",\\n        \\\"line\\\": 186,\\n        \\\"function\\\": \\\"runValidations\\\",\\n        \\\"class\\\": \\\"CarbonPHP\\\\\\\\Restful\\\\\\\\RestQueryValidation\\\",\\n        \\\"type\\\": \\\"::\\\",\\n        \\\"args\\\": [\\n            [\\n                {}\\n            ],\\n            [\\n                {\\n                    \\\"carbon_users.user_email\\\": \\\"\\\",\\n                    \\\"carbon_users.user_password\\\": \\\"$2y$10$onkSraslLEcZqNejVIAsu.4\\\\\\/OmnkdhhlgLgVeQggX\\\\\\/81G8LVGOiRi\\\",\\n                    \\\"carbon_users.user_username\\\": \\\"TestingNow\\\",\\n                    \\\"carbon_users.user_first_name\\\": \\\"Anonymous\\\",\\n                    \\\"carbon_users.user_last_name\\\": \\\"User\\\",\\n                    \\\"carbon_users.user_type\\\": \\\"member\\\",\\n                    \\\"carbon_users.user_ip\\\": \\\"NULL\\\",\\n                    \\\"carbon_users.user_id\\\": \\\"aea6928c3fc011ee8cd48e580f411cc7\\\"\\n                }\\n            ]\\n        ],\\n        \\\"jump\\\": \\\"\\\\\\/Users\\\\\\/richardmiles\\\\\\/IdeaProjects\\\\\\/reactBoot\\\\\\/vendor\\\\\\/carbonorm\\\\\\/carbonphp\\\\\\/carbonphp\\\\\\/restful\\\\\\/RestQueryValidation.php:186\\\"\\n    },\\n    \\\"CALL TRACE 14\\\": {\\n        \\\"file\\\": \\\"\\\\\\/Users\\\\\\/richardmiles\\\\\\/IdeaProjects\\\\\\/reactBoot\\\\\\/vendor\\\\\\/carbonorm\\\\\\/carbonphp\\\\\\/carbonphp\\\\\\/restful\\\\\\/RestQueryValidation.php\\\",\\n        \\\"line\\\": 818,\\n        \\\"function\\\": \\\"call_user_func_array\\\",\\n        \\\"args\\\": [\\n            {},\\n            [\\n                [\\n                    [\\n                        {\\n                            \\\"carbon_users.user_email\\\": \\\"\\\",\\n                            \\\"carbon_users.user_password\\\": \\\"$2y$10$onkSraslLEcZqNejVIAsu.4\\\\\\/OmnkdhhlgLgVeQggX\\\\\\/81G8LVGOiRi\\\",\\n                            \\\"carbon_users.user_username\\\": \\\"TestingNow\\\",\\n                            \\\"carbon_users.user_first_name\\\": \\\"Anonymous\\\",\\n                            \\\"carbon_users.user_last_name\\\": \\\"User\\\",\\n                            \\\"carbon_users.user_type\\\": \\\"member\\\",\\n                            \\\"carbon_users.user_ip\\\": \\\"NULL\\\",\\n                            \\\"carbon_users.user_id\\\": \\\"aea6928c3fc011ee8cd48e580f411cc7\\\"\\n                        }\\n                    ]\\n                ]\\n            ]\\n        ],\\n        \\\"jump\\\": \\\"\\\\\\/Users\\\\\\/richardmiles\\\\\\/IdeaProjects\\\\\\/reactBoot\\\\\\/vendor\\\\\\/carbonorm\\\\\\/carbonphp\\\\\\/carbonphp\\\\\\/restful\\\\\\/RestQueryValidation.php:818\\\"\\n    },\\n    \\\"CALL TRACE 15\\\": {\\n        \\\"function\\\": \\\"Backend\\\\\\\\Tables\\\\\\\\{closure}\\\",\\n        \\\"class\\\": \\\"Backend\\\\\\\\Tables\\\\\\\\Users\\\",\\n        \\\"type\\\": \\\"::\\\",\\n        \\\"args\\\": [\\n            [\\n                [\\n                    {\\n                        \\\"carbon_users.user_email\\\": \\\"\\\",\\n                        \\\"carbon_users.user_password\\\": \\\"$2y$10$onkSraslLEcZqNejVIAsu.4\\\\\\/OmnkdhhlgLgVeQggX\\\\\\/81G8LVGOiRi\\\",\\n                        \\\"carbon_users.user_username\\\": \\\"TestingNow\\\",\\n                        \\\"carbon_users.user_first_name\\\": \\\"Anonymous\\\",\\n                        \\\"carbon_users.user_last_name\\\": \\\"User\\\",\\n                        \\\"carbon_users.user_type\\\": \\\"member\\\",\\n                        \\\"carbon_users.user_ip\\\": \\\"NULL\\\",\\n                        \\\"carbon_users.user_id\\\": \\\"aea6928c3fc011ee8cd48e580f411cc7\\\"\\n                    }\\n                ]\\n            ]\\n        ]\\n    },\\n    \\\"CALL TRACE 16\\\": {\\n        \\\"file\\\": \\\"\\\\\\/Users\\\\\\/richardmiles\\\\\\/IdeaProjects\\\\\\/reactBoot\\\\\\/backend\\\\\\/tables\\\\\\/Users.php\\\",\\n        \\\"line\\\": 400,\\n        \\\"function\\\": \\\"CarbonPHP\\\\\\\\Error\\\\\\\\{closure}\\\",\\n        \\\"class\\\": \\\"CarbonPHP\\\\\\\\Error\\\\\\\\ThrowableHandler\\\",\\n        \\\"type\\\": \\\"::\\\",\\n        \\\"args\\\": [\\n            2,\\n            \\\"Undefined array key \\\\\\\"user_id\\\\\\\"\\\",\\n            \\\"\\\\\\/Users\\\\\\/richardmiles\\\\\\/IdeaProjects\\\\\\/reactBoot\\\\\\/backend\\\\\\/tables\\\\\\/Users.php\\\",\\n            400\\n        ],\\n        \\\"jump\\\": \\\"\\\\\\/Users\\\\\\/richardmiles\\\\\\/IdeaProjects\\\\\\/reactBoot\\\\\\/backend\\\\\\/tables\\\\\\/Users.php:400\\\"\\n    },\\n    \\\"CALL TRACE 17\\\": {\\n        \\\"file\\\": \\\"\\\\\\/Users\\\\\\/richardmiles\\\\\\/IdeaProjects\\\\\\/reactBoot\\\\\\/vendor\\\\\\/carbonorm\\\\\\/carbonphp\\\\\\/carbonphp\\\\\\/error\\\\\\/ThrowableHandler.php\\\",\\n        \\\"line\\\": 673,\\n        \\\"function\\\": \\\"generateLog\\\",\\n        \\\"class\\\": \\\"CarbonPHP\\\\\\\\Error\\\\\\\\ThrowableHandler\\\",\\n        \\\"type\\\": \\\"::\\\",\\n        \\\"args\\\": [\\n            null,\\n            true,\\n            \\\"2\\\",\\n            {\\n                \\\"PHP\\\": \\\"8.2.8 (Darwin)\\\",\\n                \\\"RECOVERABLE WARNING\\\": \\\"E_WARNING\\\",\\n                \\\"WARNING MESSAGE\\\": \\\"Undefined array key \\\\\\\"user_id\\\\\\\"\\\",\\n                \\\"FILE\\\": \\\"\\\\\\/Users\\\\\\/richardmiles\\\\\\/IdeaProjects\\\\\\/reactBoot\\\\\\/backend\\\\\\/tables\\\\\\/Users.php\\\",\\n                \\\"LINE\\\": \\\"400\\\"\\n            },\\n            \\\"yellow\\\"\\n        ],\\n        \\\"jump\\\": \\\"\\\\\\/Users\\\\\\/richardmiles\\\\\\/IdeaProjects\\\\\\/reactBoot\\\\\\/vendor\\\\\\/carbonorm\\\\\\/carbonphp\\\\\\/carbonphp\\\\\\/error\\\\\\/ThrowableHandler.php:673\\\"\\n    },\\n    \\\"CALL TRACE 18\\\": {\\n        \\\"file\\\": \\\"\\\\\\/Users\\\\\\/richardmiles\\\\\\/IdeaProjects\\\\\\/reactBoot\\\\\\/vendor\\\\\\/carbonorm\\\\\\/carbonphp\\\\\\/carbonphp\\\\\\/error\\\\\\/ThrowableHandler.php\\\",\\n        \\\"line\\\": 872,\\n        \\\"function\\\": \\\"generateCallTrace\\\",\\n        \\\"class\\\": \\\"CarbonPHP\\\\\\\\Error\\\\\\\\ThrowableHandler\\\",\\n        \\\"type\\\": \\\"::\\\",\\n        \\\"args\\\": [],\\n        \\\"jump\\\": \\\"\\\\\\/Users\\\\\\/richardmiles\\\\\\/IdeaProjects\\\\\\/reactBoot\\\\\\/vendor\\\\\\/carbonorm\\\\\\/carbonphp\\\\\\/carbonphp\\\\\\/error\\\\\\/ThrowableHandler.php:872\\\"\\n    },\\n    \\\"CALL TRACE 19\\\": {\\n        \\\"file\\\": \\\"\\\\\\/Users\\\\\\/richardmiles\\\\\\/IdeaProjects\\\\\\/reactBoot\\\\\\/vendor\\\\\\/carbonorm\\\\\\/carbonphp\\\\\\/carbonphp\\\\\\/error\\\\\\/ThrowableHandler.php\\\",\\n        \\\"line\\\": 1187,\\n        \\\"code\\\": 0,\\n        \\\"preview\\\": [\\n            \\\"        if (false === CarbonPHP::$cli) {\\\",\\n            \\\"\\\",\\n            \\\"            ob_start(null, 0, PHP_OUTPUT_HANDLER_CLEANABLE\\\",\\n            \\\"                | PHP_OUTPUT_HANDLER_FLUSHABLE | PHP_OUTPUT_HANDLER_REMOVABLE);     \\\\\\/\\\\\\/ start a new buffer for saving errors\\\",\\n            \\\"\\\",\\n            \\\"        }\\\",\\n            \\\"\\\",\\n            \\\"        if (null === $e) {\\\",\\n            \\\"\\\",\\n            \\\"            $e = new \\\\\\\\Exception();\\\",\\n            \\\"\\\",\\n            \\\"        }\\\",\\n            \\\"\\\",\\n            \\\"        $trace = $e->getTrace();\\\",\\n            \\\"\\\",\\n            \\\"        $trace = array_reverse($trace);\\\",\\n            \\\"\\\",\\n            \\\"        $trace[] = [\\\",\\n            \\\"            'file' => $e->getFile(),\\\",\\n            \\\"            'line' => $e->getLine(),\\\"\\n        ],\\n        \\\"jump\\\": \\\"\\\\\\/Users\\\\\\/richardmiles\\\\\\/IdeaProjects\\\\\\/reactBoot\\\\\\/vendor\\\\\\/carbonorm\\\\\\/carbonphp\\\\\\/carbonphp\\\\\\/error\\\\\\/ThrowableHandler.php:1187\\\"\\n    }\\n}\\n\",\"$GLOBALS['json']\":{\"session\":{\"database_closed_committed\":true,\"@close\":{\"id\":0},\"?close\":\"closing session from (\\/Users\\/richardmiles\\/IdeaProjects\\/reactBoot\\/vendor\\/carbonorm\\/carbonphp\\/carbonphp\\/Session.php) from method (CarbonPHP\\\\Session::close) at line (526)\"},\"sql\":[{\"method\":\"POST\",\"table\":\"CarbonPHP\\\\Tables\\\\Sessions\",\"CarbonPHP\\\\Restful\\\\RestSettings::$externalRestfulRequestsAPI\":false,\"argv\":[[{\"carbon_sessions.session_id\":\"5l0hgrj67f51vibb2b6o9tttem\",\"carbon_sessions.user_id\":\"0\",\"carbon_sessions.user_ip\":\"::1\",\"carbon_sessions.session_expires\":\"2023-08-27 18:18:48\",\"carbon_sessions.session_data\":\"\"}]],\"affected_rows\":1,\"committed\":true,\"stmt\":{\"sql\":\"INSERT IGNORE  INTO CarbonPHP.carbon_sessions (user_id, user_ip, session_id, session_expires, session_data) VALUES (UNHEX(:user_id0), :user_ip0, :session_id0, :session_expires0, :session_data0)\",\"injections\":[],\"debugDumpParams\":[\"SQL: [193] INSERT IGNORE  INTO CarbonPHP.carbon_sessions (user_id, user_ip, session_id, session_expires, session_data) VALUES (UNHEX(:user_id0), :user_ip0, :session_id0, :session_expires0, :session_data0)\",\"Sent SQL: [191] INSERT IGNORE  INTO CarbonPHP.carbon_sessions (user_id, user_ip, session_id, session_expires, session_data) VALUES (UNHEX('0'), '::1', '5l0hgrj67f51vibb2b6o9tttem', '2023-08-27 18:18:48', '')\",\"Params:  5\",\"Key: Name: [9] :user_id0\",\"paramno=-1\",\"name=[9] \\\":user_id0\\\"\",\"is_param=1\",\"param_type=2\",\"Key: Name: [9] :user_ip0\",\"paramno=-1\",\"name=[9] \\\":user_ip0\\\"\",\"is_param=1\",\"param_type=2\",\"Key: Name: [12] :session_id0\",\"paramno=-1\",\"name=[12] \\\":session_id0\\\"\",\"is_param=1\",\"param_type=2\",\"Key: Name: [17] :session_expires0\",\"paramno=-1\",\"name=[17] \\\":session_expires0\\\"\",\"is_param=1\",\"param_type=2\",\"Key: Name: [14] :session_data0\",\"paramno=-1\",\"name=[14] \\\":session_data0\\\"\",\"is_param=1\",\"param_type=2\",\"\"]}},{\"method\":\"GET\",\"table\":\"CarbonPHP\\\\Tables\\\\Sessions\",\"CarbonPHP\\\\Restful\\\\RestSettings::$externalRestfulRequestsAPI\":false,\"argv\":[[],{\"SELECT\":[\"carbon_sessions.session_data\"],\"LOCK\":\"FOR_UPDATE\"},{\"carbon_sessions.session_id\":\"5l0hgrj67f51vibb2b6o9tttem\"}],\"affected_rows\":1,\"committed\":false,\"stmt\":{\"sql\":\"SELECT carbon_sessions.session_data FROM CarbonPHP.carbon_sessions  WHERE carbon_sessions.session_id=:injection0  ORDER BY carbon_sessions.session_id ASC LIMIT 1 FOR UPDATE\",\"injections\":{\":injection0\":\"5l0hgrj67f51vibb2b6o9tttem\"},\"debugDumpParams\":[\"SQL: [172] SELECT carbon_sessions.session_data FROM CarbonPHP.carbon_sessions  WHERE carbon_sessions.session_id=:injection0  ORDER BY carbon_sessions.session_id ASC LIMIT 1 FOR UPDATE\",\"Sent SQL: [189] SELECT carbon_sessions.session_data FROM CarbonPHP.carbon_sessions  WHERE carbon_sessions.session_id='5l0hgrj67f51vibb2b6o9tttem'  ORDER BY carbon_sessions.session_id ASC LIMIT 1 FOR UPDATE\",\"Params:  1\",\"Key: Name: [11] :injection0\",\"paramno=-1\",\"name=[11] \\\":injection0\\\"\",\"is_param=1\",\"param_type=2\",\"\"]}},{\"method\":\"POST\",\"table\":\"Backend\\\\Tables\\\\Users\",\"CarbonPHP\\\\Restful\\\\RestSettings::$externalRestfulRequestsAPI\":true,\"argv\":[[{\"carbon_users.user_email\":\"\",\"carbon_users.user_password\":\"$2y$10$onkSraslLEcZqNejVIAsu.4\\/OmnkdhhlgLgVeQggX\\/81G8LVGOiRi\",\"carbon_users.user_username\":\"TestingNow\",\"carbon_users.user_first_name\":\"Anonymous\",\"carbon_users.user_last_name\":\"User\",\"carbon_users.user_type\":\"member\",\"carbon_users.user_ip\":\"NULL\",\"carbon_users.user_id\":null}]],\"affected_rows\":1,\"committed\":true,\"stmt\":{\"sql\":\"INSERT INTO carbon_users (user_username, user_password, user_id, user_type, user_first_name, user_last_name, user_email, user_ip) VALUES (:user_username0, :user_password0, UNHEX(:user_id0), :user_type0, :user_first_name0, :user_last_name0, :user_email0, :user_ip0)\",\"injections\":[],\"debugDumpParams\":[\"SQL: [264] INSERT INTO carbon_users (user_username, user_password, user_id, user_type, user_first_name, user_last_name, user_email, user_ip) VALUES (:user_username0, :user_password0, UNHEX(:user_id0), :user_type0, :user_first_name0, :user_last_name0, :user_email0, :user_ip0)\",\"Sent SQL: [301] INSERT INTO carbon_users (user_username, user_password, user_id, user_type, user_first_name, user_last_name, user_email, user_ip) VALUES ('TestingNow', '$2y$10$onkSraslLEcZqNejVIAsu.4\\/OmnkdhhlgLgVeQggX\\/81G8LVGOiRi', UNHEX('aea6928c3fc011ee8cd48e580f411cc7'), 'member', 'Anonymous', 'User', '', 'NULL')\",\"Params:  8\",\"Key: Name: [15] :user_username0\",\"paramno=-1\",\"name=[15] \\\":user_username0\\\"\",\"is_param=1\",\"param_type=2\",\"Key: Name: [15] :user_password0\",\"paramno=-1\",\"name=[15] \\\":user_password0\\\"\",\"is_param=1\",\"param_type=2\",\"Key: Name: [9] :user_id0\",\"paramno=-1\",\"name=[9] \\\":user_id0\\\"\",\"is_param=1\",\"param_type=2\",\"Key: Name: [11] :user_type0\",\"paramno=-1\",\"name=[11] \\\":user_type0\\\"\",\"is_param=1\",\"param_type=2\",\"Key: Name: [17] :user_first_name0\",\"paramno=-1\",\"name=[17] \\\":user_first_name0\\\"\",\"is_param=1\",\"param_type=2\",\"Key: Name: [16] :user_last_name0\",\"paramno=-1\",\"name=[16] \\\":user_last_name0\\\"\",\"is_param=1\",\"param_type=2\",\"Key: Name: [12] :user_email0\",\"paramno=-1\",\"name=[12] \\\":user_email0\\\"\",\"is_param=1\",\"param_type=2\",\"Key: Name: [9] :user_ip0\",\"paramno=-1\",\"name=[9] \\\":user_ip0\\\"\",\"is_param=1\",\"param_type=2\",\"\"]},\"uri\":\"\\/rest\\/users\\/\"},{\"method\":\"PUT\",\"table\":\"CarbonPHP\\\\Tables\\\\Sessions\",\"CarbonPHP\\\\Restful\\\\RestSettings::$externalRestfulRequestsAPI\":false,\"argv\":[[],{\"carbon_sessions.user_id\":\"0\",\"carbon_sessions.user_ip\":\"::1\",\"carbon_sessions.session_expires\":\"2023-08-21 18:18:49\",\"carbon_sessions.session_data\":\"id|i:0;\",\"carbon_sessions.session_id\":\"5l0hgrj67f51vibb2b6o9tttem\"},{\"carbon_sessions.session_id\":\"5l0hgrj67f51vibb2b6o9tttem\"}],\"affected_rows\":2,\"committed\":false,\"stmt\":{\"sql\":\"REPLACE INTO CarbonPHP.carbon_sessions SET  carbon_sessions.user_id = UNHEX(:user_id) , carbon_sessions.user_ip = :user_ip , carbon_sessions.session_expires = :session_expires , carbon_sessions.session_data = :session_data , carbon_sessions.session_id = :session_id \",\"injections\":[],\"debugDumpParams\":[\"SQL: [266] REPLACE INTO CarbonPHP.carbon_sessions SET  carbon_sessions.user_id = UNHEX(:user_id) , carbon_sessions.user_ip = :user_ip , carbon_sessions.session_expires = :session_expires , carbon_sessions.session_data = :session_data , carbon_sessions.session_id = :session_id \",\"Sent SQL: [276] REPLACE INTO CarbonPHP.carbon_sessions SET  carbon_sessions.user_id = UNHEX('0') , carbon_sessions.user_ip = '::1' , carbon_sessions.session_expires = '2023-08-21 18:18:49' , carbon_sessions.session_data = 'id|i:0;' , carbon_sessions.session_id = '5l0hgrj67f51vibb2b6o9tttem' \",\"Params:  5\",\"Key: Name: [8] :user_id\",\"paramno=-1\",\"name=[8] \\\":user_id\\\"\",\"is_param=1\",\"param_type=2\",\"Key: Name: [8] :user_ip\",\"paramno=-1\",\"name=[8] \\\":user_ip\\\"\",\"is_param=1\",\"param_type=2\",\"Key: Name: [11] :session_id\",\"paramno=-1\",\"name=[11] \\\":session_id\\\"\",\"is_param=1\",\"param_type=2\",\"Key: Name: [16] :session_expires\",\"paramno=-1\",\"name=[16] \\\":session_expires\\\"\",\"is_param=1\",\"param_type=2\",\"Key: Name: [13] :session_data\",\"paramno=-1\",\"name=[13] \\\":session_data\\\"\",\"is_param=1\",\"param_type=2\",\"\"]}},{\"Committed Transaction\":1,\"Committing transaction from\":{\"0\":\"file (\\/Users\\/richardmiles\\/IdeaProjects\\/reactBoot\\/vendor\\/carbonorm\\/carbonphp\\/carbonphp\\/Database.php) method (CarbonPHP\\\\Database::commit) at line (540)\",\"debug_backtrace\":[{\"file\":\"\\/Users\\/richardmiles\\/IdeaProjects\\/reactBoot\\/vendor\\/carbonorm\\/carbonphp\\/carbonphp\\/Database.php\",\"line\":565,\"function\":\"CarbonPHP\\\\{closure}\",\"class\":\"CarbonPHP\\\\Database\",\"type\":\"::\",\"args\":[{\"Session ID\":\"5l0hgrj67f51vibb2b6o9tttem\",\"Session Status\":{\"session_status()\":1,\"PHP_SESSION_DISABLED\":0,\"PHP_SESSION_ACTIVE\":2,\"PHP_SESSION_NONE\":1},\"Session Write Close\":\"(this commit closed the session)\"}]},{\"file\":\"\\/Users\\/richardmiles\\/IdeaProjects\\/reactBoot\\/vendor\\/carbonorm\\/carbonphp\\/carbonphp\\/Rest.php\",\"line\":1071,\"function\":\"commit\",\"class\":\"CarbonPHP\\\\Database\",\"type\":\"::\",\"args\":[]},{\"file\":\"\\/Users\\/richardmiles\\/IdeaProjects\\/reactBoot\\/backend\\/tables\\/Users.php\",\"line\":809,\"function\":\"insert\",\"class\":\"CarbonPHP\\\\Rest\",\"type\":\"::\",\"args\":[[{\"carbon_users.user_email\":\"\",\"carbon_users.user_password\":\"$2y$10$onkSraslLEcZqNejVIAsu.4\\/OmnkdhhlgLgVeQggX\\/81G8LVGOiRi\",\"carbon_users.user_username\":\"TestingNow\",\"carbon_users.user_first_name\":\"Anonymous\",\"carbon_users.user_last_name\":\"User\",\"carbon_users.user_type\":\"member\",\"carbon_users.user_ip\":\"NULL\",\"carbon_users.user_id\":\"aea6928c3fc011ee8cd48e580f411cc7\"}]]},{\"function\":\"post\",\"class\":\"Backend\\\\Tables\\\\Users\",\"type\":\"::\",\"args\":[[{\"carbon_users.user_email\":\"\",\"carbon_users.user_password\":\"$2y$10$onkSraslLEcZqNejVIAsu.4\\/OmnkdhhlgLgVeQggX\\/81G8LVGOiRi\",\"carbon_users.user_username\":\"TestingNow\",\"carbon_users.user_first_name\":\"Anonymous\",\"carbon_users.user_last_name\":\"User\",\"carbon_users.user_type\":\"member\",\"carbon_users.user_ip\":\"NULL\",\"carbon_users.user_id\":\"aea6928c3fc011ee8cd48e580f411cc7\"}],null]},{\"file\":\"\\/Users\\/richardmiles\\/IdeaProjects\\/reactBoot\\/vendor\\/carbonorm\\/carbonphp\\/carbonphp\\/restful\\/RestLifeCycle.php\",\"line\":474,\"function\":\"call_user_func_array\",\"args\":[[\"Backend\\\\Tables\\\\Users\",\"Post\"],[[{\"carbon_users.user_email\":\"\",\"carbon_users.user_password\":\"$2y$10$onkSraslLEcZqNejVIAsu.4\\/OmnkdhhlgLgVeQggX\\/81G8LVGOiRi\",\"carbon_users.user_username\":\"TestingNow\",\"carbon_users.user_first_name\":\"Anonymous\",\"carbon_users.user_last_name\":\"User\",\"carbon_users.user_type\":\"member\",\"carbon_users.user_ip\":\"NULL\",\"carbon_users.user_id\":\"aea6928c3fc011ee8cd48e580f411cc7\"}],null]]},{\"file\":\"\\/Users\\/richardmiles\\/IdeaProjects\\/reactBoot\\/vendor\\/carbonorm\\/carbonphp\\/carbonphp\\/restful\\/RestLifeCycle.php\",\"line\":603,\"function\":\"ExternalRestfulRequestsAPI\",\"class\":\"CarbonPHP\\\\Restful\\\\RestLifeCycle\",\"type\":\"::\",\"args\":[\"Users\",null,\"Backend\\\\Tables\\\\\"]},{\"function\":\"CarbonPHP\\\\Restful\\\\{closure}\",\"class\":\"CarbonPHP\\\\Restful\\\\RestLifeCycle\",\"type\":\"::\",\"args\":[\"users\"]},{\"file\":\"\\/Users\\/richardmiles\\/IdeaProjects\\/reactBoot\\/vendor\\/carbonorm\\/carbonphp\\/carbonphp\\/Route.php\",\"line\":167,\"function\":\"call_user_func_array\",\"args\":[{},[\"users\"]]},{\"file\":\"\\/Users\\/richardmiles\\/IdeaProjects\\/reactBoot\\/vendor\\/carbonorm\\/carbonphp\\/carbonphp\\/restful\\/RestLifeCycle.php\",\"line\":589,\"function\":\"regexMatch\",\"class\":\"CarbonPHP\\\\Route\",\"type\":\"::\",\"args\":[\"#rest\\/([A-Za-z\\\\_]{1,256})\\/?([^\\/]+)?#\",{}]},{\"file\":\"\\/Users\\/richardmiles\\/IdeaProjects\\/reactBoot\\/backend\\/Documentation.php\",\"line\":154,\"function\":\"MatchRestfulRequests\",\"class\":\"CarbonPHP\\\\Restful\\\\RestLifeCycle\",\"type\":\"::\",\"args\":[\"\",\"Backend\\\\Tables\\\\\"]},{\"file\":\"\\/Users\\/richardmiles\\/IdeaProjects\\/reactBoot\\/vendor\\/carbonorm\\/carbonphp\\/carbonphp\\/CarbonPHP.php\",\"line\":342,\"function\":\"startApplication\",\"class\":\"Backend\\\\Documentation\",\"object\":{},\"type\":\"->\",\"args\":[\"rest\\/users\"]},{\"file\":\"\\/Users\\/richardmiles\\/IdeaProjects\\/reactBoot\\/vendor\\/carbonorm\\/carbonphp\\/carbonphp\\/CarbonPHP.php\",\"line\":275,\"function\":\"startApplication\",\"class\":\"CarbonPHP\\\\CarbonPHP\",\"type\":\"::\",\"args\":[]},{\"file\":\"\\/Users\\/richardmiles\\/IdeaProjects\\/reactBoot\\/vendor\\/carbonorm\\/carbonphp\\/carbonphp\\/CarbonPHP.php\",\"line\":170,\"function\":\"run\",\"class\":\"CarbonPHP\\\\CarbonPHP\",\"type\":\"::\",\"args\":[\"Backend\\\\Documentation\"]},{\"file\":\"\\/Users\\/richardmiles\\/IdeaProjects\\/reactBoot\\/index.php\",\"line\":18,\"function\":\"__invoke\",\"class\":\"CarbonPHP\\\\CarbonPHP\",\"object\":{},\"type\":\"->\",\"args\":[]}]},\"Session ID\":\"5l0hgrj67f51vibb2b6o9tttem\",\"Session Status\":{\"session_status()\":1,\"PHP_SESSION_DISABLED\":0,\"PHP_SESSION_ACTIVE\":2,\"PHP_SESSION_NONE\":1},\"Session Write Close\":\"(this commit closed the session)\"}],\"SITE\":\"http:\\/\\/local.carbonphp.com:8080\\/\",\"POST\":{\"carbon_users.user_email\":\"\",\"carbon_users.user_password\":\"TestingNow\",\"carbon_users.user_username\":\"TestingNow\"},\"GET\":[],\"HTTP\":false,\"HTTPS\":false,\"SOCKET\":false,\"AJAX\":true,\"SITE_TITLE\":\"CarbonPHP \\u2022 C6\",\"CarbonPHP::$app_view\":\"view\\/\",\"COMPOSER\":\"\\/Users\\/richardmiles\\/IdeaProjects\\/reactBoot\\/vendor\\/carbonorm\\/carbonphp\\/carbonphp\\/\",\"FACEBOOK_APP_ID\":\"\"},\"LAST_REST_STATEMENT\":{\"Committed Transaction\":1,\"Committing transaction from\":{\"0\":\"file (\\/Users\\/richardmiles\\/IdeaProjects\\/reactBoot\\/vendor\\/carbonorm\\/carbonphp\\/carbonphp\\/Database.php) method (CarbonPHP\\\\Database::commit) at line (540)\",\"debug_backtrace\":[{\"file\":\"\\/Users\\/richardmiles\\/IdeaProjects\\/reactBoot\\/vendor\\/carbonorm\\/carbonphp\\/carbonphp\\/Database.php\",\"line\":565,\"function\":\"CarbonPHP\\\\{closure}\",\"class\":\"CarbonPHP\\\\Database\",\"type\":\"::\",\"args\":[{\"Session ID\":\"5l0hgrj67f51vibb2b6o9tttem\",\"Session Status\":{\"session_status()\":1,\"PHP_SESSION_DISABLED\":0,\"PHP_SESSION_ACTIVE\":2,\"PHP_SESSION_NONE\":1},\"Session Write Close\":\"(this commit closed the session)\"}]},{\"file\":\"\\/Users\\/richardmiles\\/IdeaProjects\\/reactBoot\\/vendor\\/carbonorm\\/carbonphp\\/carbonphp\\/Rest.php\",\"line\":1071,\"function\":\"commit\",\"class\":\"CarbonPHP\\\\Database\",\"type\":\"::\",\"args\":[]},{\"file\":\"\\/Users\\/richardmiles\\/IdeaProjects\\/reactBoot\\/backend\\/tables\\/Users.php\",\"line\":809,\"function\":\"insert\",\"class\":\"CarbonPHP\\\\Rest\",\"type\":\"::\",\"args\":[[{\"carbon_users.user_email\":\"\",\"carbon_users.user_password\":\"$2y$10$onkSraslLEcZqNejVIAsu.4\\/OmnkdhhlgLgVeQggX\\/81G8LVGOiRi\",\"carbon_users.user_username\":\"TestingNow\",\"carbon_users.user_first_name\":\"Anonymous\",\"carbon_users.user_last_name\":\"User\",\"carbon_users.user_type\":\"member\",\"carbon_users.user_ip\":\"NULL\",\"carbon_users.user_id\":\"aea6928c3fc011ee8cd48e580f411cc7\"}]]},{\"function\":\"post\",\"class\":\"Backend\\\\Tables\\\\Users\",\"type\":\"::\",\"args\":[[{\"carbon_users.user_email\":\"\",\"carbon_users.user_password\":\"$2y$10$onkSraslLEcZqNejVIAsu.4\\/OmnkdhhlgLgVeQggX\\/81G8LVGOiRi\",\"carbon_users.user_username\":\"TestingNow\",\"carbon_users.user_first_name\":\"Anonymous\",\"carbon_users.user_last_name\":\"User\",\"carbon_users.user_type\":\"member\",\"carbon_users.user_ip\":\"NULL\",\"carbon_users.user_id\":\"aea6928c3fc011ee8cd48e580f411cc7\"}],null]},{\"file\":\"\\/Users\\/richardmiles\\/IdeaProjects\\/reactBoot\\/vendor\\/carbonorm\\/carbonphp\\/carbonphp\\/restful\\/RestLifeCycle.php\",\"line\":474,\"function\":\"call_user_func_array\",\"args\":[[\"Backend\\\\Tables\\\\Users\",\"Post\"],[[{\"carbon_users.user_email\":\"\",\"carbon_users.user_password\":\"$2y$10$onkSraslLEcZqNejVIAsu.4\\/OmnkdhhlgLgVeQggX\\/81G8LVGOiRi\",\"carbon_users.user_username\":\"TestingNow\",\"carbon_users.user_first_name\":\"Anonymous\",\"carbon_users.user_last_name\":\"User\",\"carbon_users.user_type\":\"member\",\"carbon_users.user_ip\":\"NULL\",\"carbon_users.user_id\":\"aea6928c3fc011ee8cd48e580f411cc7\"}],null]]},{\"file\":\"\\/Users\\/richardmiles\\/IdeaProjects\\/reactBoot\\/vendor\\/carbonorm\\/carbonphp\\/carbonphp\\/restful\\/RestLifeCycle.php\",\"line\":603,\"function\":\"ExternalRestfulRequestsAPI\",\"class\":\"CarbonPHP\\\\Restful\\\\RestLifeCycle\",\"type\":\"::\",\"args\":[\"Users\",null,\"Backend\\\\Tables\\\\\"]},{\"function\":\"CarbonPHP\\\\Restful\\\\{closure}\",\"class\":\"CarbonPHP\\\\Restful\\\\RestLifeCycle\",\"type\":\"::\",\"args\":[\"users\"]},{\"file\":\"\\/Users\\/richardmiles\\/IdeaProjects\\/reactBoot\\/vendor\\/carbonorm\\/carbonphp\\/carbonphp\\/Route.php\",\"line\":167,\"function\":\"call_user_func_array\",\"args\":[{},[\"users\"]]},{\"file\":\"\\/Users\\/richardmiles\\/IdeaProjects\\/reactBoot\\/vendor\\/carbonorm\\/carbonphp\\/carbonphp\\/restful\\/RestLifeCycle.php\",\"line\":589,\"function\":\"regexMatch\",\"class\":\"CarbonPHP\\\\Route\",\"type\":\"::\",\"args\":[\"#rest\\/([A-Za-z\\\\_]{1,256})\\/?([^\\/]+)?#\",{}]},{\"file\":\"\\/Users\\/richardmiles\\/IdeaProjects\\/reactBoot\\/backend\\/Documentation.php\",\"line\":154,\"function\":\"MatchRestfulRequests\",\"class\":\"CarbonPHP\\\\Restful\\\\RestLifeCycle\",\"type\":\"::\",\"args\":[\"\",\"Backend\\\\Tables\\\\\"]},{\"file\":\"\\/Users\\/richardmiles\\/IdeaProjects\\/reactBoot\\/vendor\\/carbonorm\\/carbonphp\\/carbonphp\\/CarbonPHP.php\",\"line\":342,\"function\":\"startApplication\",\"class\":\"Backend\\\\Documentation\",\"object\":{},\"type\":\"->\",\"args\":[\"rest\\/users\"]},{\"file\":\"\\/Users\\/richardmiles\\/IdeaProjects\\/reactBoot\\/vendor\\/carbonorm\\/carbonphp\\/carbonphp\\/CarbonPHP.php\",\"line\":275,\"function\":\"startApplication\",\"class\":\"CarbonPHP\\\\CarbonPHP\",\"type\":\"::\",\"args\":[]},{\"file\":\"\\/Users\\/richardmiles\\/IdeaProjects\\/reactBoot\\/vendor\\/carbonorm\\/carbonphp\\/carbonphp\\/CarbonPHP.php\",\"line\":170,\"function\":\"run\",\"class\":\"CarbonPHP\\\\CarbonPHP\",\"type\":\"::\",\"args\":[\"Backend\\\\Documentation\"]},{\"file\":\"\\/Users\\/richardmiles\\/IdeaProjects\\/reactBoot\\/index.php\",\"line\":18,\"function\":\"__invoke\",\"class\":\"CarbonPHP\\\\CarbonPHP\",\"object\":{},\"type\":\"->\",\"args\":[]}]},\"Session ID\":\"5l0hgrj67f51vibb2b6o9tttem\",\"Session Status\":{\"session_status()\":1,\"PHP_SESSION_DISABLED\":0,\"PHP_SESSION_ACTIVE\":2,\"PHP_SESSION_NONE\":1},\"Session Write Close\":\"(this commit closed the session)\"}},\"yellow\"]},{\"file\":\"\\/Users\\/richardmiles\\/IdeaProjects\\/reactBoot\\/backend\\/tables\\/Users.php\",\"line\":400,\"function\":\"CarbonPHP\\\\Error\\\\{closure}\",\"class\":\"CarbonPHP\\\\Error\\\\ThrowableHandler\",\"type\":\"::\",\"args\":[2,\"Undefined array key \\\"user_id\\\"\",\"\\/Users\\/richardmiles\\/IdeaProjects\\/reactBoot\\/backend\\/tables\\/Users.php\",400]},{\"function\":\"Backend\\\\Tables\\\\{closure}\",\"class\":\"Backend\\\\Tables\\\\Users\",\"type\":\"::\",\"args\":[[[{\"carbon_users.user_email\":\"\",\"carbon_users.user_password\":\"$2y$10$onkSraslLEcZqNejVIAsu.4\\/OmnkdhhlgLgVeQggX\\/81G8LVGOiRi\",\"carbon_users.user_username\":\"TestingNow\",\"carbon_users.user_first_name\":\"Anonymous\",\"carbon_users.user_last_name\":\"User\",\"carbon_users.user_type\":\"member\",\"carbon_users.user_ip\":\"NULL\",\"carbon_users.user_id\":\"aea6928c3fc011ee8cd48e580f411cc7\"}]]]},{\"file\":\"\\/Users\\/richardmiles\\/IdeaProjects\\/reactBoot\\/vendor\\/carbonorm\\/carbonphp\\/carbonphp\\/restful\\/RestQueryValidation.php\",\"line\":818,\"function\":\"call_user_func_array\",\"args\":[{},[[[{\"carbon_users.user_email\":\"\",\"carbon_users.user_password\":\"$2y$10$onkSraslLEcZqNejVIAsu.4\\/OmnkdhhlgLgVeQggX\\/81G8LVGOiRi\",\"carbon_users.user_username\":\"TestingNow\",\"carbon_users.user_first_name\":\"Anonymous\",\"carbon_users.user_last_name\":\"User\",\"carbon_users.user_type\":\"member\",\"carbon_users.user_ip\":\"NULL\",\"carbon_users.user_id\":\"aea6928c3fc011ee8cd48e580f411cc7\"}]]]]},{\"file\":\"\\/Users\\/richardmiles\\/IdeaProjects\\/reactBoot\\/vendor\\/carbonorm\\/carbonphp\\/carbonphp\\/restful\\/RestQueryValidation.php\",\"line\":186,\"function\":\"runValidations\",\"class\":\"CarbonPHP\\\\Restful\\\\RestQueryValidation\",\"type\":\"::\",\"args\":[[{}],[{\"carbon_users.user_email\":\"\",\"carbon_users.user_password\":\"$2y$10$onkSraslLEcZqNejVIAsu.4\\/OmnkdhhlgLgVeQggX\\/81G8LVGOiRi\",\"carbon_users.user_username\":\"TestingNow\",\"carbon_users.user_first_name\":\"Anonymous\",\"carbon_users.user_last_name\":\"User\",\"carbon_users.user_type\":\"member\",\"carbon_users.user_ip\":\"NULL\",\"carbon_users.user_id\":\"aea6928c3fc011ee8cd48e580f411cc7\"}]]},{\"file\":\"\\/Users\\/richardmiles\\/IdeaProjects\\/reactBoot\\/vendor\\/carbonorm\\/carbonphp\\/carbonphp\\/Rest.php\",\"line\":1086,\"function\":\"postprocessRestRequest\",\"class\":\"CarbonPHP\\\\Restful\\\\RestQueryValidation\",\"type\":\"::\",\"args\":[[{\"carbon_users.user_email\":\"\",\"carbon_users.user_password\":\"$2y$10$onkSraslLEcZqNejVIAsu.4\\/OmnkdhhlgLgVeQggX\\/81G8LVGOiRi\",\"carbon_users.user_username\":\"TestingNow\",\"carbon_users.user_first_name\":\"Anonymous\",\"carbon_users.user_last_name\":\"User\",\"carbon_users.user_type\":\"member\",\"carbon_users.user_ip\":\"NULL\",\"carbon_users.user_id\":\"aea6928c3fc011ee8cd48e580f411cc7\"}]]},{\"file\":\"\\/Users\\/richardmiles\\/IdeaProjects\\/reactBoot\\/backend\\/tables\\/Users.php\",\"line\":809,\"function\":\"insert\",\"class\":\"CarbonPHP\\\\Rest\",\"type\":\"::\",\"args\":[[{\"carbon_users.user_email\":\"\",\"carbon_users.user_password\":\"$2y$10$onkSraslLEcZqNejVIAsu.4\\/OmnkdhhlgLgVeQggX\\/81G8LVGOiRi\",\"carbon_users.user_username\":\"TestingNow\",\"carbon_users.user_first_name\":\"Anonymous\",\"carbon_users.user_last_name\":\"User\",\"carbon_users.user_type\":\"member\",\"carbon_users.user_ip\":\"NULL\",\"carbon_users.user_id\":\"aea6928c3fc011ee8cd48e580f411cc7\"}]]},{\"function\":\"post\",\"class\":\"Backend\\\\Tables\\\\Users\",\"type\":\"::\",\"args\":[[{\"carbon_users.user_email\":\"\",\"carbon_users.user_password\":\"$2y$10$onkSraslLEcZqNejVIAsu.4\\/OmnkdhhlgLgVeQggX\\/81G8LVGOiRi\",\"carbon_users.user_username\":\"TestingNow\",\"carbon_users.user_first_name\":\"Anonymous\",\"carbon_users.user_last_name\":\"User\",\"carbon_users.user_type\":\"member\",\"carbon_users.user_ip\":\"NULL\",\"carbon_users.user_id\":\"aea6928c3fc011ee8cd48e580f411cc7\"}],null]},{\"file\":\"\\/Users\\/richardmiles\\/IdeaProjects\\/reactBoot\\/vendor\\/carbonorm\\/carbonphp\\/carbonphp\\/restful\\/RestLifeCycle.php\",\"line\":474,\"function\":\"call_user_func_array\",\"args\":[[\"Backend\\\\Tables\\\\Users\",\"Post\"],[[{\"carbon_users.user_email\":\"\",\"carbon_users.user_password\":\"$2y$10$onkSraslLEcZqNejVIAsu.4\\/OmnkdhhlgLgVeQggX\\/81G8LVGOiRi\",\"carbon_users.user_username\":\"TestingNow\",\"carbon_users.user_first_name\":\"Anonymous\",\"carbon_users.user_last_name\":\"User\",\"carbon_users.user_type\":\"member\",\"carbon_users.user_ip\":\"NULL\",\"carbon_users.user_id\":\"aea6928c3fc011ee8cd48e580f411cc7\"}],null]]},{\"file\":\"\\/Users\\/richardmiles\\/IdeaProjects\\/reactBoot\\/vendor\\/carbonorm\\/carbonphp\\/carbonphp\\/restful\\/RestLifeCycle.php\",\"line\":603,\"function\":\"ExternalRestfulRequestsAPI\",\"class\":\"CarbonPHP\\\\Restful\\\\RestLifeCycle\",\"type\":\"::\",\"args\":[\"Users\",null,\"Backend\\\\Tables\\\\\"]},{\"function\":\"CarbonPHP\\\\Restful\\\\{closure}\",\"class\":\"CarbonPHP\\\\Restful\\\\RestLifeCycle\",\"type\":\"::\",\"args\":[\"users\"]},{\"file\":\"\\/Users\\/richardmiles\\/IdeaProjects\\/reactBoot\\/vendor\\/carbonorm\\/carbonphp\\/carbonphp\\/Route.php\",\"line\":167,\"function\":\"call_user_func_array\",\"args\":[{},[\"users\"]]},{\"file\":\"\\/Users\\/richardmiles\\/IdeaProjects\\/reactBoot\\/vendor\\/carbonorm\\/carbonphp\\/carbonphp\\/restful\\/RestLifeCycle.php\",\"line\":589,\"function\":\"regexMatch\",\"class\":\"CarbonPHP\\\\Route\",\"type\":\"::\",\"args\":[\"#rest\\/([A-Za-z\\\\_]{1,256})\\/?([^\\/]+)?#\",{}]},{\"file\":\"\\/Users\\/richardmiles\\/IdeaProjects\\/reactBoot\\/backend\\/Documentation.php\",\"line\":154,\"function\":\"MatchRestfulRequests\",\"class\":\"CarbonPHP\\\\Restful\\\\RestLifeCycle\",\"type\":\"::\",\"args\":[\"\",\"Backend\\\\Tables\\\\\"]},{\"file\":\"\\/Users\\/richardmiles\\/IdeaProjects\\/reactBoot\\/vendor\\/carbonorm\\/carbonphp\\/carbonphp\\/CarbonPHP.php\",\"line\":342,\"function\":\"startApplication\",\"class\":\"Backend\\\\Documentation\",\"object\":{},\"type\":\"->\",\"args\":[\"rest\\/users\"]},{\"file\":\"\\/Users\\/richardmiles\\/IdeaProjects\\/reactBoot\\/vendor\\/carbonorm\\/carbonphp\\/carbonphp\\/CarbonPHP.php\",\"line\":275,\"function\":\"startApplication\",\"class\":\"CarbonPHP\\\\CarbonPHP\",\"type\":\"::\",\"args\":[]},{\"file\":\"\\/Users\\/richardmiles\\/IdeaProjects\\/reactBoot\\/vendor\\/carbonorm\\/carbonphp\\/carbonphp\\/CarbonPHP.php\",\"line\":170,\"function\":\"run\",\"class\":\"CarbonPHP\\\\CarbonPHP\",\"type\":\"::\",\"args\":[\"Backend\\\\Documentation\"]},{\"file\":\"\\/Users\\/richardmiles\\/IdeaProjects\\/reactBoot\\/index.php\",\"line\":18,\"function\":\"__invoke\",\"class\":\"CarbonPHP\\\\CarbonPHP\",\"object\":{},\"type\":\"->\",\"args\":[]}]",
+    "INNODB_STATUS": [
+        "",
+        "=====================================",
+        "2023-08-20 19:18:49 0x70000d97f000 INNODB MONITOR OUTPUT",
+        "=====================================",
+        "Per second averages calculated from the last 14 seconds",
+        "-----------------",
+        "BACKGROUND THREAD",
+        "-----------------",
+        "srv_master_thread loops: 786 srv_active, 0 srv_shutdown, 21915 srv_idle",
+        "srv_master_thread log flush and writes: 0",
+        "----------",
+        "SEMAPHORES",
+        "----------",
+        "OS WAIT ARRAY INFO: reservation count 727",
+        "OS WAIT ARRAY INFO: signal count 869",
+        "RW-shared spins 0, rounds 0, OS waits 0",
+        "RW-excl spins 0, rounds 0, OS waits 0",
+        "RW-sx spins 0, rounds 0, OS waits 0",
+        "Spin rounds per wait: 0.00 RW-shared, 0.00 RW-excl, 0.00 RW-sx",
+        "------------------------",
+        "LATEST FOREIGN KEY ERROR",
+        "------------------------",
+        "2023-08-20 18:15:23 0x70000da83000 Transaction:",
+        "TRANSACTION 88137786, ACTIVE 0 sec inserting",
+        "mysql tables in use 1, locked 1",
+        "3 lock struct(s), heap size 1128, 1 row lock(s)",
+        "MySQL thread id 2779, OS thread handle 123145531437056, query id 378724 localhost 127.0.0.1 root update",
+        "INSERT INTO carbon_users (user_username, user_password, user_id, user_type, user_first_name, user_last_name, user_email, user_ip) VALUES ('WookieeTyler', '$2y$10$wd5gBu40b1OZCWDynAXwDeyvR/nCZbM04G4IJAbyG3b8XKo5kePwa', UNHEX('d23c00be3fb711ee8cd48e580f411cc7'), 'member', 'Anonymous', 'User', '', 'NULL')",
+        "Foreign key constraint fails for table `reactboot`.`carbon_users`:",
+        ",",
+        "  CONSTRAINT `user_entity_entity_pk_fk` FOREIGN KEY (`user_id`) REFERENCES `carbon_carbons` (`entity_pk`) ON DELETE CASCADE ON UPDATE CASCADE",
+        "Trying to add in child table, in index PRIMARY tuple:",
+        "DATA TUPLE: 29 fields;",
+        " 0: len 16; hex d23c00be3fb711ee8cd48e580f411cc7; asc  <  ?      X A  ;;",
+        " 1: len 6; hex 00000540e03a; asc    @ :;;",
+        " 2: len 7; hex 00000000000000; asc        ;;",
+        " 3: len 12; hex 576f6f6b69656554796c6572; asc WookieeTyler;;",
+        " 4: len 60; hex 24327924313024776435674275343062314f5a435744796e41587744657976522f6e435a624d30344734494a41627947336238584b6f356b65507761; asc $2y$10$wd5gBu40b1OZCWDynAXwDeyvR/nCZbM04G4IJAbyG3b8XKo5kePwa;;",
+        " 5: len 6; hex 6d656d626572; asc member;;",
+        " 6: len 4; hex 474f4c46; asc GOLF;;",
+        " 7: SQL NULL;",
+        " 8: SQL NULL;",
+        " 9: len 9; hex 416e6f6e796d6f7573; asc Anonymous;;",
+        " 10: len 4; hex 55736572; asc User;;",
+        " 11: SQL NULL;",
+        " 12: SQL NULL;",
+        " 13: SQL NULL;",
+        " 14: SQL NULL;",
+        " 15: SQL NULL;",
+        " 16: SQL NULL;",
+        " 17: len 4; hex 80000000; asc     ;;",
+        " 18: len 0; hex ; asc ;;",
+        " 19: SQL NULL;",
+        " 20: len 1; hex 80; asc  ;;",
+        " 21: SQL NULL;",
+        " 22: len 4; hex 80000000; asc     ;;",
+        " 23: len 1; hex 80; asc  ;;",
+        " 24: len 5; hex 99b0e923d7; asc    # ;;",
+        " 25: len 4; hex 4e554c4c; asc NULL;;",
+        " 26: SQL NULL;",
+        " 27: SQL NULL;",
+        " 28: len 5; hex 99b0e923d7; asc    # ;;",
+        "",
+        "But in parent table `reactboot`.`carbon_carbons`, in index PRIMARY,",
+        "the closest match we can find is record:",
+        "PHYSICAL RECORD: n_fields 1; compact format; info bits 0",
+        " 0: len 8; hex 696e66696d756d00; asc infimum ;;",
+        "",
+        "------------",
+        "TRANSACTIONS",
+        "------------",
+        "Trx id counter 88143841",
+        "Purge done for trx's n:o < 88143838 undo n:o < 0 state: running but idle",
+        "History list length 1",
+        "LIST OF TRANSACTIONS FOR EACH SESSION:",
+        "---TRANSACTION 421688258894984, not started",
+        "0 lock struct(s), heap size 1128, 0 row lock(s)",
+        "---TRANSACTION 421688258895776, not started",
+        "0 lock struct(s), heap size 1128, 0 row lock(s)",
+        "---TRANSACTION 421688258894192, not started",
+        "0 lock struct(s), heap size 1128, 0 row lock(s)",
+        "---TRANSACTION 421688258893400, not started",
+        "0 lock struct(s), heap size 1128, 0 row lock(s)",
+        "--------",
+        "FILE I/O",
+        "--------",
+        "I/O thread 0 state: waiting for i/o request ((null))",
+        "I/O thread 1 state: waiting for i/o request (insert buffer thread)",
+        "I/O thread 2 state: waiting for i/o request (read thread)",
+        "I/O thread 3 state: waiting for i/o request (read thread)",
+        "I/O thread 4 state: waiting for i/o request (read thread)",
+        "I/O thread 5 state: waiting for i/o request (read thread)",
+        "I/O thread 6 state: waiting for i/o request (write thread)",
+        "I/O thread 7 state: waiting for i/o request (write thread)",
+        "I/O thread 8 state: waiting for i/o request (write thread)",
+        "Pending normal aio reads: [0, 0, 0, 0] , aio writes: [0, 0, 0, 0] ,",
+        " ibuf aio reads:",
+        "Pending flushes (fsync) log: 0; buffer pool: 0",
+        "3911 OS file reads, 178977 OS file writes, 116396 OS fsyncs",
+        "0.00 reads/s, 0 avg bytes/read, 0.35 writes/s, 0.35 fsyncs/s",
+        "-------------------------------------",
+        "INSERT BUFFER AND ADAPTIVE HASH INDEX",
+        "-------------------------------------",
+        "Ibuf: size 1, free list len 425, seg size 427, 4 merges",
+        "merged operations:",
+        " insert 4, delete mark 0, delete 0",
+        "discarded operations:",
+        " insert 0, delete mark 0, delete 0",
+        "Hash table size 34679, node heap has 8 buffer(s)",
+        "Hash table size 34679, node heap has 2 buffer(s)",
+        "Hash table size 34679, node heap has 7 buffer(s)",
+        "Hash table size 34679, node heap has 3 buffer(s)",
+        "Hash table size 34679, node heap has 7 buffer(s)",
+        "Hash table size 34679, node heap has 2 buffer(s)",
+        "Hash table size 34679, node heap has 7 buffer(s)",
+        "Hash table size 34679, node heap has 3 buffer(s)",
+        "0.00 hash searches/s, 0.71 non-hash searches/s",
+        "---",
+        "LOG",
+        "---",
+        "Log sequence number          2287627149860",
+        "Log buffer assigned up to    2287627149860",
+        "Log buffer completed up to   2287627149860",
+        "Log written up to            2287627149860",
+        "Log flushed up to            2287627149860",
+        "Added dirty pages up to      2287627149860",
+        "Pages flushed up to          2287627148771",
+        "Last checkpoint at           2287627148771",
+        "Log minimum file id is       52888",
+        "Log maximum file id is       52901",
+        "53051 log i/o's done, 0.33 log i/o's/second",
+        "----------------------",
+        "BUFFER POOL AND MEMORY",
+        "----------------------",
+        "Total large memory allocated 0",
+        "Dictionary memory allocated 2012131",
+        "Buffer pool size   8191",
+        "Free buffers       4927",
+        "Database pages     3225",
+        "Old database pages 1210",
+        "Modified db pages  10",
+        "Pending reads      0",
+        "Pending writes: LRU 0, flush list 0, single page 0",
+        "Pages made young 3, not young 0",
+        "0.00 youngs/s, 0.00 non-youngs/s",
+        "Pages read 2922, created 303, written 99431",
+        "0.00 reads/s, 0.00 creates/s, 0.00 writes/s",
+        "Buffer pool hit rate 1000 / 1000, young-making rate 0 / 1000 not 0 / 1000",
+        "Pages read ahead 0.00/s, evicted without access 0.00/s, Random read ahead 0.00/s",
+        "LRU len: 3225, unzip_LRU len: 0",
+        "I/O sum[0]:cur[0], unzip sum[0]:cur[0]",
+        "--------------",
+        "ROW OPERATIONS",
+        "--------------",
+        "0 queries inside InnoDB, 0 queries in queue",
+        "0 read views open inside InnoDB",
+        "Process ID=1179, Main thread ID=0x70000ccc8000 , state=sleeping",
+        "Number of rows inserted 49, updated 18815, deleted 10, read 20824318",
+        "0.14 inserts/s, 0.07 updates/s, 0.00 deletes/s, 1.29 reads/s",
+        "Number of system rows inserted 78, updated 348, deleted 80, read 54221",
+        "0.00 inserts/s, 0.00 updates/s, 0.00 deletes/s, 0.00 reads/s",
+        "----------------------------",
+        "END OF INNODB MONITOR OUTPUT",
+        "============================",
+        ""
+    ],
+    "MESSAGE AGAIN": "Undefined array key \"user_id\""
+}[0m
+[20-Aug-2023 18:18:49 America/Phoenix] [36m<pid::364> Returning Error Information[0m
+[20-Aug-2023 18:19:04 America/Phoenix] [46m<pid::368> Getting new database instance[0m
+[20-Aug-2023 18:19:15 America/Phoenix] [46m<pid::2106> Getting new database instance[0m
+[20-Aug-2023 18:19:15 America/Phoenix] [36m<pid::2106> Generating pretty error message using C6 tools. Message ::[0m
+[20-Aug-2023 18:19:15 America/Phoenix] [31m<pid::2106> 	CarbonPHP\Error\PublicAlert[0m
+[20-Aug-2023 18:19:15 America/Phoenix] [31m<pid::2106> 		Password was incorrect for user: TestingNow[0m
+[20-Aug-2023 18:19:15 America/Phoenix] [31m<pid::2106> {
+    "CarbonPHP\\Error\\PublicAlert": "Password was incorrect for user: TestingNow",
+    "THROWN NEAR": "<pre><code><table style='width: 100%'><tr><td class=\"num\">\n-1<br />0<br />1<br />2<br />3<br />4<br />5<br />6<br />7<br />8<br />9<br />10<br />11<br />12<br />13<br />14<br />15<br />16<br />17<br />18<br />19\n</td><td>\n<span style=\"overflow-x: scroll\">&nbsp;<span style=\"color: #0000BB\">&nbsp;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style=\"color: #FF8000\">//&nbsp;work&nbsp;on&nbsp;attempt&nbsp;count&nbsp;4&nbsp;bad&nbsp;actor&nbsp;//&nbsp;temp&nbsp;ip&nbsp;ban<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style=\"color: #007700\">throw&nbsp;new&nbsp;</span><span style=\"color: #0000BB\">PublicAlert</span><span style=\"color: #007700\">(</span><span style=\"color: #DD0000\">'Failed&nbsp;to&nbsp;find&nbsp;user&nbsp;with&nbsp;login:&nbsp;'&nbsp;</span><span style=\"color: #007700\">.&nbsp;</span><span style=\"color: #0000BB\">$request</span><span style=\"color: #007700\">[</span><span style=\"color: #0000BB\">self</span><span style=\"color: #007700\">::</span><span style=\"color: #0000BB\">USER_USERNAME</span><span style=\"color: #007700\">]);<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style=\"color: #0000BB\">true&nbsp;</span><span style=\"color: #007700\">!==&nbsp;</span><span style=\"color: #0000BB\">password_verify</span><span style=\"color: #007700\">(</span><span style=\"color: #0000BB\">$request</span><span style=\"color: #007700\">[</span><span style=\"color: #0000BB\">self</span><span style=\"color: #007700\">::</span><span style=\"color: #0000BB\">USER_PASSWORD</span><span style=\"color: #007700\">],&nbsp;</span><span style=\"color: #0000BB\">$user</span><span style=\"color: #007700\">[</span><span style=\"color: #0000BB\">self</span><span style=\"color: #007700\">::</span><span style=\"color: #0000BB\">COLUMNS</span><span style=\"color: #007700\">[</span><span style=\"color: #0000BB\">self</span><span style=\"color: #007700\">::</span><span style=\"color: #0000BB\">USER_PASSWORD</span><span style=\"color: #007700\">]]))&nbsp;{<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style=\"color: #FF8000\">//&nbsp;work&nbsp;on&nbsp;attempt&nbsp;count&nbsp;4&nbsp;bad&nbsp;actor&nbsp;//&nbsp;temp&nbsp;ip&nbsp;ban<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style=\"color: #007700\">throw&nbsp;new&nbsp;</span><span style=\"color: #0000BB\">PublicAlert</span><span style=\"color: #007700\">(</span><span style=\"color: #DD0000\">'Password&nbsp;was&nbsp;incorrect&nbsp;for&nbsp;user:&nbsp;'&nbsp;</span><span style=\"color: #007700\">.&nbsp;</span><span style=\"color: #0000BB\">$request</span><span style=\"color: #007700\">[</span><span style=\"color: #0000BB\">self</span><span style=\"color: #007700\">::</span><span style=\"color: #0000BB\">USER_USERNAME</span><span style=\"color: #007700\">]);<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style=\"color: #0000BB\">RestLifeCycle</span><span style=\"color: #007700\">::</span><span style=\"color: #0000BB\">hijackRestfulRequest</span><span style=\"color: #007700\">(</span><span style=\"color: #0000BB\">$json&nbsp;</span><span style=\"color: #007700\">+&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style=\"color: #DD0000\">'rest'&nbsp;</span><span style=\"color: #007700\">=&gt;&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style=\"color: #DD0000\">'success'&nbsp;</span><span style=\"color: #007700\">=&gt;&nbsp;</span><span style=\"color: #0000BB\">true</span><span style=\"color: #007700\">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style=\"color: #DD0000\">'user'&nbsp;</span><span style=\"color: #007700\">=&gt;&nbsp;&nbsp;</span><span style=\"color: #0000BB\">$user</span><span style=\"color: #007700\">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;]<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;]);<br /></span>\n\n</span>\n</td></tr></table></code></pre>",
+    "ERROR TYPE": "A Public Alert Was Thrown!",
+    "FILE": "/Users/richardmiles/IdeaProjects/reactBoot/backend/tables/Users.php",
+    "LINE": "343",
+    "JUMP": "/Users/richardmiles/IdeaProjects/reactBoot/backend/tables/Users.php:343",
+    "CODE": "0",
+    "[C6] CARBONPHP": "/Users/richardmiles/IdeaProjects/reactBoot/vendor/carbonorm/carbonphp/carbonphp/error/ThrowableHandler.php CarbonPHP\\Error\\ThrowableHandler::generateLog",
+    "METHOD": "POST",
+    "$_COOKIE": [],
+    "$_REQUEST": [],
+    "$_SERVER": {
+        "REDIRECT_CORS_ALLOW_ORIGIN": "http://localhost:3000",
+        "REDIRECT_XDEBUG_SESSION": "1",
+        "REDIRECT_DBGP_IDEKEY": "XDEBUG_INTELLIJ",
+        "REDIRECT_STATUS": "200",
+        "CORS_ALLOW_ORIGIN": "http://localhost:3000",
+        "XDEBUG_SESSION": "1",
+        "DBGP_IDEKEY": "XDEBUG_INTELLIJ",
+        "HTTP_HOST": "local.carbonphp.com:8080",
+        "HTTP_CONNECTION": "keep-alive",
+        "CONTENT_LENGTH": "87",
+        "HTTP_ACCEPT": "application/json, text/plain, */*",
+        "HTTP_X_REQUESTED_WITH": "XMLHttpRequest",
+        "HTTP_USER_AGENT": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36",
+        "CONTENT_TYPE": "application/json",
+        "HTTP_ORIGIN": "http://localhost:3000",
+        "HTTP_REFERER": "http://localhost:3000/",
+        "HTTP_ACCEPT_ENCODING": "gzip, deflate",
+        "HTTP_ACCEPT_LANGUAGE": "en-US,en;q=0.9",
+        "PATH": "/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin",
+        "SERVER_SIGNATURE": "",
+        "SERVER_SOFTWARE": "Apache/2.4.57 (Unix) PHP/8.2.8",
+        "SERVER_NAME": "local.carbonphp.com",
+        "SERVER_ADDR": "::1",
+        "SERVER_PORT": "8080",
+        "REMOTE_ADDR": "::1",
+        "DOCUMENT_ROOT": "/usr/local/var/www",
+        "REQUEST_SCHEME": "http",
+        "CONTEXT_PREFIX": "",
+        "CONTEXT_DOCUMENT_ROOT": "/usr/local/var/www",
+        "SERVER_ADMIN": "you@example.com",
+        "SCRIPT_FILENAME": "/usr/local/var/www/index.php",
+        "REMOTE_PORT": "59215",
+        "REDIRECT_URL": "/rest/users/",
+        "GATEWAY_INTERFACE": "CGI/1.1",
+        "SERVER_PROTOCOL": "HTTP/1.1",
+        "REQUEST_METHOD": "POST",
+        "QUERY_STRING": "",
+        "REQUEST_URI": "/rest/users/",
+        "SCRIPT_NAME": "/index.php",
+        "PHP_SELF": "/index.php",
+        "REQUEST_TIME_FLOAT": 1692580755.306161,
+        "REQUEST_TIME": 1692580755,
+        "HTTP_X_FORWARDED_PROTO": false
+    },
+    "URI": "/rest/users/",
+    "TRACE": {
+        "CALL TRACE 0": {
+            "file": "/Users/richardmiles/IdeaProjects/reactBoot/index.php",
+            "line": 18,
+            "function": "__invoke",
+            "class": "CarbonPHP\\CarbonPHP",
+            "type": "->",
+            "args": [],
+            "jump": "/Users/richardmiles/IdeaProjects/reactBoot/index.php:18"
+        },
+        "CALL TRACE 1": {
+            "file": "/Users/richardmiles/IdeaProjects/reactBoot/vendor/carbonorm/carbonphp/carbonphp/CarbonPHP.php",
+            "line": 170,
+            "function": "run",
+            "class": "CarbonPHP\\CarbonPHP",
+            "type": "::",
+            "args": [
+                "Backend\\Documentation"
+            ],
+            "jump": "/Users/richardmiles/IdeaProjects/reactBoot/vendor/carbonorm/carbonphp/carbonphp/CarbonPHP.php:170"
+        },
+        "CALL TRACE 2": {
+            "file": "/Users/richardmiles/IdeaProjects/reactBoot/vendor/carbonorm/carbonphp/carbonphp/CarbonPHP.php",
+            "line": 275,
+            "function": "startApplication",
+            "class": "CarbonPHP\\CarbonPHP",
+            "type": "::",
+            "args": [],
+            "jump": "/Users/richardmiles/IdeaProjects/reactBoot/vendor/carbonorm/carbonphp/carbonphp/CarbonPHP.php:275"
+        },
+        "CALL TRACE 3": {
+            "file": "/Users/richardmiles/IdeaProjects/reactBoot/vendor/carbonorm/carbonphp/carbonphp/CarbonPHP.php",
+            "line": 342,
+            "function": "startApplication",
+            "class": "Backend\\Documentation",
+            "type": "->",
+            "args": [
+                "rest/users"
+            ],
+            "jump": "/Users/richardmiles/IdeaProjects/reactBoot/vendor/carbonorm/carbonphp/carbonphp/CarbonPHP.php:342"
+        },
+        "CALL TRACE 4": {
+            "file": "/Users/richardmiles/IdeaProjects/reactBoot/backend/Documentation.php",
+            "line": 154,
+            "function": "MatchRestfulRequests",
+            "class": "CarbonPHP\\Restful\\RestLifeCycle",
+            "type": "::",
+            "args": [
+                "",
+                "Backend\\Tables\\"
+            ],
+            "jump": "/Users/richardmiles/IdeaProjects/reactBoot/backend/Documentation.php:154"
+        },
+        "CALL TRACE 5": {
+            "file": "/Users/richardmiles/IdeaProjects/reactBoot/vendor/carbonorm/carbonphp/carbonphp/restful/RestLifeCycle.php",
+            "line": 589,
+            "function": "regexMatch",
+            "class": "CarbonPHP\\Route",
+            "type": "::",
+            "args": [
+                "#rest/([A-Za-z\\_]{1,256})/?([^/]+)?#",
+                {}
+            ],
+            "jump": "/Users/richardmiles/IdeaProjects/reactBoot/vendor/carbonorm/carbonphp/carbonphp/restful/RestLifeCycle.php:589"
+        },
+        "CALL TRACE 6": {
+            "file": "/Users/richardmiles/IdeaProjects/reactBoot/vendor/carbonorm/carbonphp/carbonphp/Route.php",
+            "line": 167,
+            "function": "call_user_func_array",
+            "args": [
+                {},
+                [
+                    "users"
+                ]
+            ],
+            "jump": "/Users/richardmiles/IdeaProjects/reactBoot/vendor/carbonorm/carbonphp/carbonphp/Route.php:167"
+        },
+        "CALL TRACE 7": {
+            "function": "CarbonPHP\\Restful\\{closure}",
+            "class": "CarbonPHP\\Restful\\RestLifeCycle",
+            "type": "::",
+            "args": [
+                "users"
+            ]
+        },
+        "CALL TRACE 8": {
+            "file": "/Users/richardmiles/IdeaProjects/reactBoot/vendor/carbonorm/carbonphp/carbonphp/restful/RestLifeCycle.php",
+            "line": 603,
+            "function": "ExternalRestfulRequestsAPI",
+            "class": "CarbonPHP\\Restful\\RestLifeCycle",
+            "type": "::",
+            "args": [
+                "Users",
+                null,
+                "Backend\\Tables\\"
+            ],
+            "jump": "/Users/richardmiles/IdeaProjects/reactBoot/vendor/carbonorm/carbonphp/carbonphp/restful/RestLifeCycle.php:603"
+        },
+        "CALL TRACE 9": {
+            "file": "/Users/richardmiles/IdeaProjects/reactBoot/vendor/carbonorm/carbonphp/carbonphp/restful/RestLifeCycle.php",
+            "line": 474,
+            "function": "call_user_func_array",
+            "args": [
+                [
+                    "Backend\\Tables\\Users",
+                    "Post"
+                ],
+                [
+                    {
+                        "carbon_users.user_password": "jhgdfbdsewrw",
+                        "carbon_users.user_username": "TestingNow"
+                    },
+                    null
+                ]
+            ],
+            "jump": "/Users/richardmiles/IdeaProjects/reactBoot/vendor/carbonorm/carbonphp/carbonphp/restful/RestLifeCycle.php:474"
+        },
+        "CALL TRACE 10": {
+            "function": "post",
+            "class": "Backend\\Tables\\Users",
+            "type": "::",
+            "args": [
+                {
+                    "carbon_users.user_password": "jhgdfbdsewrw",
+                    "carbon_users.user_username": "TestingNow"
+                },
+                null
+            ]
+        },
+        "CALL TRACE 11": {
+            "file": "/Users/richardmiles/IdeaProjects/reactBoot/backend/tables/Users.php",
+            "line": 809,
+            "function": "insert",
+            "class": "CarbonPHP\\Rest",
+            "type": "::",
+            "args": [
+                {
+                    "carbon_users.user_password": "jhgdfbdsewrw",
+                    "carbon_users.user_username": "TestingNow"
+                }
+            ],
+            "jump": "/Users/richardmiles/IdeaProjects/reactBoot/backend/tables/Users.php:809"
+        },
+        "CALL TRACE 12": {
+            "file": "/Users/richardmiles/IdeaProjects/reactBoot/vendor/carbonorm/carbonphp/carbonphp/Rest.php",
+            "line": 693,
+            "function": "startRest",
+            "class": "CarbonPHP\\Restful\\RestLifeCycle",
+            "type": "::",
+            "args": [
+                "POST",
+                [],
+                {
+                    "carbon_users.user_password": "jhgdfbdsewrw",
+                    "carbon_users.user_username": "TestingNow"
+                }
+            ],
+            "jump": "/Users/richardmiles/IdeaProjects/reactBoot/vendor/carbonorm/carbonphp/carbonphp/Rest.php:693"
+        },
+        "CALL TRACE 13": {
+            "file": "/Users/richardmiles/IdeaProjects/reactBoot/vendor/carbonorm/carbonphp/carbonphp/restful/RestLifeCycle.php",
+            "line": 159,
+            "function": "preprocessRestRequest",
+            "class": "CarbonPHP\\Restful\\RestQueryValidation",
+            "type": "::",
+            "args": [],
+            "jump": "/Users/richardmiles/IdeaProjects/reactBoot/vendor/carbonorm/carbonphp/carbonphp/restful/RestLifeCycle.php:159"
+        },
+        "CALL TRACE 14": {
+            "file": "/Users/richardmiles/IdeaProjects/reactBoot/vendor/carbonorm/carbonphp/carbonphp/restful/RestQueryValidation.php",
+            "line": 112,
+            "function": "runValidations",
+            "class": "CarbonPHP\\Restful\\RestQueryValidation",
+            "type": "::",
+            "args": [
+                [
+                    {}
+                ]
+            ],
+            "jump": "/Users/richardmiles/IdeaProjects/reactBoot/vendor/carbonorm/carbonphp/carbonphp/restful/RestQueryValidation.php:112"
+        },
+        "CALL TRACE 15": {
+            "file": "/Users/richardmiles/IdeaProjects/reactBoot/vendor/carbonorm/carbonphp/carbonphp/restful/RestQueryValidation.php",
+            "line": 812,
+            "function": "call_user_func_array",
+            "args": [
+                {},
+                [
+                    {
+                        "carbon_users.user_password": "jhgdfbdsewrw",
+                        "carbon_users.user_username": "TestingNow"
+                    }
+                ]
+            ],
+            "jump": "/Users/richardmiles/IdeaProjects/reactBoot/vendor/carbonorm/carbonphp/carbonphp/restful/RestQueryValidation.php:812"
+        },
+        "CALL TRACE 16": {
+            "function": "Backend\\Tables\\{closure}",
+            "class": "Backend\\Tables\\Users",
+            "type": "::",
+            "args": [
+                {
+                    "carbon_users.user_password": "jhgdfbdsewrw",
+                    "carbon_users.user_username": "TestingNow"
+                }
+            ]
+        },
+        "CALL TRACE 17": {
+            "file": "/Users/richardmiles/IdeaProjects/reactBoot/backend/tables/Users.php",
+            "line": 374,
+            "function": "validateLogin",
+            "class": "Backend\\Tables\\Users",
+            "type": "::",
+            "args": [
+                {
+                    "carbon_users.user_password": "jhgdfbdsewrw",
+                    "carbon_users.user_username": "TestingNow"
+                }
+            ],
+            "jump": "/Users/richardmiles/IdeaProjects/reactBoot/backend/tables/Users.php:374"
+        },
+        "CALL TRACE 18": {
+            "file": "/Users/richardmiles/IdeaProjects/reactBoot/backend/tables/Users.php",
+            "line": 343,
+            "code": 0,
+            "preview": [
+                "",
+                "            // work on attempt count 4 bad actor // temp ip ban",
+                "            throw new PublicAlert('Failed to find user with login: ' . $request[self::USER_USERNAME]);",
+                "",
+                "        }",
+                "",
+                "        if (true !== password_verify($request[self::USER_PASSWORD], $user[self::COLUMNS[self::USER_PASSWORD]])) {",
+                "",
+                "            // work on attempt count 4 bad actor // temp ip ban",
+                "            throw new PublicAlert('Password was incorrect for user: ' . $request[self::USER_USERNAME]);",
+                "",
+                "        }",
+                "",
+                "        RestLifeCycle::hijackRestfulRequest($json + [",
+                "                'rest' => [",
+                "                    'success' => true,",
+                "                    'user' =>  $user,",
+                "                ]",
+                "            ]);",
+                ""
+            ],
+            "jump": "/Users/richardmiles/IdeaProjects/reactBoot/backend/tables/Users.php:343"
+        }
+    },
+    "$GLOBALS['json']": {
+        "session": {
+            "database_closed_committed": false
+        },
+        "sql": [
+            {
+                "method": "POST",
+                "table": "CarbonPHP\\Tables\\Sessions",
+                "CarbonPHP\\Restful\\RestSettings::$externalRestfulRequestsAPI": false,
+                "argv": [
+                    [
+                        {
+                            "carbon_sessions.session_id": "i23jq2dluhc4sbb2rac0vuggm4",
+                            "carbon_sessions.user_id": "0",
+                            "carbon_sessions.user_ip": "::1",
+                            "carbon_sessions.session_expires": "2023-08-27 18:19:15",
+                            "carbon_sessions.session_data": ""
+                        }
+                    ]
+                ],
+                "affected_rows": 1,
+                "committed": true,
+                "stmt": {
+                    "sql": "INSERT IGNORE  INTO CarbonPHP.carbon_sessions (user_id, user_ip, session_id, session_expires, session_data) VALUES (UNHEX(:user_id0), :user_ip0, :session_id0, :session_expires0, :session_data0)",
+                    "injections": [],
+                    "debugDumpParams": [
+                        "SQL: [193] INSERT IGNORE  INTO CarbonPHP.carbon_sessions (user_id, user_ip, session_id, session_expires, session_data) VALUES (UNHEX(:user_id0), :user_ip0, :session_id0, :session_expires0, :session_data0)",
+                        "Sent SQL: [191] INSERT IGNORE  INTO CarbonPHP.carbon_sessions (user_id, user_ip, session_id, session_expires, session_data) VALUES (UNHEX('0'), '::1', 'i23jq2dluhc4sbb2rac0vuggm4', '2023-08-27 18:19:15', '')",
+                        "Params:  5",
+                        "Key: Name: [9] :user_id0",
+                        "paramno=-1",
+                        "name=[9] \":user_id0\"",
+                        "is_param=1",
+                        "param_type=2",
+                        "Key: Name: [9] :user_ip0",
+                        "paramno=-1",
+                        "name=[9] \":user_ip0\"",
+                        "is_param=1",
+                        "param_type=2",
+                        "Key: Name: [12] :session_id0",
+                        "paramno=-1",
+                        "name=[12] \":session_id0\"",
+                        "is_param=1",
+                        "param_type=2",
+                        "Key: Name: [17] :session_expires0",
+                        "paramno=-1",
+                        "name=[17] \":session_expires0\"",
+                        "is_param=1",
+                        "param_type=2",
+                        "Key: Name: [14] :session_data0",
+                        "paramno=-1",
+                        "name=[14] \":session_data0\"",
+                        "is_param=1",
+                        "param_type=2",
+                        ""
+                    ]
+                }
+            },
+            {
+                "method": "GET",
+                "table": "CarbonPHP\\Tables\\Sessions",
+                "CarbonPHP\\Restful\\RestSettings::$externalRestfulRequestsAPI": false,
+                "argv": [
+                    [],
+                    {
+                        "SELECT": [
+                            "carbon_sessions.session_data"
+                        ],
+                        "LOCK": "FOR_UPDATE"
+                    },
+                    {
+                        "carbon_sessions.session_id": "i23jq2dluhc4sbb2rac0vuggm4"
+                    }
+                ],
+                "affected_rows": 1,
+                "committed": false,
+                "stmt": {
+                    "sql": "SELECT carbon_sessions.session_data FROM CarbonPHP.carbon_sessions  WHERE carbon_sessions.session_id=:injection0  ORDER BY carbon_sessions.session_id ASC LIMIT 1 FOR UPDATE",
+                    "injections": {
+                        ":injection0": "i23jq2dluhc4sbb2rac0vuggm4"
+                    },
+                    "debugDumpParams": [
+                        "SQL: [172] SELECT carbon_sessions.session_data FROM CarbonPHP.carbon_sessions  WHERE carbon_sessions.session_id=:injection0  ORDER BY carbon_sessions.session_id ASC LIMIT 1 FOR UPDATE",
+                        "Sent SQL: [189] SELECT carbon_sessions.session_data FROM CarbonPHP.carbon_sessions  WHERE carbon_sessions.session_id='i23jq2dluhc4sbb2rac0vuggm4'  ORDER BY carbon_sessions.session_id ASC LIMIT 1 FOR UPDATE",
+                        "Params:  1",
+                        "Key: Name: [11] :injection0",
+                        "paramno=-1",
+                        "name=[11] \":injection0\"",
+                        "is_param=1",
+                        "param_type=2",
+                        ""
+                    ]
+                }
+            },
+            {
+                "method": "GET",
+                "table": "Backend\\Tables\\Users",
+                "CarbonPHP\\Restful\\RestSettings::$externalRestfulRequestsAPI": false,
+                "argv": [
+                    [],
+                    {
+                        "SELECT": [
+                            "carbon_users.user_id",
+                            "carbon_users.user_password"
+                        ],
+                        "WHERE": [
+                            {
+                                "carbon_users.user_username": "TestingNow",
+                                "carbon_users.user_email": "TestingNow"
+                            }
+                        ],
+                        "PAGINATION": {
+                            "LIMIT": 1
+                        }
+                    },
+                    null
+                ],
+                "affected_rows": 1,
+                "committed": false,
+                "stmt": {
+                    "sql": "SELECT HEX(carbon_users.user_id) as user_id, carbon_users.user_password FROM carbon_users  WHERE ((carbon_users.user_username = :injection0 OR carbon_users.user_email = :injection0)) LIMIT 1",
+                    "injections": {
+                        ":injection0": "TestingNow"
+                    },
+                    "debugDumpParams": [
+                        "SQL: [190] SELECT HEX(carbon_users.user_id) as user_id, carbon_users.user_password FROM carbon_users  WHERE ((carbon_users.user_username = :injection0 OR carbon_users.user_email = :injection0)) LIMIT 1",
+                        "Sent SQL: [192] SELECT HEX(carbon_users.user_id) as user_id, carbon_users.user_password FROM carbon_users  WHERE ((carbon_users.user_username = 'TestingNow' OR carbon_users.user_email = 'TestingNow')) LIMIT 1",
+                        "Params:  1",
+                        "Key: Name: [11] :injection0",
+                        "paramno=-1",
+                        "name=[11] \":injection0\"",
+                        "is_param=1",
+                        "param_type=2",
+                        ""
+                    ]
+                }
+            }
+        ],
+        "SITE": "http://local.carbonphp.com:8080/",
+        "POST": {
+            "carbon_users.user_password": "jhgdfbdsewrw",
+            "carbon_users.user_username": "TestingNow"
+        },
+        "GET": [],
+        "HTTP": false,
+        "HTTPS": false,
+        "SOCKET": false,
+        "AJAX": true,
+        "SITE_TITLE": "CarbonPHP \u2022 C6",
+        "CarbonPHP::$app_view": "view/",
+        "COMPOSER": "/Users/richardmiles/IdeaProjects/reactBoot/vendor/carbonorm/carbonphp/carbonphp/",
+        "FACEBOOK_APP_ID": ""
+    },
+    "LAST_REST_STATEMENT": {
+        "method": "GET",
+        "table": "Backend\\Tables\\Users",
+        "CarbonPHP\\Restful\\RestSettings::$externalRestfulRequestsAPI": false,
+        "argv": [
+            [],
+            {
+                "SELECT": [
+                    "carbon_users.user_id",
+                    "carbon_users.user_password"
+                ],
+                "WHERE": [
+                    {
+                        "carbon_users.user_username": "TestingNow",
+                        "carbon_users.user_email": "TestingNow"
+                    }
+                ],
+                "PAGINATION": {
+                    "LIMIT": 1
+                }
+            },
+            null
+        ],
+        "affected_rows": 1,
+        "committed": false,
+        "stmt": {
+            "sql": "SELECT HEX(carbon_users.user_id) as user_id, carbon_users.user_password FROM carbon_users  WHERE ((carbon_users.user_username = :injection0 OR carbon_users.user_email = :injection0)) LIMIT 1",
+            "injections": {
+                ":injection0": "TestingNow"
+            },
+            "debugDumpParams": [
+                "SQL: [190] SELECT HEX(carbon_users.user_id) as user_id, carbon_users.user_password FROM carbon_users  WHERE ((carbon_users.user_username = :injection0 OR carbon_users.user_email = :injection0)) LIMIT 1",
+                "Sent SQL: [192] SELECT HEX(carbon_users.user_id) as user_id, carbon_users.user_password FROM carbon_users  WHERE ((carbon_users.user_username = 'TestingNow' OR carbon_users.user_email = 'TestingNow')) LIMIT 1",
+                "Params:  1",
+                "Key: Name: [11] :injection0",
+                "paramno=-1",
+                "name=[11] \":injection0\"",
+                "is_param=1",
+                "param_type=2",
+                ""
+            ]
+        }
+    },
+    "debug_backtrace()": "[{\"file\":\"\\/Users\\/richardmiles\\/IdeaProjects\\/reactBoot\\/vendor\\/carbonorm\\/carbonphp\\/carbonphp\\/restful\\/RestLifeCycle.php\",\"line\":92,\"function\":\"generateLog\",\"class\":\"CarbonPHP\\\\Error\\\\ThrowableHandler\",\"type\":\"::\",\"args\":[{}]},{\"file\":\"\\/Users\\/richardmiles\\/IdeaProjects\\/reactBoot\\/vendor\\/carbonorm\\/carbonphp\\/carbonphp\\/Rest.php\",\"line\":1095,\"function\":\"handleRestException\",\"class\":\"CarbonPHP\\\\Restful\\\\RestLifeCycle\",\"type\":\"::\",\"args\":[{}]},{\"file\":\"\\/Users\\/richardmiles\\/IdeaProjects\\/reactBoot\\/backend\\/tables\\/Users.php\",\"line\":809,\"function\":\"insert\",\"class\":\"CarbonPHP\\\\Rest\",\"type\":\"::\",\"args\":[{\"carbon_users.user_password\":\"jhgdfbdsewrw\",\"carbon_users.user_username\":\"TestingNow\"}]},{\"function\":\"post\",\"class\":\"Backend\\\\Tables\\\\Users\",\"type\":\"::\",\"args\":[{\"carbon_users.user_password\":\"jhgdfbdsewrw\",\"carbon_users.user_username\":\"TestingNow\"},null]},{\"file\":\"\\/Users\\/richardmiles\\/IdeaProjects\\/reactBoot\\/vendor\\/carbonorm\\/carbonphp\\/carbonphp\\/restful\\/RestLifeCycle.php\",\"line\":474,\"function\":\"call_user_func_array\",\"args\":[[\"Backend\\\\Tables\\\\Users\",\"Post\"],[{\"carbon_users.user_password\":\"jhgdfbdsewrw\",\"carbon_users.user_username\":\"TestingNow\"},null]]},{\"file\":\"\\/Users\\/richardmiles\\/IdeaProjects\\/reactBoot\\/vendor\\/carbonorm\\/carbonphp\\/carbonphp\\/restful\\/RestLifeCycle.php\",\"line\":603,\"function\":\"ExternalRestfulRequestsAPI\",\"class\":\"CarbonPHP\\\\Restful\\\\RestLifeCycle\",\"type\":\"::\",\"args\":[\"Users\",null,\"Backend\\\\Tables\\\\\"]},{\"function\":\"CarbonPHP\\\\Restful\\\\{closure}\",\"class\":\"CarbonPHP\\\\Restful\\\\RestLifeCycle\",\"type\":\"::\",\"args\":[\"users\"]},{\"file\":\"\\/Users\\/richardmiles\\/IdeaProjects\\/reactBoot\\/vendor\\/carbonorm\\/carbonphp\\/carbonphp\\/Route.php\",\"line\":167,\"function\":\"call_user_func_array\",\"args\":[{},[\"users\"]]},{\"file\":\"\\/Users\\/richardmiles\\/IdeaProjects\\/reactBoot\\/vendor\\/carbonorm\\/carbonphp\\/carbonphp\\/restful\\/RestLifeCycle.php\",\"line\":589,\"function\":\"regexMatch\",\"class\":\"CarbonPHP\\\\Route\",\"type\":\"::\",\"args\":[\"#rest\\/([A-Za-z\\\\_]{1,256})\\/?([^\\/]+)?#\",{}]},{\"file\":\"\\/Users\\/richardmiles\\/IdeaProjects\\/reactBoot\\/backend\\/Documentation.php\",\"line\":154,\"function\":\"MatchRestfulRequests\",\"class\":\"CarbonPHP\\\\Restful\\\\RestLifeCycle\",\"type\":\"::\",\"args\":[\"\",\"Backend\\\\Tables\\\\\"]},{\"file\":\"\\/Users\\/richardmiles\\/IdeaProjects\\/reactBoot\\/vendor\\/carbonorm\\/carbonphp\\/carbonphp\\/CarbonPHP.php\",\"line\":342,\"function\":\"startApplication\",\"class\":\"Backend\\\\Documentation\",\"object\":{},\"type\":\"->\",\"args\":[\"rest\\/users\"]},{\"file\":\"\\/Users\\/richardmiles\\/IdeaProjects\\/reactBoot\\/vendor\\/carbonorm\\/carbonphp\\/carbonphp\\/CarbonPHP.php\",\"line\":275,\"function\":\"startApplication\",\"class\":\"CarbonPHP\\\\CarbonPHP\",\"type\":\"::\",\"args\":[]},{\"file\":\"\\/Users\\/richardmiles\\/IdeaProjects\\/reactBoot\\/vendor\\/carbonorm\\/carbonphp\\/carbonphp\\/CarbonPHP.php\",\"line\":170,\"function\":\"run\",\"class\":\"CarbonPHP\\\\CarbonPHP\",\"type\":\"::\",\"args\":[\"Backend\\\\Documentation\"]},{\"file\":\"\\/Users\\/richardmiles\\/IdeaProjects\\/reactBoot\\/index.php\",\"line\":18,\"function\":\"__invoke\",\"class\":\"CarbonPHP\\\\CarbonPHP\",\"object\":{},\"type\":\"->\",\"args\":[]}]",
+    "INNODB_STATUS": [
+        "",
+        "=====================================",
+        "2023-08-20 19:19:15 0x70000e19f000 INNODB MONITOR OUTPUT",
+        "=====================================",
+        "Per second averages calculated from the last 26 seconds",
+        "-----------------",
+        "BACKGROUND THREAD",
+        "-----------------",
+        "srv_master_thread loops: 790 srv_active, 0 srv_shutdown, 21936 srv_idle",
+        "srv_master_thread log flush and writes: 0",
+        "----------",
+        "SEMAPHORES",
+        "----------",
+        "OS WAIT ARRAY INFO: reservation count 727",
+        "OS WAIT ARRAY INFO: signal count 870",
+        "RW-shared spins 0, rounds 0, OS waits 0",
+        "RW-excl spins 0, rounds 0, OS waits 0",
+        "RW-sx spins 0, rounds 0, OS waits 0",
+        "Spin rounds per wait: 0.00 RW-shared, 0.00 RW-excl, 0.00 RW-sx",
+        "------------------------",
+        "LATEST FOREIGN KEY ERROR",
+        "------------------------",
+        "2023-08-20 18:15:23 0x70000da83000 Transaction:",
+        "TRANSACTION 88137786, ACTIVE 0 sec inserting",
+        "mysql tables in use 1, locked 1",
+        "3 lock struct(s), heap size 1128, 1 row lock(s)",
+        "MySQL thread id 2779, OS thread handle 123145531437056, query id 378724 localhost 127.0.0.1 root update",
+        "INSERT INTO carbon_users (user_username, user_password, user_id, user_type, user_first_name, user_last_name, user_email, user_ip) VALUES ('WookieeTyler', '$2y$10$wd5gBu40b1OZCWDynAXwDeyvR/nCZbM04G4IJAbyG3b8XKo5kePwa', UNHEX('d23c00be3fb711ee8cd48e580f411cc7'), 'member', 'Anonymous', 'User', '', 'NULL')",
+        "Foreign key constraint fails for table `reactboot`.`carbon_users`:",
+        ",",
+        "  CONSTRAINT `user_entity_entity_pk_fk` FOREIGN KEY (`user_id`) REFERENCES `carbon_carbons` (`entity_pk`) ON DELETE CASCADE ON UPDATE CASCADE",
+        "Trying to add in child table, in index PRIMARY tuple:",
+        "DATA TUPLE: 29 fields;",
+        " 0: len 16; hex d23c00be3fb711ee8cd48e580f411cc7; asc  <  ?      X A  ;;",
+        " 1: len 6; hex 00000540e03a; asc    @ :;;",
+        " 2: len 7; hex 00000000000000; asc        ;;",
+        " 3: len 12; hex 576f6f6b69656554796c6572; asc WookieeTyler;;",
+        " 4: len 60; hex 24327924313024776435674275343062314f5a435744796e41587744657976522f6e435a624d30344734494a41627947336238584b6f356b65507761; asc $2y$10$wd5gBu40b1OZCWDynAXwDeyvR/nCZbM04G4IJAbyG3b8XKo5kePwa;;",
+        " 5: len 6; hex 6d656d626572; asc member;;",
+        " 6: len 4; hex 474f4c46; asc GOLF;;",
+        " 7: SQL NULL;",
+        " 8: SQL NULL;",
+        " 9: len 9; hex 416e6f6e796d6f7573; asc Anonymous;;",
+        " 10: len 4; hex 55736572; asc User;;",
+        " 11: SQL NULL;",
+        " 12: SQL NULL;",
+        " 13: SQL NULL;",
+        " 14: SQL NULL;",
+        " 15: SQL NULL;",
+        " 16: SQL NULL;",
+        " 17: len 4; hex 80000000; asc     ;;",
+        " 18: len 0; hex ; asc ;;",
+        " 19: SQL NULL;",
+        " 20: len 1; hex 80; asc  ;;",
+        " 21: SQL NULL;",
+        " 22: len 4; hex 80000000; asc     ;;",
+        " 23: len 1; hex 80; asc  ;;",
+        " 24: len 5; hex 99b0e923d7; asc    # ;;",
+        " 25: len 4; hex 4e554c4c; asc NULL;;",
+        " 26: SQL NULL;",
+        " 27: SQL NULL;",
+        " 28: len 5; hex 99b0e923d7; asc    # ;;",
+        "",
+        "But in parent table `reactboot`.`carbon_carbons`, in index PRIMARY,",
+        "the closest match we can find is record:",
+        "PHYSICAL RECORD: n_fields 1; compact format; info bits 0",
+        " 0: len 8; hex 696e66696d756d00; asc infimum ;;",
+        "",
+        "------------",
+        "TRANSACTIONS",
+        "------------",
+        "Trx id counter 88143942",
+        "Purge done for trx's n:o < 88143940 undo n:o < 0 state: running but idle",
+        "History list length 50",
+        "LIST OF TRANSACTIONS FOR EACH SESSION:",
+        "---TRANSACTION 421688258895776, not started",
+        "0 lock struct(s), heap size 1128, 0 row lock(s)",
+        "---TRANSACTION 421688258894192, not started",
+        "0 lock struct(s), heap size 1128, 0 row lock(s)",
+        "---TRANSACTION 421688258893400, not started",
+        "0 lock struct(s), heap size 1128, 0 row lock(s)",
+        "---TRANSACTION 88143941, ACTIVE 0 sec",
+        "2 lock struct(s), heap size 1128, 1 row lock(s)",
+        "MySQL thread id 3315, OS thread handle 123145538891776, query id 453683 localhost 127.0.0.1 root starting",
+        "SHOW ENGINE INNODB STATUS",
+        "Trx read view will not see trx with id >= 88143942, sees < 88143942",
+        "--------",
+        "FILE I/O",
+        "--------",
+        "I/O thread 0 state: waiting for i/o request ((null))",
+        "I/O thread 1 state: waiting for i/o request (insert buffer thread)",
+        "I/O thread 2 state: waiting for i/o request (read thread)",
+        "I/O thread 3 state: waiting for i/o request (read thread)",
+        "I/O thread 4 state: waiting for i/o request (read thread)",
+        "I/O thread 5 state: waiting for i/o request (read thread)",
+        "I/O thread 6 state: waiting for i/o request (write thread)",
+        "I/O thread 7 state: waiting for i/o request (write thread)",
+        "I/O thread 8 state: waiting for i/o request (write thread)",
+        "Pending normal aio reads: [0, 0, 0, 0] , aio writes: [0, 0, 0, 0] ,",
+        " ibuf aio reads:",
+        "Pending flushes (fsync) log: 0; buffer pool: 0",
+        "3911 OS file reads, 179330 OS file writes, 116666 OS fsyncs",
+        "0.00 reads/s, 0 avg bytes/read, 13.25 writes/s, 10.13 fsyncs/s",
+        "-------------------------------------",
+        "INSERT BUFFER AND ADAPTIVE HASH INDEX",
+        "-------------------------------------",
+        "Ibuf: size 1, free list len 425, seg size 427, 4 merges",
+        "merged operations:",
+        " insert 4, delete mark 0, delete 0",
+        "discarded operations:",
+        " insert 0, delete mark 0, delete 0",
+        "Hash table size 34679, node heap has 8 buffer(s)",
+        "Hash table size 34679, node heap has 2 buffer(s)",
+        "Hash table size 34679, node heap has 7 buffer(s)",
+        "Hash table size 34679, node heap has 3 buffer(s)",
+        "Hash table size 34679, node heap has 7 buffer(s)",
+        "Hash table size 34679, node heap has 2 buffer(s)",
+        "Hash table size 34679, node heap has 7 buffer(s)",
+        "Hash table size 34679, node heap has 3 buffer(s)",
+        "384.06 hash searches/s, 1629.86 non-hash searches/s",
+        "---",
+        "LOG",
+        "---",
+        "Log sequence number          2287627763995",
+        "Log buffer assigned up to    2287627763995",
+        "Log buffer completed up to   2287627763995",
+        "Log written up to            2287627763995",
+        "Log flushed up to            2287627763995",
+        "Added dirty pages up to      2287627763995",
+        "Pages flushed up to          2287627763795",
+        "Last checkpoint at           2287627763795",
+        "Log minimum file id is       52888",
+        "Log maximum file id is       52901",
+        "53196 log i/o's done, 5.58 log i/o's/second",
+        "----------------------",
+        "BUFFER POOL AND MEMORY",
+        "----------------------",
+        "Total large memory allocated 0",
+        "Dictionary memory allocated 2012131",
+        "Buffer pool size   8191",
+        "Free buffers       4927",
+        "Database pages     3225",
+        "Old database pages 1210",
+        "Modified db pages  3",
+        "Pending reads      0",
+        "Pending writes: LRU 0, flush list 0, single page 0",
+        "Pages made young 3, not young 0",
+        "0.00 youngs/s, 0.00 non-youngs/s",
+        "Pages read 2922, created 303, written 99594",
+        "0.00 reads/s, 0.00 creates/s, 6.12 writes/s",
+        "Buffer pool hit rate 1000 / 1000, young-making rate 0 / 1000 not 0 / 1000",
+        "Pages read ahead 0.00/s, evicted without access 0.00/s, Random read ahead 0.00/s",
+        "LRU len: 3225, unzip_LRU len: 0",
+        "I/O sum[0]:cur[0], unzip sum[0]:cur[0]",
+        "--------------",
+        "ROW OPERATIONS",
+        "--------------",
+        "0 queries inside InnoDB, 0 queries in queue",
+        "1 read views open inside InnoDB",
+        "Process ID=1179, Main thread ID=0x70000ccc8000 , state=sleeping",
+        "Number of rows inserted 51, updated 18864, deleted 10, read 20875559",
+        "0.08 inserts/s, 1.88 updates/s, 0.00 deletes/s, 1970.73 reads/s",
+        "Number of system rows inserted 78, updated 348, deleted 80, read 54243",
+        "0.00 inserts/s, 0.00 updates/s, 0.00 deletes/s, 0.85 reads/s",
+        "----------------------------",
+        "END OF INNODB MONITOR OUTPUT",
+        "============================",
+        ""
+    ]
+}[0m
+[20-Aug-2023 18:19:26 America/Phoenix] [46m<pid::367> Getting new database instance[0m
+[21-Aug-2023 19:09:17 America/Phoenix] [46m<pid::2096> Getting new database instance[0m
+[21-Aug-2023 23:25:11 America/Phoenix] [46m<pid::368> Getting new database instance[0m
+[21-Aug-2023 23:57:01 America/Phoenix] [46m<pid::2107> Getting new database instance[0m
+[21-Aug-2023 23:58:01 America/Phoenix] [46m<pid::364> Getting new database instance[0m
+[22-Aug-2023 00:29:36 America/Phoenix] [46m<pid::2106> Getting new database instance[0m
+[22-Aug-2023 00:41:19 America/Phoenix] [46m<pid::367> Getting new database instance[0m
+[22-Aug-2023 01:17:53 America/Phoenix] [43m<pid::98072> No Programs namespace found. Please add a namespace ending in Programs to your composer.json file to define custom C6 programs.[0m
+[22-Aug-2023 01:17:53 America/Phoenix] [31m<pid::98072> The file (gcpDeployment.sh) found under directory (/Users/richardmiles/IdeaProjects/reactBoot/vendor/carbonorm/carbonphp/carbonphp/programs) namespace (CarbonPHP\Programs\) was could not be auto-loaded. Please check your composer.json file and configuration passe to CarbonPHP.[0m
+[22-Aug-2023 01:17:53 America/Phoenix] [34m<pid::98072> CLI Command Parsed >>[0m
+[22-Aug-2023 01:17:53 America/Phoenix] [42m<pid::98072> php index.php restbuilder -prefix carbon_ -dontQueryWithDatabaseName -excludeTablesRegex #_mig_.*# -react src/ -json -namespace Backend\Tables -target backend/tables/[0m
+[22-Aug-2023 01:17:53 America/Phoenix] [36m<pid::98072> Constructing Program >> CarbonPHP\Programs\RestBuilder[0m
+[22-Aug-2023 01:17:53 America/Phoenix] [36m<pid::98072> Program Constructed >> CarbonPHP\Programs\RestBuilder[0m
+[22-Aug-2023 01:17:53 America/Phoenix] [32m<pid::98072> CarbonPHP CLI has loaded a program into memory, CarbonPHP::make(...) will need to be executed to  .[0m
+[22-Aug-2023 01:17:53 America/Phoenix] [32m<pid::98072> CarbonPHP is finished initializing and is running the command line interface.[0m
+[22-Aug-2023 01:17:53 America/Phoenix] [34m<pid::98072> Running Command[0m
+[22-Aug-2023 01:17:53 America/Phoenix] [45m<pid::98072> index.php restbuilder -prefix carbon_ -dontQueryWithDatabaseName -excludeTablesRegex #_mig_.*# -react src/ -json -namespace Backend\Tables -target backend/tables/[0m
+[22-Aug-2023 01:17:53 America/Phoenix] [34m<pid::98072> Building Rest Api![0m
+[22-Aug-2023 01:17:53 America/Phoenix] [43m<pid::98072> Namespace set to (Backend\Tables)[0m
+[22-Aug-2023 01:17:53 America/Phoenix] [33m<pid::98072> No ['DATABASE']['DB_PORT'] configuration active. Using default port 3306. 
+Set to an empty string "" for mysql to auto-resolve.[0m
+[22-Aug-2023 01:17:53 America/Phoenix] [32m<pid::98072> Successfully created mysql.cnf file in (/Users/richardmiles/IdeaProjects/reactBoot/mysql.cnf)[0m
+[22-Aug-2023 01:17:53 America/Phoenix] [44m<pid::98072> Running CMD >> mysqldump  --defaults-extra-file="/Users/richardmiles/IdeaProjects/reactBoot/mysql.cnf"  --skip-add-locks --single-transaction --quick --no-data ReactBoot  > '/Users/richardmiles/IdeaProjects/reactBoot/mysqldump.sql'[0m
+[22-Aug-2023 01:17:54 America/Phoenix] [32m<pid::98072> 	Finished Building REST ORM!
+
+[0m
+[22-Aug-2023 01:17:54 America/Phoenix] [32m<pid::98072> 	Success!
+
+[0m
+[22-Aug-2023 01:17:54 America/Phoenix] [32m<pid::98072> CarbonPHP is returning (true) from (CarbonPHP\CarbonPHP::run). The cli command has finished.[0m
+[22-Aug-2023 01:22:08 America/Phoenix] [43m<pid::98427> No Programs namespace found. Please add a namespace ending in Programs to your composer.json file to define custom C6 programs.[0m
+[22-Aug-2023 01:22:08 America/Phoenix] [31m<pid::98427> The file (gcpDeployment.sh) found under directory (/Users/richardmiles/IdeaProjects/reactBoot/vendor/carbonorm/carbonphp/carbonphp/programs) namespace (CarbonPHP\Programs\) was could not be auto-loaded. Please check your composer.json file and configuration passe to CarbonPHP.[0m
+[22-Aug-2023 01:22:08 America/Phoenix] [34m<pid::98427> CLI Command Parsed >>[0m
+[22-Aug-2023 01:22:08 America/Phoenix] [42m<pid::98427> php index.php restbuilder -prefix carbon_ -dontQueryWithDatabaseName -excludeTablesRegex #_mig_.*# -react src/ -json -namespace Backend\Tables -target backend/tables/[0m
+[22-Aug-2023 01:22:08 America/Phoenix] [36m<pid::98427> Constructing Program >> CarbonPHP\Programs\RestBuilder[0m
+[22-Aug-2023 01:22:08 America/Phoenix] [36m<pid::98427> Program Constructed >> CarbonPHP\Programs\RestBuilder[0m
+[22-Aug-2023 01:22:08 America/Phoenix] [32m<pid::98427> CarbonPHP CLI has loaded a program into memory, CarbonPHP::make(...) will need to be executed to  .[0m
+[22-Aug-2023 01:22:08 America/Phoenix] [32m<pid::98427> CarbonPHP is finished initializing and is running the command line interface.[0m
+[22-Aug-2023 01:22:08 America/Phoenix] [34m<pid::98427> Running Command[0m
+[22-Aug-2023 01:22:08 America/Phoenix] [45m<pid::98427> index.php restbuilder -prefix carbon_ -dontQueryWithDatabaseName -excludeTablesRegex #_mig_.*# -react src/ -json -namespace Backend\Tables -target backend/tables/[0m
+[22-Aug-2023 01:22:08 America/Phoenix] [34m<pid::98427> Building Rest Api![0m
+[22-Aug-2023 01:22:08 America/Phoenix] [43m<pid::98427> Namespace set to (Backend\Tables)[0m
+[22-Aug-2023 01:22:08 America/Phoenix] [33m<pid::98427> No ['DATABASE']['DB_PORT'] configuration active. Using default port 3306. 
+Set to an empty string "" for mysql to auto-resolve.[0m
+[22-Aug-2023 01:22:08 America/Phoenix] [32m<pid::98427> Successfully created mysql.cnf file in (/Users/richardmiles/IdeaProjects/reactBoot/mysql.cnf)[0m
+[22-Aug-2023 01:22:08 America/Phoenix] [44m<pid::98427> Running CMD >> mysqldump  --defaults-extra-file="/Users/richardmiles/IdeaProjects/reactBoot/mysql.cnf"  --skip-add-locks --single-transaction --quick --no-data ReactBoot  > '/Users/richardmiles/IdeaProjects/reactBoot/mysqldump.sql'[0m
+[22-Aug-2023 01:22:09 America/Phoenix] [32m<pid::98427> 	Finished Building REST ORM!
+
+[0m
+[22-Aug-2023 01:22:09 America/Phoenix] [32m<pid::98427> 	Success!
+
+[0m
+[22-Aug-2023 01:22:09 America/Phoenix] [32m<pid::98427> CarbonPHP is returning (true) from (CarbonPHP\CarbonPHP::run). The cli command has finished.[0m

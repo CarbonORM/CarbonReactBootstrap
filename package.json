@@ -12,7 +12,6 @@
     "@fortawesome/react-fontawesome": "0.2.0",
     "@profabric/react-components": "0.1.7",
     "@reduxjs/toolkit": "1.9.5",
-    "@sweetalert/with-react": "^0.1.1",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -61,8 +60,10 @@
   "scripts": {
     "start": "rm -rf node_modules/.cache/ && npm cache clean --force && npm run build:css && concurrently \"npm:watch:sass\" \"npm:rewired:start\"",
     "rewired:start": "react-app-rewired start  --experimental-modules",
-    "build:css": "sass ./src:./src && tcm src",
-    "build": "npm run build:css && PUBLIC_URL=https://drop-in-gaming.github.io/node-core/ react-app-rewired build",
+    "build:css": "sass ./src:./src && tcm src && cat src/variables/bootstrap.module.scss.d.ts",
+    "build": "npm run build:css && PUBLIC_URL=https://carbonorm.github.io/reactC6Boot/ react-app-rewired build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "test": "react-app-rewired test",
     "watch:sass": "sass ./src:./src --watch",
     "eject": "react-app-rewired eject"
@@ -86,6 +87,8 @@
     ]
   },
   "devDependencies": {
-    "ajv": "^7.2.4"
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "ajv": "^8.0.0",
+    "gh-pages": "^6.0.0"
   }
 }

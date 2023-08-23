@@ -20,7 +20,6 @@ export const authSlice = createSlice({
 
       state.authentication = payload;
 
-
     }
   }
 });

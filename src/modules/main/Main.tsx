@@ -21,9 +21,6 @@ const Main = () => {
   const authentication = useSelector((state: any) => state.auth.authentication);
   const [isAppLoaded, setIsAppLoaded] = useState(false);
 
-  const handleToggleMenuSidebar = () => {
-    dispatch(toggleSidebarMenu());
-  };
 
   useEffect(() => {
     setIsAppLoaded(Boolean(authentication));
@@ -78,6 +75,11 @@ const Main = () => {
         </div>
       );
     }
+
+    const handleToggleMenuSidebar = () => {
+      dispatch(toggleSidebarMenu());
+    };
+
     return (
       <>
         <Header />
@@ -100,7 +102,7 @@ const Main = () => {
         />
       </>
     );
-  }, [isAppLoaded]);
+  }, [isAppLoaded, dispatch]);
 
   return <div className="wrapper">{getAppTemplate()}</div>;
 };
