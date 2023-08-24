@@ -23,6 +23,10 @@ mysql.cnf
 .env.test.local
 .env.production.local
 
+
+reactBoot.iml
+
+
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*

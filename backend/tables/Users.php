@@ -63,6 +63,7 @@ class Users extends Rest implements iRestSinglePrimaryKey
     
     // Tables we have a foreign key reference to
     public const INTERNAL_TABLE_CONSTRAINTS = [
+        self::USER_ID => Carbons::ENTITY_PK,
     ];
     
     // Tables that reference this tables columns via FK
@@ -101,7 +102,7 @@ class Users extends Rest implements iRestSinglePrimaryKey
      * CARBON_CARBONS_PRIMARY_KEY
      * does your table reference $prefix . 'carbon_carbons.entity_pk'
     **/
-    public const CARBON_CARBONS_PRIMARY_KEY = false;
+    public const CARBON_CARBONS_PRIMARY_KEY = true;
     
     /**
      * COLUMNS
@@ -208,7 +209,7 @@ class Users extends Rest implements iRestSinglePrimaryKey
     public const PDO_VALIDATION = [
         self::USER_USERNAME => [ self::MYSQL_TYPE => 'varchar', self::NOT_NULL => true, self::COLUMN_CONSTRAINTS => [], self::PDO_TYPE => PDO::PARAM_STR, self::MAX_LENGTH => '100', self::AUTO_INCREMENT => false, self::SKIP_COLUMN_IN_POST => false ],
         self::USER_PASSWORD => [ self::MYSQL_TYPE => 'varchar', self::NOT_NULL => true, self::COLUMN_CONSTRAINTS => [], self::PDO_TYPE => PDO::PARAM_STR, self::MAX_LENGTH => '225', self::AUTO_INCREMENT => false, self::SKIP_COLUMN_IN_POST => false ],
-        self::USER_ID => [ self::MYSQL_TYPE => 'binary', self::NOT_NULL => true, self::COLUMN_CONSTRAINTS => [], self::PDO_TYPE => PDO::PARAM_STR, self::MAX_LENGTH => '16', self::AUTO_INCREMENT => false, self::SKIP_COLUMN_IN_POST => false ],
+        self::USER_ID => [ self::MYSQL_TYPE => 'binary', self::NOT_NULL => true, self::COLUMN_CONSTRAINTS => [Carbons::ENTITY_PK => [ self::CONSTRAINT_NAME => 'user_entity_entity_pk_fk', self::UPDATE_RULE => 'CASCADE', self::DELETE_RULE => 'CASCADE'],], self::PDO_TYPE => PDO::PARAM_STR, self::MAX_LENGTH => '16', self::AUTO_INCREMENT => false, self::SKIP_COLUMN_IN_POST => false ],
         self::USER_TYPE => [ self::MYSQL_TYPE => 'varchar', self::NOT_NULL => true, self::COLUMN_CONSTRAINTS => [], self::PDO_TYPE => PDO::PARAM_STR, self::MAX_LENGTH => '20', self::AUTO_INCREMENT => false, self::SKIP_COLUMN_IN_POST => true, self::DEFAULT_POST_VALUE => '"Athlete"' ],
         self::USER_SPORT => [ self::MYSQL_TYPE => 'varchar', self::NOT_NULL => false, self::COLUMN_CONSTRAINTS => [], self::PDO_TYPE => PDO::PARAM_STR, self::MAX_LENGTH => '20', self::AUTO_INCREMENT => false, self::SKIP_COLUMN_IN_POST => true, self::DEFAULT_POST_VALUE => '"GOLF"' ],
         self::USER_SESSION_ID => [ self::MYSQL_TYPE => 'varchar', self::NOT_NULL => false, self::COLUMN_CONSTRAINTS => [], self::PDO_TYPE => PDO::PARAM_STR, self::MAX_LENGTH => '225', self::AUTO_INCREMENT => false, self::SKIP_COLUMN_IN_POST => true, self::DEFAULT_POST_VALUE => null ],
@@ -330,7 +331,7 @@ class Users extends Rest implements iRestSinglePrimaryKey
 
         }
 
-        if (false === $user[self::COLUMNS[self::USER_ID]]) {
+        if (false === ($user[self::COLUMNS[self::USER_ID]] ?? false)) {
 
             // work on attempt count 4 bad actor // temp ip ban
             throw new PublicAlert('Failed to find user with login: ' . $request[self::USER_USERNAME]);
@@ -713,7 +714,8 @@ CREATE TABLE IF NOT EXISTS `carbon_users` (
 PRIMARY KEY (`user_id`),
 UNIQUE KEY `carbon_users_user_username_uindex` (`user_username`),
 UNIQUE KEY `user_user_profile_uri_uindex` (`user_profile_uri`),
-UNIQUE KEY `carbon_users_user_facebook_id_uindex` (`user_facebook_id`)
+UNIQUE KEY `carbon_users_user_facebook_id_uindex` (`user_facebook_id`),
+CONSTRAINT `user_entity_entity_pk_fk` FOREIGN KEY (`user_id`) REFERENCES `carbon_carbons` (`entity_pk`) ON DELETE CASCADE ON UPDATE CASCADE
 ) ENGINE=InnoDB;
 MYSQL;
        

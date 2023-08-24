@@ -16,7 +16,7 @@
   "prefer-stable": true,
   "require": {
     "php": ">=8.1",
-    "carbonorm/carbonphp": "^15.0.2",
+    "carbonorm/carbonphp": "15.*",
     "ext-json": "*",
     "ext-pdo": "*",
     "ext-curl": "*",

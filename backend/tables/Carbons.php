@@ -91,6 +91,7 @@ class Carbons extends Rest implements iRestSinglePrimaryKey
         User_Tasks::TASK_ID => self::ENTITY_PK,
         User_Tasks::USER_ID => self::ENTITY_PK,
         User_Tasks::FROM_ID => self::ENTITY_PK,
+        Users::USER_ID => self::ENTITY_PK,
     ];
 
     /** VALIDATE_AFTER_REBUILD

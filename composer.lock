@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3f9f7c4f20cb941744de67274ce744dc",
+    "content-hash": "0cb567475d973933b49402146e6ac7ff",
     "packages": [
         {
             "name": "carbonorm/carbonphp",
-            "version": "15.0.2",
+            "version": "15.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/CarbonORM/CarbonPHP.git",
-                "reference": "34f9761235ffe3fc45b969d89a701233f5ff9931"
+                "reference": "55be2f61174def35c71030b1b4af848caf7b40e9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/CarbonORM/CarbonPHP/zipball/34f9761235ffe3fc45b969d89a701233f5ff9931",
-                "reference": "34f9761235ffe3fc45b969d89a701233f5ff9931",
+                "url": "https://api.github.com/repos/CarbonORM/CarbonPHP/zipball/55be2f61174def35c71030b1b4af848caf7b40e9",
+                "reference": "55be2f61174def35c71030b1b4af848caf7b40e9",
                 "shasum": ""
             },
             "require": {
@@ -85,9 +85,9 @@
             ],
             "support": {
                 "issues": "https://github.com/CarbonORM/CarbonPHP/issues",
-                "source": "https://github.com/CarbonORM/CarbonPHP/tree/15.0.2"
+                "source": "https://github.com/CarbonORM/CarbonPHP/tree/15.1.1"
             },
-            "time": "2023-08-17T20:03:15+00:00"
+            "time": "2023-08-23T19:46:10+00:00"
         },
         {
             "name": "mustache/mustache",
